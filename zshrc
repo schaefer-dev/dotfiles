@@ -4,7 +4,7 @@ echo "# weiterlesen auf Seite 42"
 echo "# sublimeuni jetzt nutzbar als shortcut"
 
 # open university sublime project the short way
-alias sublimeuni="open ~/Documents/university.sublime-project"
+alias sublimeuni="open ~/.university.sublime-project"
 
 
 # enable interactive mode for mv, rm, cp (asks before overwriting)

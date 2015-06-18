@@ -1,0 +1,41 @@
+{
+	"folders":
+	[
+		{
+			"name": "hacking_abgaben",
+			"path": "/Users/daniel/Dropbox/uni/hacking/abgaben",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
+			"name": "hacking_talk",
+			"path": "/Users/daniel/Dropbox/uni/hacking/talk",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
+			"name": "infosys_abgaben",
+			"path": "/Users/daniel/Dropbox/uni/infosys/projekte/git_repo",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
+			"name": "np_abgaben",
+			"path": "/Users/daniel/Dropbox/uni/np/abgaben",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
+			"name": "ai_abgaben",
+			"path": "/Users/daniel/Dropbox/uni/ai/abgaben",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
+			"name": "daniel",
+			"path": "/Users/daniel",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.out", "*.synctex.gz"]
+		}
+	]
+}
