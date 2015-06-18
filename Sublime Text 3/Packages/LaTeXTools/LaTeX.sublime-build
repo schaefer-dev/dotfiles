@@ -1,0 +1,29 @@
+// Compilation settings
+// ====================
+//
+// DO NOT TOUCH THIS FILE!
+// All configuration now occurs in LaTeXTools Preferences.sublime-settings
+// Put a copy of *that* file in your User directory and customize at will
+//
+// Again: there is NOTHING user-customizable here anymore.
+
+{
+
+	"target": "make_pdf",
+	"selector": "text.tex.latex",
+
+	"osx":
+		{
+			"file_regex": "^(...*?):([0-9]+): ([0-9]*)([^\\.]+)"
+		},
+
+	"windows":
+		{
+			"file_regex": "^((?:.:)?[^:\n\r]*):([0-9]+):?([0-9]+)?:? (.*)$"
+		},
+
+	"linux":
+		{
+			"file_regex": "^(...*?):([0-9]+): ([0-9]*)([^\\.]+)"
+		}
+}
