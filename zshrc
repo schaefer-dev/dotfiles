@@ -12,8 +12,8 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
-# Vi mode
-# bindkey -v
+# enable vi mode
+# source .zsh_vimode
 
 # set hashcat to app link
 alias hashcat=/Applications/hashcat-0.49/Hashcat.app 
