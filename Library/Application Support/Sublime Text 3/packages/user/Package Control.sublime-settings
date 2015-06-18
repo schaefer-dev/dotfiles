@@ -1,0 +1,39 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"Base16 Color Schemes",
+		"BracketHighlighter",
+		"ColorPicker",
+		"Dark Pastel Color Scheme",
+		"Default File Type",
+		"Floobits",
+		"Git",
+		"GitGutter",
+		"Gutter Color",
+		"HTML-CSS-JS Prettify",
+		"LaTeXTools",
+		"Minifier",
+		"Nodejs",
+		"Numix Theme",
+		"Package Control",
+		"Predawn",
+		"Pylinter",
+		"Python 3",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Theme - Brogrammer",
+		"Theme - Flatland",
+		"Theme - itg.flat",
+		"Theme - Numix",
+		"Theme - Orchis",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Theme - Sodarized",
+		"Theme - Spacegray",
+		"Tomorrow Color Schemes"
+	]
+}
