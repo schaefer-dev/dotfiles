@@ -95,5 +95,11 @@ web(){
 		open 'https://infsec.cs.uni-saarland.de/index.php%3Fp=874.html'
 		return
 	fi
+
+	if [ "$1" = "np" ]; then
+		open 'https://mcms.cs.uni-saarland.de/np15/'
+		return
+	fi
+
 	echo "invalid input after function call"
 }
