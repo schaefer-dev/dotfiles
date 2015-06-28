@@ -36,9 +36,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"SublimeLinter",
 		"Pylinter",
-		"HTML-CSS-JS Prettify"
+		"HTML-CSS-JS Prettify",
+		"SublimeLinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
