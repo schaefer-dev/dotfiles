@@ -1,3 +1,11 @@
+# function to start livestreamer with twitch source
+livestream(){
+	echo "starting livestreamer http://twitch.tv/$1 source in second window..."
+	 osascript -e 'tell application "Terminal" to do script "livestreamer http://twitch.tv/'$1' source"'
+	#$(livestreamer http://twitch.tv/$1 'source' '&')
+
+}
+
 # Web function to open Websites
 web(){
 	if [ "$1" = "reddit" ]; then
