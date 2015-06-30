@@ -12,6 +12,10 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
+# added alias 'filetree' which lists the filesystem graphically
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+
+
 # enable vi mode
 # source .zsh_vimode
 
