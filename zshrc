@@ -3,8 +3,13 @@ date
 echo "# weiterlesen auf Seite 42"
 echo "# sublimeuni jetzt nutzbar als shortcut"
 
+# vlc control
+alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
+
 # open university sublime project the short way
 alias sublimeuni="open ~/.university.sublime-project"
+alias stuni="open ~/.university.sublime-project"
+alias stu="open ~/.university.sublime-project"
 
 
 # enable interactive mode for mv, rm, cp (asks before overwriting)
