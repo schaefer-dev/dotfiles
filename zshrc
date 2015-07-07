@@ -11,11 +11,16 @@ alias sublimeuni="open ~/.university.sublime-project"
 alias stuni="open ~/.university.sublime-project"
 alias stu="open ~/.university.sublime-project"
 
+# use htop with sudo (to show ram/cpu) and also sort for cpu usage
+alias htop="sudo htop --sort-key PERCENT_CPU"
 
 # enable interactive mode for mv, rm, cp (asks before overwriting)
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
+
+# launch apps with 'app'
+alias app="open -a"
 
 # sorts top list by cpu default
 alias top="top -o cpu"
@@ -23,6 +28,10 @@ alias top="top -o cpu"
 # added alias 'filetree' which lists the filesystem graphically
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
 
+
+# alias for hidden files
+alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
+alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
 
 # enable vi mode
 # source .zsh_vimode
