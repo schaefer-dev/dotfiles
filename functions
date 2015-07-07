@@ -1,3 +1,9 @@
+# function to start terminal chess
+chess(){
+	cd /Applications/Chess.app/Contents/Resources/
+	sudo ./sjeng.ChessEngine
+}
+
 # function to start livestreamer with twitch source
 livestream(){
 	echo "starting livestreamer http://twitch.tv/$1 source in second window..."

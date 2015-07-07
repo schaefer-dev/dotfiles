@@ -35,6 +35,7 @@ brew install gitignore
 brew install htop-osx
 brew install mysql
 brew install autojump
+brew install ssh-copy-id
 
 # Install more recent versions of some OS X tools.
 echo "Install more recent versions of some OS X tools."
