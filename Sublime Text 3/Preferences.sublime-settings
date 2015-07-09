@@ -43,5 +43,6 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"theme": "Spacegray.sublime-theme",
-	"word_wrap": true
+	"word_wrap": true,
+	"spacegray_tabs_xlarge": true,
 }
