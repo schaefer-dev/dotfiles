@@ -36,13 +36,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Pylinter",
 		"HTML-CSS-JS Prettify",
+		"Pylinter",
 		"SublimeLinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"theme": "Spacegray.sublime-theme",
-	"word_wrap": true,
 	"spacegray_tabs_xlarge": true,
+	"theme": "Spacegray.sublime-theme",
+	"word_wrap": true
 }
