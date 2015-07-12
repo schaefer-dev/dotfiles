@@ -36,6 +36,9 @@ alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Fi
 # enable vi mode
 # source .zsh_vimode
 
+# setting java_home
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
 # set hashcat to app link
 alias hashcat=/Applications/hashcat-0.49/Hashcat.app 
 
