@@ -3,6 +3,23 @@ date
 echo "# weiterlesen auf Seite 42"
 echo "# sublimeuni jetzt nutzbar als shortcut"
 
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
 # vlc control
 alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
 
@@ -50,6 +67,17 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 
 # import my functions
 source ~/.functions
+
+# Shortcuts
+alias hacking="cd ~/hackingrepo"
+alias infosys="cd ~/infosysrepo"
+alias np="cd ~/nplink"
+alias projectnp="cd ~/project_np"
+alias project="cd ~/project_np"
+alias npproject="cd ~/project_np"
+alias ai="cd ~/ailink"
+alias dotfiles="cd ~/dotfiles"
+alias scripts="cd ~/scripts"
 
 
 ############################### MY STUFF ENDS HERE ######################################
