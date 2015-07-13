@@ -26,6 +26,12 @@
         	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
 		},
 		{
+			"name": "np_project",
+			"path": "/Users/daniel/Dropbox/uni/np_project",
+			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
+        	"file_exclude_patterns": ["*.pyc", "*.pyo", ".project","*.aux","*.fdb_latexmk", "*.log", "*.out", "*.synctex.gz"]
+		},
+		{
 			"name": "ai_abgaben",
 			"path": "/Users/daniel/Dropbox/uni/ai/abgaben",
 			"folder_exclude_patterns": [".svn", "._d", ".metadata", ".settings"],
