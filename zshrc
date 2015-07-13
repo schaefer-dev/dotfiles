@@ -87,6 +87,7 @@ alias dt="~/Desktop"
 alias db="~/Dropbox"
 alias doc="~/Documents"
 alias wallpaper="~/Dropbox/Wallpaper"
+alias icons="~/icons"
 
 
 ############################### MY STUFF ENDS HERE ######################################
