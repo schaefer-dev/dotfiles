@@ -73,15 +73,20 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 source ~/.functions
 
 # Shortcuts
-alias hacking="cd ~/hackingrepo"
-alias infosys="cd ~/infosysrepo"
-alias np="cd ~/nplink"
-alias projectnp="cd ~/project_np"
-alias project="cd ~/project_np"
-alias npproject="cd ~/project_np"
-alias ai="cd ~/ailink"
-alias dotfiles="cd ~/dotfiles"
-alias scripts="cd ~/scripts"
+alias hacking="~/hackingrepo"
+alias infosys="~/infosysrepo"
+alias np="~/nplink"
+alias projectnp="~/project_np"
+alias project="~/project_np"
+alias npproject="~/project_np"
+alias ai="~/ailink"
+alias dotfiles="~/dotfiles"
+alias scripts="~/scripts"
+alias dl="~/Downloads"
+alias dt="~/Desktop"
+alias db="~/Dropbox"
+alias doc="~/Documents"
+alias wallpaper="~/Dropbox/Wallpaper"
 
 
 ############################### MY STUFF ENDS HERE ######################################
