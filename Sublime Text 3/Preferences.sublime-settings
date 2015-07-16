@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
@@ -36,13 +36,13 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Pylinter",
 		"HTML-CSS-JS Prettify",
-		"SublimeLinter",
-		"Pylinter"
+		"SublimeLinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"spacegray_tabs_xlarge": true,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "predawn.sublime-theme",
 	"word_wrap": true
 }
