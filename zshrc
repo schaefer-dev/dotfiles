@@ -43,6 +43,9 @@ alias mv="mv -i"
 # launch apps with 'app'
 alias app="open -a"
 
+# open folder with 'o'
+alias o="open ."
+
 # sorts top list by cpu default
 alias top="top -o cpu"
 
