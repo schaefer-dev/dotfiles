@@ -37,8 +37,8 @@
 	"ignored_packages":
 	[
 		"HTML-CSS-JS Prettify",
-		"Pylinter",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Pylinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

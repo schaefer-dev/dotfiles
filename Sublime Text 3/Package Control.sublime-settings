@@ -5,6 +5,7 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AlignTab",
 		"Base16 Color Schemes",
 		"BracketHighlighter",
 		"ColorPicker",
@@ -24,10 +25,12 @@
 		"Predawn",
 		"Pylinter",
 		"Python 3",
+		"Seti_UI",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"Syntax Manager",
 		"Theme - Brogrammer",
+		"Theme - Cobalt2",
 		"Theme - Flatland",
 		"Theme - itg.flat",
 		"Theme - Numix",
