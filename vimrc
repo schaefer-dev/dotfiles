@@ -21,7 +21,7 @@ set tabstop=4
 
 
 
-"colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night
 set encoding=utf8
 set background=dark
 
