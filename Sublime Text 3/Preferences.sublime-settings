@@ -1,6 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"dictionary": "Packages/Dictionaries/German_de_DE.dic",
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
@@ -36,9 +37,9 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Pylinter",
 		"HTML-CSS-JS Prettify",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Pylinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
