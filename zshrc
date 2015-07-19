@@ -77,6 +77,7 @@ source ~/.functions
 
 # Shortcuts
 alias hacking="~/hackingrepo"
+alias mfi2="~/mfi2link"
 alias infosys="~/infosysrepo"
 alias np="~/nplink"
 alias projectnp="~/project_np"
