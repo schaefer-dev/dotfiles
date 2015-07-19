@@ -1,7 +1,6 @@
 #startup show date enabled
 date
-echo "# weiterlesen auf Seite 42"
-echo "# sublimeuni jetzt nutzbar als shortcut"
+echo "# use 'o' to open dir in finder"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
