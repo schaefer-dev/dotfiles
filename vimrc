@@ -29,6 +29,10 @@ Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'bling/vim-airline'
 " Gitgutter shows difference in git
 Plugin 'airblade/vim-gitgutter'
+" nerdtree file tree
+Plugin 'scrooloose/nerdtree'
+" shows indentationlevels nicer
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,6 +52,8 @@ filetype plugin indent on    " required
 
 "shows horizontal and vertical line where the cursor is in the file
 set cursorline cursorcolumn
+set wrap
+set breakindent
 
 syntax enable
 set mouse=a
