@@ -1,6 +1,7 @@
 #startup show date enabled
 date
 echo "# use 'o' to open dir in finder"
+echo "# use 'a' or 'app' to open app."
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -41,6 +42,8 @@ alias mv="mv -i"
 
 # launch apps with 'app'
 alias app="open -a"
+alias a="open -a"
+alias Battle.net="Battle.net.app"
 
 # open folder with 'o'
 alias o="open ."
