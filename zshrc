@@ -148,7 +148,7 @@ ZSH_THEME="sorin"
 plugins=(git terminalapp brew textmate web-search sublime osx battery)
 
 # User configuration
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/lib/node_modules/bin:/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/daniel/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$(brew --prefix coreutils)/libexec/gnubin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/lib/node_modules/bin:/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/daniel/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$(brew --prefix coreutils)/libexec/gnubin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
