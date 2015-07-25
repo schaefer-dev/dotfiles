@@ -33,6 +33,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 " shows indentationlevels nicer
 Plugin 'nathanaelkane/vim-indent-guides'
+" latex box for latex compilation and other stuff
+Plugin 'lervag/vimtex'
+" this plugin would need vim to run with server, so its not possible for me
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,6 +51,9 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+"----------------------------------------------------------------------------
+
 
 
 "shows horizontal and vertical line where the cursor is in the file
