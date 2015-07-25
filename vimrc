@@ -33,9 +33,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdtree'
 " shows indentationlevels nicer
 Plugin 'nathanaelkane/vim-indent-guides'
-" latex box for latex compilation and other stuff
-Plugin 'lervag/vimtex'
-" this plugin would need vim to run with server, so its not possible for me
+" Big python functionality pack
+Plugin 'klen/python-mode'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,13 +93,19 @@ set noswapfile
 "shows number of columns and lines in powerbar
 set ruler
 
-"sets width for shifting with >> or << and tablength
+"sets width for shifting with >> or << and tablength and converts tab to spaces
 set shiftwidth=4
 set tabstop=4
+set expandtab
 
 "sets character encoding
 set encoding=utf8
 
+" Use <leader>l to toggle display of whitespace
+nmap <leader>l :set list!<CR>
+
+" automatically change window's cwd to file's dir
+set autochdir
 
 
 
@@ -110,13 +116,60 @@ set showmatch
 
 
 
+" Python-mode
+" Activate rope
+" Keys:
+" K             Show python docs
+" <Ctrl-Space>  Rope autocomplete
+" <Ctrl-c>g     Rope goto definition
+" <Ctrl-c>d     Rope show documentation
+" <Ctrl-c>f     Rope find occurrences
+" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[            Jump on previous class or function (normal, visual, operator modes)
+" ]]            Jump on next class or function (normal, visual, operator modes)
+" [M            Jump on previous class or method (normal, visual, operator modes)
+" ]M            Jump on next class or method (normal, visual, operator modes)
+let g:pymode_rope = 1
+
+" Documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'
+
+"Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>b'
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Don't autofold code
+let g:pymode_folding = 0
+
+
+" => NERDTree setup
+"""""""""""""""""""""""""""""
+" toggle NerdTree
+map <F2> :NERDTreeToggle<CR>
 
 
 
-
-" => Status line
+" => Powerline setup 
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 " Format the status line
