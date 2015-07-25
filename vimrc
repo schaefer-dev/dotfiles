@@ -58,35 +58,58 @@ filetype plugin indent on    " required
 
 "shows horizontal and vertical line where the cursor is in the file
 set cursorline cursorcolumn
+
+"linebreaks after long line are indented correctly
 set wrap
 set breakindent
 
+"show syntax colors
 syntax enable
-set mouse=a
-set t_Co=256
-set background=dark
+
+"enable filetype detection
+filetype on
+filetype plugin on
 filetype indent on
+
+"enable mouse usage
+set mouse=a
+
+"vim color settings
+set t_Co=256
+set background=dark	
+colorscheme Tomorrow-Night
+
+" make backspace work like most other apps
 set backspace=2 
+
+"show linenumbers
 set number
+
+"disable creating of all sort of swapfiles
 set nobackup
 set nowb
 set noswapfile
-filetype plugin on
-filetype indent on
+
+"shows number of columns and lines in powerbar
 set ruler
+
+"sets width for shifting with >> or << and tablength
+set shiftwidth=4
+set tabstop=4
+
+"sets character encoding
+set encoding=utf8
+
+
+
+
 set history=999
 set scrolloff=999
 set hlsearch
 set showmatch
 
-set shiftwidth=4
-set tabstop=4
 
 
-
-colorscheme Tomorrow-Night
-set encoding=utf8
-set background=dark
 
 
 
