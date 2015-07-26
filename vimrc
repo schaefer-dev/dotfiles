@@ -115,11 +115,12 @@ set hlsearch
 set showmatch
 
 
-" custom keymaps -------------------------------------
-"
+" custom keymaps begin --------------------------------------
+
 " <Leader>rtw will remove all trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
+" custom keymaps end ----------------------------------------
 
 
 " Python-mode
@@ -179,5 +180,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+"disableing showing of trailing in current file
+let g:airline#extensions#whitespace#show_message = 0
 
 " Format the status line
