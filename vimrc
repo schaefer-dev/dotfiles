@@ -76,11 +76,11 @@ set mouse=a
 
 "vim color settings
 set t_Co=256
-set background=dark	
+set background=dark
 colorscheme Tomorrow-Night
 
 " make backspace work like most other apps
-set backspace=2 
+set backspace=2
 
 "show linenumbers
 set number
@@ -113,6 +113,12 @@ set history=999
 set scrolloff=999
 set hlsearch
 set showmatch
+
+
+" custom keymaps -------------------------------------
+"
+" <Leader>rtw will remove all trailing whitespace
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 
 
@@ -165,11 +171,13 @@ map <F2> :NERDTreeToggle<CR>
 
 
 
-" => Powerline setup 
+" => Powerline setup
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 " Format the status line
