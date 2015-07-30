@@ -1,0 +1,185 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" status/tabline for vim
+Plugin 'bling/vim-airline'
+" Gitgutter shows difference in git
+Plugin 'airblade/vim-gitgutter'
+" nerdtree file tree
+Plugin 'scrooloose/nerdtree'
+" shows indentationlevels nicer
+Plugin 'nathanaelkane/vim-indent-guides'
+" Big python functionality pack
+Plugin 'klen/python-mode'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"----------------------------------------------------------------------------
+
+
+
+
+
+"shows horizontal and vertical line where the cursor is in the file
+set cursorline cursorcolumn
+
+"linebreaks after long line are indented correctly
+set wrap
+set breakindent
+
+"show syntax colors
+syntax enable
+
+"enable filetype detection
+filetype on
+filetype plugin on
+filetype indent on
+
+"enable mouse usage
+set mouse=a
+
+"vim color settings
+set t_Co=256
+set background=dark
+colorscheme Tomorrow-Night
+
+" make backspace work like most other apps
+set backspace=2
+
+"show linenumbers
+set number
+
+"disable creating of all sort of swapfiles
+set nobackup
+set nowb
+set noswapfile
+
+"shows number of columns and lines in powerbar
+set ruler
+
+"sets width for shifting with >> or << and tablength and converts tab to spaces
+set shiftwidth=4
+set tabstop=4
+set expandtab
+
+"sets character encoding
+set encoding=utf8
+
+" Use <leader>l to toggle display of whitespace
+nmap <leader>l :set list!<CR>
+
+" automatically change window's cwd to file's dir
+set autochdir
+
+
+
+set history=999
+set scrolloff=999
+set hlsearch
+set showmatch
+
+
+" custom keymaps begin --------------------------------------
+let mapleader=" "
+
+" <Leader>rtw will remove all trailing whitespace
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
+" custom keymaps end ----------------------------------------
+
+
+" Python-mode
+" Activate rope
+" Keys:
+" K             Show python docs
+" <Ctrl-Space>  Rope autocomplete
+" <Ctrl-c>g     Rope goto definition
+" <Ctrl-c>d     Rope show documentation
+" <Ctrl-c>f     Rope find occurrences
+" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[            Jump on previous class or function (normal, visual, operator modes)
+" ]]            Jump on next class or function (normal, visual, operator modes)
+" [M            Jump on previous class or method (normal, visual, operator modes)
+" ]M            Jump on next class or method (normal, visual, operator modes)
+let g:pymode_rope = 1
+
+" Documentation
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'
+
+"Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_bind = '<leader>b'
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Don't autofold code
+let g:pymode_folding = 0
+
+
+" => NERDTree setup
+"""""""""""""""""""""""""""""
+" toggle NerdTree
+map <leader>k :NERDTreeToggle<CR>
+
+
+
+" => Powerline setup
+""""""""""""""""""""""""""""""
+" Always show the status line
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+"disableing showing of trailing in current file
+let g:airline#extensions#whitespace#show_message = 0
+
+" Format the status line
