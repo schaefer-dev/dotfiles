@@ -5,5 +5,5 @@ CYANlight='\033[1;36m'
 NC='\033[0m' # No Color
 
 printf "${GREENlight}"
-python ~/scripts/speedtest_cli.py
+python ~/dotfiles/scripts/speedtest_cli.py
 printf "${NC}"
