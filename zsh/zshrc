@@ -28,9 +28,7 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
 
 # open university sublime project the short way
-alias sublimeuni="open ~/.university.sublime-project"
-alias stuni="open ~/.university.sublime-project"
-alias stu="open ~/.university.sublime-project"
+alias stu="open ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.sublime-project"
 
 # use htop with sudo (to show ram/cpu) and also sort for cpu usage
 alias htop="sudo htop --sort-key PERCENT_CPU"
