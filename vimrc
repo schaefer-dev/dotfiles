@@ -114,6 +114,7 @@ set showmatch
 
 
 " custom keymaps begin --------------------------------------
+let mapleader=" "
 
 " <Leader>rtw will remove all trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
@@ -166,7 +167,7 @@ let g:pymode_folding = 0
 " => NERDTree setup
 """""""""""""""""""""""""""""
 " toggle NerdTree
-map <F2> :NERDTreeToggle<CR>
+map <leader>k :NERDTreeToggle<CR>
 
 
 

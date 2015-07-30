@@ -145,7 +145,7 @@ ZSH_THEME="sorin"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git terminalapp brew textmate web-search sublime osx battery)
+plugins=(git tmux terminalapp brew textmate web-search sublime osx battery)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/lib/node_modules/bin:/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/daniel/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$(brew --prefix coreutils)/libexec/gnubin"
@@ -160,7 +160,7 @@ source $ZSH/oh-my-zsh.sh
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
-   export EDITOR='mvim'
+   export EDITOR='vim'
  fi
 
 # Compilation flags
@@ -177,3 +177,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 	# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
