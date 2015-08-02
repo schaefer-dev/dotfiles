@@ -43,6 +43,12 @@ alias app="open -a"
 alias a="open -a"
 alias Battle.net="Battle.net.app"
 
+# macvim shortcuts
+alias mvim="open -a MacVim "$@""
+alias macvim="open -a MacVim "$@""
+alias MacVim="open -a MacVim "$@""
+
+
 # open folder with 'o'
 alias o="open ."
 
@@ -75,7 +81,7 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 # import my functions
 source ~/.functions
 
-# Shortcuts
+# Shortcuts to directories or files
 alias hacking="~/hackingrepo"
 alias mfi2="~/mfi2link"
 alias infosys="~/infosysrepo"
@@ -92,6 +98,10 @@ alias db="~/Dropbox"
 alias doc="~/Documents"
 alias wallpaper="~/Dropbox/Wallpaper"
 alias icons="~/icons"
+
+alias zshrc="vim ~/dotfiles/zsh/zshrc"
+alias vimrc="vim ~/dotfiles/mvim/vimrc"
+
 
 
 ############################### MY STUFF ENDS HERE ######################################
