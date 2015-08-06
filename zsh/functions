@@ -4,6 +4,23 @@ chess(){
 	sudo ./sjeng.ChessEngine
 }
 
+livestream(){
+    osascript <<-EOF
+    tell application "iTerm"
+    create window with default profile command "cd dotfiles"
+    select first window
+    end tell
+EOF
+
+
+
+  #  osascript -e "tell application iTerm
+   #     create window with default profile
+    #    create window with default profile command 'ls -a'
+   # end tell"  
+}
+
+
 # Web function to open Websites
 web(){
 	if [ "$1" = "reddit" ]; then
