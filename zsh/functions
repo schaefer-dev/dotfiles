@@ -15,13 +15,6 @@ livestream(){
         end tell
     end tell
 EOF
-
-
-
-  #  osascript -e "tell application iTerm
-   #     create window with default profile
-    #    create window with default profile command 'ls -a'
-   # end tell"  
 }
 
 
