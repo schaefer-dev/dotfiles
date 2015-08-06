@@ -7,8 +7,12 @@ chess(){
 livestream(){
     osascript <<-EOF
     tell application "iTerm"
-    create window with default profile command "cd dotfiles"
+    create window with default profile
     select first window
+    launch session "Default Session"
+        tell current session of first window
+            write text "livestreamer twitch.tv/'$1' source"
+        end tell
     end tell
 EOF
 
