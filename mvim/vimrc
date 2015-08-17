@@ -31,6 +31,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'nathanaelkane/vim-indent-guides'
 " Big python functionality pack
 Plugin 'klen/python-mode'
+" Tmux navigaion with vim splits
+Plugin 'christoomey/vim-tmux-navigator'
 
 
 " All of your Plugins must be added before the following line
