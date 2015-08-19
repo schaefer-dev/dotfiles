@@ -22,10 +22,12 @@ Plugin 'git://git.wincent.com/command-t.git'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" status/tabline for vim
-"Plugin 'bling/vim-airline'
+"""" status/tabline for vim
+""""Plugin 'bling/vim-airline'
 " lightline
 Plugin 'itchyny/lightline.vim'
+"lightline theme for hybrid
+Plugin 'cocopon/lightline-hybrid.vim'
 " Gitgutter shows difference in git
 Plugin 'airblade/vim-gitgutter'
 " nerdtree file tree
@@ -200,7 +202,7 @@ set laststatus=2
 
 " => Lightline
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'hybrid',
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
