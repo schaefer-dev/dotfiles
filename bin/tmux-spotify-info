@@ -8,6 +8,10 @@ tell application "Spotify"
       set artist_name to artist of current track
 
       track_name
+    else
+      "no music"
     end if
+  else
+    "no music"
   end if
 end tell
