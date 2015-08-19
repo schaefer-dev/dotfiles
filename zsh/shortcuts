@@ -1,0 +1,26 @@
+# File to contain shortcuts into important folders or files
+
+# Shortcuts to directories or files
+alias hacking="~/hackingrepo"
+alias mfi2="~/mfi2link"
+alias infosys="~/infosysrepo"
+alias np="~/nplink"
+alias projectnp="~/project_np"
+alias project="~/project_np"
+alias npproject="~/project_np"
+alias ai="~/ailink"
+alias dotfiles="~/dotfiles"
+alias scripts="~/scripts"
+alias dl="~/Downloads"
+alias dt="~/Desktop"
+alias db="~/Dropbox"
+alias doc="~/Documents"
+alias wallpaper="~/Dropbox/Wallpaper"
+alias icons="~/icons"
+alias euler="~/github/projecteuler"
+
+alias zshrc="vim ~/dotfiles/zsh/zshrc"
+alias vimrc="vim ~/dotfiles/mvim/vimrc"
+
+alias postgrestart="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data start"
+alias postgrestop="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data stop"
