@@ -23,7 +23,9 @@ Plugin 'git://git.wincent.com/command-t.git'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " status/tabline for vim
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
+" lightline
+Plugin 'itchyny/lightline.vim'
 " Gitgutter shows difference in git
 Plugin 'airblade/vim-gitgutter'
 " nerdtree file tree
@@ -181,18 +183,30 @@ map <leader>k :NERDTreeToggle<CR>
 
 
 
-" => Powerline setup
+" => Airline setup
 """"""""""""""""""""""""""""""
 " Always show the status line
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline_powerline_fonts = 1
 "let g:airline_left_sep = ''
 "let g:airline_right_sep = ''
 "disableing showing of trailing in current file
-let g:airline#extensions#whitespace#show_message = 0
+"let g:airline#extensions#whitespace#show_message = 0
 
 " fancy powerline fonts
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
+
+
+" => Lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
+
 
 " Format the status line
