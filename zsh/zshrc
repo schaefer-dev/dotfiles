@@ -33,6 +33,10 @@ alias stu="open ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 # use htop with sudo (to show ram/cpu) and also sort for cpu usage
 alias htop="sudo htop --sort-key PERCENT_CPU"
 
+# colortest_etc launch
+alias colortest = "bash ~/dotfiles/scripts/colortests/colors_esc"
+alias colortest_etc = "bash ~/dotfiles/scripts/colortests/colors_etc"
+
 # enable interactive mode for mv, rm, cp (asks before overwriting)
 alias rm="rm -i"
 alias cp="cp -i"
