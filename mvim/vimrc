@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -74,10 +75,14 @@ filetype indent on
 "enable mouse usage
 set mouse=a
 
-"vim color settings
-set t_Co=256
+" Tomorrow-Night vim color setting
+"set t_Co=256
 set background=dark
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
+
+" hybrid color theme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 
 " make backspace work like most other apps
 set backspace=2
