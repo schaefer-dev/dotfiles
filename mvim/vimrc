@@ -182,9 +182,12 @@ map <leader>k :NERDTreeToggle<CR>
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+"let g:airline_left_sep = ''
+"let g:airline_right_sep = ''
 "disableing showing of trailing in current file
 let g:airline#extensions#whitespace#show_message = 0
+
+" fancy powerline fonts
+let g:airline_powerline_fonts = 1
 
 " Format the status line
