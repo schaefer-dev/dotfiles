@@ -1,2 +1,4 @@
-" ignore vimperator history
-/vimperator/info/default/history-command
+vimperator/info/default/history-command
+vimperator*
+vimperator/
+/vimperator/
