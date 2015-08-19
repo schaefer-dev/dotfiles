@@ -6,6 +6,12 @@ echo "# use 'a' or 'app' to open app."
 # import my commands, all kind of useful stuff
 source ~/dotfiles/zsh/commands
 
+# import my shortcuts
+source ~/dotfiles/zsh/shortcuts
+
+# import my functions
+source ~/.functions
+
 # enable interactive mode for mv, rm, cp (asks before overwriting)
 alias rm="rm -i"
 alias cp="cp -i"
@@ -14,21 +20,14 @@ alias mv="mv -i"
 # enable vi mode
 # source ~/dotfiles/zsh/zsh_vimode
 
-# setting java_home
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
-
 #important for autojump to work properly
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # important for lesspipe to work properly
 export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 
-# import my shortcuts
-source ~/dotfiles/zsh/shortcuts
-
-# import my functions
-source ~/.functions
-
+# setting java_home
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 ############################### MY STUFF ENDS HERE ######################################
 
