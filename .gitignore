@@ -1,4 +1,4 @@
-vimperator/info/default/history-command
-vimperator*
-vimperator/
-/vimperator/
+[submodule "mvim/vim/bundle/L9"]
+    path = path/to/submodule
+    url = http://github.com/username/repo.git
+    ignore = untracked  # <====
