@@ -53,6 +53,9 @@ alias o="open ."
 # sorts top list by cpu default
 alias top="top -o cpu"
 
+# archey is default colored
+alias archey="archey -c"
+
 # added alias 'filetree' which lists the filesystem graphically
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
 
