@@ -11,7 +11,7 @@ livestream(){
     select first window
     launch session "Default Session"
         tell current session of first window
-            write text "livestreamer twitch.tv/'$1' source"
+            write text "livestreamer twitch.tv/'$1' source --player-passthrough hls"
         end tell
     end tell
 EOF
