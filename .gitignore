@@ -2,3 +2,5 @@
     path = path/to/submodule
     url = http://github.com/username/repo.git
     ignore = untracked  # <====
+
+weechat/logs/*
