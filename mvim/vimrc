@@ -38,6 +38,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'klen/python-mode'
 " Tmux navigaion with vim splits
 Plugin 'christoomey/vim-tmux-navigator'
+" Latex stuff for latexdev
+Plugin 'jcf/vim-latex'
 
 
 " All of your Plugins must be added before the following line
@@ -178,6 +180,28 @@ let g:pymode_folding = 0
 let g:pymode_python = 'python3'
 
 
+" Latex Suite setup:
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+filetype plugin on
+
+" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
+" can be called correctly.
+" set shellslash
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: This enables automatic indentation as you type.
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+
 " => NERDTree setup
 """""""""""""""""""""""""""""
 " toggle NerdTree
@@ -214,5 +238,3 @@ let g:lightline = {
 set noshowmode 
 
 
-
-" Format the status line
