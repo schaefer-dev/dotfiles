@@ -207,12 +207,11 @@ let g:tex_flavor='latex'
 " Latex Suite settings:
 augroup MyIMAPs
         au!
-        au VimEnter * call IMAP('( ', '(<++>)<++>', 'tex')
-        au VimEnter * call IMAP('{ ', '{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\{ ', '\{<++>\}<++>', 'tex')
-        au VimEnter * call IMAP('[ ', '[<++>]<++>', 'tex')
-        au VimEnter * call IMAP('$$ ', '$$<++>$$<++>', 'tex')
-        au VimEnter * call IMAP('$ ', '$<++>$<++>', 'tex')
+        au VimEnter * call IMAP('(', '(<++>)<++>', 'tex')
+        au VimEnter * call IMAP('{', '{<++>}<++>', 'tex')
+        au VimEnter * call IMAP('\{', '\{<++>\}<++>', 'tex')
+        au VimEnter * call IMAP('[', '[<++>]<++>', 'tex')
+        au VimEnter * call IMAP('$', '$<++>$<++>', 'tex')
         au VimEnter * call IMAP('\s ', '\section{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\ss ', '\subsection{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\enumerate ', '\begin{enumerate}<++>', 'tex')
