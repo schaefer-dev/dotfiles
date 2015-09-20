@@ -216,7 +216,7 @@ augroup MyIMAPs
         au VimEnter * call IMAP('\ss ', '\subsection{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\enumerate ', '\begin{enumerate}<++>', 'tex')
         au VimEnter * call IMAP ('\itemize ', '\begin{itemize}<++>','tex')
-
+        au VimEnter * call IMAP('\bf ','\textbf{<++>}<++>','tex')
 augroup END
 
 
