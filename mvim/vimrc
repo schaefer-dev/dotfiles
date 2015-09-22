@@ -95,8 +95,11 @@ colorscheme hybrid
 " make backspace work like most other apps
 set backspace=2
 
-"show linenumbers
+" show linenumbers
 set relativenumber
+set number
+
+
 
 "disable creating of all sort of swapfiles
 set nobackup
