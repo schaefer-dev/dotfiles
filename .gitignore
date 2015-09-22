@@ -4,3 +4,4 @@
     ignore = untracked  # <====
 
 weechat/logs/*
+mvim/vim/bundle/*
