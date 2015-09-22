@@ -22,8 +22,6 @@ Plugin 'git://git.wincent.com/command-t.git'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"""" status/tabline for vim
-""""Plugin 'bling/vim-airline'
 " lightline
 Plugin 'itchyny/lightline.vim'
 "lightline theme for hybrid
@@ -42,6 +40,19 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jcf/vim-latex'
 " Latex automatic closing of environment with ctrl c or \c
 Plugin 'gi1242/vim-tex-autoclose'
+" using the Noun 's' for surround, for example change surrounding quotes into
+" brackets
+Plugin 'tpope/vim-surround'
+" enabled . do be able to repeat even more stuff
+Plugin 'tpope/vim-repeat'
+" comment stuff out using vim
+Plugin 'tpope/vim-commentary'
+" replace something with something in the register
+Plugin 'vim-scripts/ReplaceWithRegister'
+" get stuff from vim into your system clipboard
+Plugin 'christoomey/vim-system-copy'
+" defines indent as an object using ii
+Plugin 'michaeljsmith/vim-indent-object'
 
 
 " All of your Plugins must be added before the following line
@@ -126,7 +137,6 @@ set autochdir
 
 
 set history=999
-set scrolloff=999
 set hlsearch
 set showmatch
 
