@@ -96,7 +96,7 @@ colorscheme hybrid
 set backspace=2
 
 "show linenumbers
-set number
+set relativenumber
 
 "disable creating of all sort of swapfiles
 set nobackup
