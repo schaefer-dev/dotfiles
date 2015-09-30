@@ -33094,7 +33094,7 @@
 	<key>HotKeyBookmark</key>
 	<string>960917F3-3883-4139-B3AD-6BAFA4C33416</string>
 	<key>HotKeyTogglesWindow</key>
-	<false/>
+	<true/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
@@ -33164,15 +33164,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1742 66 445 82 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>359 417 606 456 0 0 1440 877 </string>
+	<string>1138 951 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 778 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>840 48 834 979 0 0 1680 1027 </string>
+	<string>0 380 1162 1030 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>111 370 810 622 0 0 1680 1027 </string>
+	<string>48 812 810 599 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33188,7 +33188,7 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>227 336 810 622 0 0 1680 1027 </string>
+	<string>0 13 834 503 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>630 795 810 622 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -36308,7 +36308,7 @@
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>NoSyncLastTipTime</key>
-	<real>464191435.59672397</real>
+	<real>465129758.469504</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -36342,6 +36342,11 @@
 		<string>0017</string>
 		<string>0018</string>
 		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -36409,7 +36414,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-09-17T10:25:38Z</date>
+	<date>2015-09-30T11:21:09Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
