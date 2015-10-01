@@ -33518,15 +33518,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1742 66 445 82 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1138 951 606 456 0 0 2560 1417 </string>
+	<string>1138 951 606 456 0 0 2560 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 778 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>48 395 810 622 0 0 2560 1417 </string>
+	<string>345 226 810 622 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>24 425 810 599 0 0 1680 1027 </string>
+	<string>1626 759 810 622 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33577,7 +33577,9 @@
 			<key>AWDS Window Option</key>
 			<string>No</string>
 			<key>Allow Title Reporting</key>
-			<true/>
+			<false/>
+			<key>Allow Title Setting</key>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -33782,7 +33784,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>100</integer>
+			<integer>120</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Color</key>
@@ -33850,7 +33852,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux new -s MAIN; tmux attach -t MAIN; clear;</string>
+			<string>tmux attach -t MAIN;tmux new -s MAIN; clear;</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -34177,7 +34179,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>35</integer>
+			<integer>45</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -34718,7 +34720,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux new -s QUICK; tmux attach -t QUICK; clear;</string>
+			<string>tmux attach -t QUICK;tmux new -s QUICK;  clear;</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -35527,7 +35529,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux new -s MAIN; tmux attach -t MAIN; clear;</string>
+			<string></string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -35838,7 +35840,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>t</string>
+			<string>ZSH_livestream</string>
 			<key>Non Ascii Font</key>
 			<string>MenloForPowerline-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -36030,7 +36032,7 @@
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
 	<key>NoSyncLastTipTime</key>
-	<real>465309090.04543799</real>
+	<real>465397112.72308099</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -36070,6 +36072,7 @@
 		<string>0023</string>
 		<string>0024</string>
 		<string>0025</string>
+		<string>0026</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
