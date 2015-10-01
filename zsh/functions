@@ -7,7 +7,7 @@ chess(){
 livestream(){
     osascript <<-EOF
     tell application "iTerm"
-    create window with default profile
+    create window with profile "ZSH_livestream"
     select first window
     launch session "Default Session"
         tell current session of first window
