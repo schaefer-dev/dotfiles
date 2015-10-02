@@ -271,4 +271,3 @@ let g:lightline = {
 
 " hide -- INSERT --
 set noshowmode 
-
