@@ -42,7 +42,7 @@ alias a="open -a"
 alias Battle.net="Battle.net.app"
 
 # macvim shortcuts
-alias mvim="open -a MacVim "$@""
+# alias mvim="open -a MacVim "$@""
 alias macvim="open -a MacVim "$@""
 alias MacVim="open -a MacVim "$@""
 
