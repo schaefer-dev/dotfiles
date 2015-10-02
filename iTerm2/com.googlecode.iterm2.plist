@@ -33516,7 +33516,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1742 66 445 82 0 0 2560 1417 </string>
+	<string>247 286 445 77 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>526 569 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -33524,9 +33524,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 428 810 599 0 0 1680 1027 </string>
+	<string>0 278 710 599 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>88 575 810 622 0 0 2560 1417 </string>
+	<string>32 40 970 792 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33542,7 +33542,7 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>38 194 810 622 0 0 2560 1417 </string>
+	<string>14 40 970 792 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>630 795 810 622 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -34169,7 +34169,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MenloForPowerline-Regular 13</string>
+			<string>InconsolataForPowerline 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
@@ -34179,7 +34179,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>45</integer>
+			<integer>40</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -34341,7 +34341,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0422428846359253</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -35037,7 +35037,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MenloForPowerline-Regular 13</string>
+			<string>InconsolataForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
@@ -35047,7 +35047,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>35</integer>
+			<integer>33</integer>
 			<key>Screen</key>
 			<integer>0</integer>
 			<key>Scrollback Lines</key>
@@ -35230,7 +35230,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0422428846359253</real>
+			<real>1.0023884600903614</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -35846,7 +35846,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MenloForPowerline-Regular 13</string>
+			<string>InconsolataForPowerline 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
@@ -36018,7 +36018,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0422428846359253</real>
+			<real>0.99310523343373491</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
