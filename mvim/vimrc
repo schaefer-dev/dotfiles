@@ -134,7 +134,8 @@ nmap <leader>l :set list!<CR>
 " automatically change window's cwd to file's dir
 set autochdir
 
-
+" i want to see at least x lines above/below the cursor
+set scrolloff=8
 
 set history=999
 set hlsearch
