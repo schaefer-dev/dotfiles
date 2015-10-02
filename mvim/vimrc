@@ -91,8 +91,12 @@ filetype on
 filetype plugin on
 filetype indent on
 
-"enable mouse usage
-set mouse=a
+"enable mouse usage in GUI
+if has("gui_running")
+    set mouse=a
+else
+    set mouse=
+endif
 
 " Tomorrow-Night vim color setting
 "set t_Co=256
@@ -135,7 +139,7 @@ nmap <leader>l :set list!<CR>
 set autochdir
 
 " i want to see at least x lines above/below the cursor
-set scrolloff=8
+set scrolloff=10
 
 set history=999
 set hlsearch
