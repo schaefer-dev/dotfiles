@@ -1,4 +1,4 @@
 # dotfiles
 Hello Everybody,
 
-this is my fist github 'projekt' and it just contains my most used dotfiles. I will add scripts later to make the installation process even easier
+raw dotfiles, installation/setup scripts NOT up to date!
