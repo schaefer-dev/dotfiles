@@ -2,10 +2,10 @@
 sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
 
 # start systemlinking
-zsh ~/dotfiles/makesymlinks.sh
+zsh ~/dotfiles/setup/makesymlinks.sh
 
 # start homebrew setup
-zsh ~/dotfiles/brew.sh
+zsh ~/dotfiles/setup/brew.sh
 
 # install livestreamer tool https://github.com/chrippa/livestreamer
 pip install livestreamer
