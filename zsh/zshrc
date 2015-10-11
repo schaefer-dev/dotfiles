@@ -1,7 +1,5 @@
 #startup show date enabled
 date
-echo "# use 'o' to open dir in finder"
-echo "# use 'a' or 'app' to open app."
 
 # import my commands, all kind of useful stuff
 source ~/dotfiles/zsh/commands
