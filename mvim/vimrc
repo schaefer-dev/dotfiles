@@ -81,7 +81,6 @@ set cursorline cursorcolumn
 
 "linebreaks after long line are indented correctly
 set wrap
-set breakindent
 
 "show syntax colors
 syntax enable
