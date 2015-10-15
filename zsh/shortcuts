@@ -1,15 +1,6 @@
 # File to contain shortcuts into important folders or files
 
 # Shortcuts to directories or files
-alias hacking="~/hackingrepo"
-alias mfi2="~/mfi2link"
-alias nachklausur="~/mfi2link/nachklausur"
-alias infosys="~/infosysrepo"
-alias np="~/nplink"
-alias projectnp="~/project_np"
-alias project="~/project_np"
-alias npproject="~/project_np"
-alias ai="~/ailink"
 alias dotfiles="~/dotfiles"
 alias cheatsheets="~/cheatsheets"
 alias scripts="~/scripts"
