@@ -2,7 +2,7 @@
 sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
 
 # start systemlinking
-zsh ~/dotfiles/setup/makesymlinks.sh
+zsh ~/dotfiles/setup/dotfiles.sh
 
 # start homebrew setup
 zsh ~/dotfiles/setup/brew.sh
