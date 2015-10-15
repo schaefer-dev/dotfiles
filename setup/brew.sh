@@ -36,7 +36,8 @@ brew install htop-osx
 brew install autojump
 brew install ssh-copy-id
 brew install tmux
-brew install macvim
+brew install vim --with-python3
+brew install macvim --override-system-vim --with-python3
 brew install mpv
 brew install grep
 brew install autojump
@@ -45,7 +46,6 @@ brew install weechat
 
 # Install more recent versions of some OS X tools.
 echo "Install more recent versions of some OS X tools."
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
