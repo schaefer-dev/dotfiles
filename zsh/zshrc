@@ -8,7 +8,7 @@ source ~/dotfiles/zsh/commands
 source ~/dotfiles/zsh/shortcuts
 
 # import my functions
-source ~/.functions
+source ~/dotfiles/zsh/functions
 
 # enable interactive mode for mv, rm, cp (asks before overwriting)
 alias rm="rm -i"
