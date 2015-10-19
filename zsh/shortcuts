@@ -1,5 +1,12 @@
 # File to contain shortcuts into important folders or files
 
+# Shortcuts to University stuff
+alias crypto="~/dropbox/uni/cryptography"
+alias invest="~/dropbox/uni/investition"
+alias medien="~/dropbox/uni/medieninformatik"
+alias spiel="~/dropbox/uni/spieltheorie"
+alias personal="~/dropbox/uni/personalmanagement"
+
 # Shortcuts to directories or files
 alias dotfiles="~/dotfiles"
 alias cheatsheets="~/cheatsheets"
@@ -7,6 +14,7 @@ alias scripts="~/scripts"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
 alias db="~/Dropbox"
+alias dropbox="~/Dropbox"
 alias doc="~/Documents"
 alias wallpaper="~/Dropbox/Wallpaper"
 alias icons="~/icons"
