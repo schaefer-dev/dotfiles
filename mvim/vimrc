@@ -230,10 +230,12 @@ augroup MyIMAPs
         au VimEnter * call IMAP('[', '[<++>]<++>', 'tex')
         au VimEnter * call IMAP('$', '$<++>$<++>', 'tex')
         au VimEnter * call IMAP('\s ', '\section{<++>}<++>', 'tex')
+        au VimEnter * call IMAP('\sss ', '\subsubsection{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\ss ', '\subsection{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\enumerate ', '\begin{enumerate}<++>', 'tex')
         au VimEnter * call IMAP ('\itemize ', '\begin{itemize}<++>','tex')
         au VimEnter * call IMAP('\bf ','\textbf{<++>}<++>','tex')
+        au VimEnter * call IMAP('\un ','\underline{<++>}<++>','tex')
 augroup END
 
 let g:Tex_CompileRule_pdf = 'latexmk -pdf'
