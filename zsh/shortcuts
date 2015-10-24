@@ -2,12 +2,14 @@
 
 # Shortcuts to University stuff
 alias crypto="~/dropbox/uni/cryptography"
+alias cysec="~/dropbox/uni/cryptography"
 alias invest="~/dropbox/uni/investition"
 alias medien="~/dropbox/uni/medieninformatik"
 alias spiel="~/dropbox/uni/spieltheorie"
 alias personal="~/dropbox/uni/personalmanagement"
 
 # Shortcuts to directories or files
+alias c="cd; clear"
 alias dotfiles="~/dotfiles"
 alias cheatsheets="~/cheatsheets"
 alias scripts="~/scripts"
