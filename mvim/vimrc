@@ -82,6 +82,9 @@ set cursorline cursorcolumn
 "linebreaks after long line are indented correctly
 set wrap
 
+" long lines have same indent
+set breakindent
+
 "show syntax colors
 syntax enable
 
@@ -236,6 +239,8 @@ augroup MyIMAPs
         au VimEnter * call IMAP ('\itemize ', '\begin{itemize}<++>','tex')
         au VimEnter * call IMAP('\bf ','\textbf{<++>}<++>','tex')
         au VimEnter * call IMAP('\un ','\underline{<++>}<++>','tex')
+        au VimEnter * call IMAP('\conc ','$\rightarrow$ <++>','tex')
+        au VimEnter * call IMAP('\Conc ','$\Rightarrow$ <++>','tex')
 augroup END
 
 let g:Tex_CompileRule_pdf = 'latexmk -pdf'
