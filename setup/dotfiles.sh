@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="tmux tmuxinator weechat"    # list of files/folders to symlink in homedir
+files="config tmux tmuxinator weechat"    # list of files/folders to symlink in homedir
 
 ##########
 
