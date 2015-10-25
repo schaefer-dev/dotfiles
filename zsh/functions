@@ -120,6 +120,15 @@ web(){
 		open 'https://mcms.cs.uni-saarland.de/np15/'
 		return
 	fi
+    if [ "$1" = "netflix" ]; then
+		open 'http://www.netflix.com'
+		return
+	fi
+
+    if [ "$1" = "twitch" ]; then
+		open 'http://www.twitch.tv'
+		return
+	fi
 
 	echo "invalid input after function call"
 }
