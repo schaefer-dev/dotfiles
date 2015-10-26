@@ -6,3 +6,4 @@
 weechat/logs/*
 mvim/vim/bundle/*
 config/mps-youtube/input_history
+config/rtv/refresh-token
