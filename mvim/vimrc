@@ -240,6 +240,7 @@ augroup MyIMAPs
         au VimEnter * call IMAP('\bf ','\textbf{<++>}<++>','tex')
         au VimEnter * call IMAP('\un ','\underline{<++>}<++>','tex')
         au VimEnter * call IMAP('\conc ','$\rightarrow$ <++>','tex')
+        au VimEnter * call IMAP('\frac{','\frac{<++>}{<++>}<++>','tex')
         au VimEnter * call IMAP('\Conc ','$\Rightarrow$ <++>','tex')
 augroup END
 
