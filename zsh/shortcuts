@@ -25,5 +25,6 @@ alias euler="~/github/projecteuler"
 alias zshrc="vim ~/dotfiles/zsh/zshrc"
 alias vimrc="vim ~/dotfiles/mvim/vimrc"
 
+alias reddit="rtv"
 alias postgrestart="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data start"
 alias postgrestop="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data stop"
