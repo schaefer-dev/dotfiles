@@ -22,9 +22,16 @@ alias wallpaper="~/Dropbox/Wallpaper"
 alias icons="~/icons"
 alias euler="~/github/projecteuler"
 
+# important Files to quickedit
 alias zshrc="vim ~/dotfiles/zsh/zshrc"
+alias shortcuts="vim ~/dotfiles/zsh/shortcuts"
+alias functions="vim ~/dotfiles/zsh/functions"
 alias vimrc="vim ~/dotfiles/mvim/vimrc"
+alias pluginsettings="vim ~/dotfiles/mvim/pluginsettings.vim"
+alias remaps="vim ~/dotfiles/mvim/remaps.vim"
+alias tmuxconf="vim ~/dotfiles/tmux/tmux.conf"
 
 alias reddit="rtv"
+
 alias postgrestart="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data start"
 alias postgrestop="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data stop"

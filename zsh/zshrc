@@ -1,5 +1,6 @@
 #startup show date enabled
 date
+echo "# use option key to mark text in tmux"
 
 # import my commands, all kind of useful stuff
 source ~/dotfiles/zsh/commands
