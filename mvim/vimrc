@@ -58,8 +58,6 @@ Plugin 'michaeljsmith/vim-indent-object'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -71,10 +69,6 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 "----------------------------------------------------------------------------
-
-
-
-
 
 "shows horizontal and vertical line where the cursor is in the file
 set cursorline cursorcolumn
@@ -100,23 +94,12 @@ else
     set mouse=
 endif
 
-" Tomorrow-Night vim color setting
-"set t_Co=256
-set background=dark
-"colorscheme Tomorrow-Night
-
-" hybrid color theme
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
-
 " make backspace work like most other apps
 set backspace=2
 
 " show linenumbers
 set relativenumber
 set number
-
-
 
 "disable creating of all sort of swapfiles
 set nobackup
@@ -126,6 +109,9 @@ set noswapfile
 "shows number of columns and lines in powerbar
 set ruler
 
+" hide -- INSERT --
+set noshowmode 
+
 "sets width for shifting with >> or << and tablength and converts tab to spaces
 set shiftwidth=4
 set tabstop=4
@@ -133,9 +119,6 @@ set expandtab
 
 "sets character encoding
 set encoding=utf8
-
-" Use <leader>l to toggle display of whitespace
-nmap <leader>l :set list!<CR>
 
 " automatically change window's cwd to file's dir
 set autochdir
@@ -147,155 +130,17 @@ set history=999
 set hlsearch
 set showmatch
 
+" Tomorrow-Night vim color setting
+"set t_Co=256
+set background=dark
+"colorscheme Tomorrow-Night
 
-" custom keymaps begin --------------------------------------
-let mapleader=" "
+" hybrid color theme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 
-" <Leader>rtw will remove all trailing whitespace
-nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+" source my custom remaps
+source ~/dotfiles/mvim/remaps.vim
 
-" custom keymaps end ----------------------------------------
-
-
-" Python-mode
-" Activate rope
-" Keys:
-" K             Show python docs
-" <Ctrl-Space>  Rope autocomplete
-" <Ctrl-c>g     Rope goto definition
-" <Ctrl-c>d     Rope show documentation
-" <Ctrl-c>f     Rope find occurrences
-" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
-" [[            Jump on previous class or function (normal, visual, operator modes)
-" ]]            Jump on next class or function (normal, visual, operator modes)
-" [M            Jump on previous class or method (normal, visual, operator modes)
-" ]M            Jump on next class or method (normal, visual, operator modes)
-let g:pymode_rope = 1
-
-" Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'
-
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-" Auto check on save
-let g:pymode_lint_write = 1
-
-" Support virtualenv
-let g:pymode_virtualenv = 1
-
-" Enable breakpoints plugin
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
-
-" syntax highlighting
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-let g:pymode_syntax_space_errors = g:pymode_syntax_all
-
-" Don't autofold code
-let g:pymode_folding = 0
-
-" Enable python3
-let g:pymode_python = 'python3'
-
-
-" Latex Suite setup:
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
-filetype plugin on
-
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-" set shellslash
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
-" OPTIONAL: This enables automatic indentation as you type.
-filetype indent on
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-
-" Latex Suite settings:
-augroup MyIMAPs
-        au!
-        au VimEnter * call IMAP('(', '(<++>)<++>', 'tex')
-        au VimEnter * call IMAP('{', '{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\{', '\{<++>\}<++>', 'tex')
-        au VimEnter * call IMAP('[', '[<++>]<++>', 'tex')
-        au VimEnter * call IMAP('$', '$<++>$<++>', 'tex')
-        au VimEnter * call IMAP('\s ', '\section{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\s* ', '\section*{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\sss ', '\subsubsection{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\ss ', '\subsection{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\sss* ', '\subsubsection*{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\ss* ', '\subsection*{<++>}<++>', 'tex')
-        au VimEnter * call IMAP('\enumerate ', '\begin{enumerate}<++>', 'tex')
-        au VimEnter * call IMAP ('\itemize ', '\begin{itemize}<++>','tex')
-        au VimEnter * call IMAP('\bf ','\textbf{<++>}<++>','tex')
-        au VimEnter * call IMAP('\t ','\text{<++>}<++>','tex')
-        au VimEnter * call IMAP('\t{','\text{<++>}<++>','tex')
-        au VimEnter * call IMAP('\un ','\underline{<++>}<++>','tex')
-        au VimEnter * call IMAP('\under ','\underline{<++>}<++>','tex')
-        au VimEnter * call IMAP('\over ','\overline{<++>}<++>','tex')
-        au VimEnter * call IMAP('\conc ','$\rightarrow$ <++>','tex')
-        au VimEnter * call IMAP('\frac{','\frac{<++>}{<++>}<++>','tex')
-        au VimEnter * call IMAP('\frac ','\frac{<++>}{<++>}<++>','tex')
-        au VimEnter * call IMAP('\underbrace{','\underbrace{<++>}_{<++>}<++>','tex')
-        au VimEnter * call IMAP('\overbrace{','\overbrace{<++>}_{<++>}<++>','tex')
-        au VimEnter * call IMAP('\underbrace ','\underbrace{<++>}_{<++>}<++>','tex')
-        au VimEnter * call IMAP('\overbrace ','\overbrace{<++>}_{<++>}<++>','tex')
-        au VimEnter * call IMAP('\Conc ','$\Rightarrow$ <++>','tex')
-        au VimEnter * call IMAP('\nl ','\newline <++>','tex')
-        au VimEnter * call IMAP('\margin ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
-        au VimEnter * call IMAP('\mar ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
-        au VimEnter * call IMAP("''","''<++>''<++>",'tex')
-augroup END
-
-let g:Tex_CompileRule_pdf = 'latexmk -pdf'
-
-
-
-
-" => NERDTree setup
-"""""""""""""""""""""""""""""
-" toggle NerdTree
-map <leader>k :NERDTreeToggle<CR>
-
-
-
-" => Airline setup
-""""""""""""""""""""""""""""""
-" Always show the status line
-set laststatus=2
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline_powerline_fonts = 1
-"let g:airline_left_sep = ''
-"let g:airline_right_sep = ''
-"disableing showing of trailing in current file
-"let g:airline#extensions#whitespace#show_message = 0
-
-" fancy powerline fonts
-"let g:airline_powerline_fonts = 1
-
-
-" => Lightline
-let g:lightline = {
-      \ 'colorscheme': 'hybrid',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
-      \ }
-
-" hide -- INSERT --
-set noshowmode 
+" source my plugin settings
+source ~/dotfiles/mvim/pluginsettings.vim
