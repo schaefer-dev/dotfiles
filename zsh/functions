@@ -18,6 +18,22 @@ livestream(){
 EOF
 }
 
+# function to download twitch vod using livestreamer
+# livestreamdl takes stream link as first parameter
+# Filename = streamname with replaced illegal characters
+livestreamdl(){
+    osascript <<-EOF
+    tell application "iTerm"
+    create window with profile "ZSH_livestream"
+    select first window
+    launch session "Default Session"
+        tell current session of first window
+            write text "cd ~/downloads; livestreamer -o $(echo "$1" | tr / _).mp4 --hls-segment-threads 4 twitch.tv/'$1' source"
+        end tell
+    end tell
+EOF
+}
+
 # Web function to open Websites
 web(){
 	if [ "$1" = "reddit" ]; then
