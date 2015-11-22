@@ -10,5 +10,6 @@ git push -u origin master;
 printf "${CYANlight}"
 echo "----------------------------"
 echo "pushing to my server ..."
+git push -u server master;
 
 printf "${NC}"
