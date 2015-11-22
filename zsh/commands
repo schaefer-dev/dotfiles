@@ -2,6 +2,10 @@
 
 # speedtest
 alias speedtest="zsh ~/dotfiles/scripts/speedtest.sh"
+
+# git push to myserver + origin
+alias gpall="zsh ~/dotfiles/scripts/gpall.sh"
+
 # shortcut to restart notifyd process to avoid tmux bug/lag
 alias bug="sudo kill $(ps aux | grep '[n]otifyd' | awk '{print $2}'); echo fixed my friend!"
 
