@@ -28,6 +28,8 @@ augroup MyIMAPs
         au VimEnter * call IMAP('\underbrace ','\underbrace{<++>}_{<++>}<++>','tex')
         au VimEnter * call IMAP('\overbrace ','\overbrace{<++>}_{<++>}<++>','tex')
         au VimEnter * call IMAP('\Conc ','$\Rightarrow$ <++>','tex')
+        au VimEnter * call IMAP('\pic ','\includegraphics[scale = 0.11]{pictures/<++>}\\<++>','tex')
+        au VimEnter * call IMAP('\pic{','\includegraphics[scale = 0.11]{pictures/<++>}\\<++>','tex')
         au VimEnter * call IMAP('\nl ','\newline <++>','tex')
         au VimEnter * call IMAP('\margin ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
         au VimEnter * call IMAP('\mar ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
