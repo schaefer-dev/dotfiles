@@ -53,6 +53,8 @@ Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'christoomey/vim-system-copy'
 " defines indent as an object using ii
 Plugin 'michaeljsmith/vim-indent-object'
+" Dash 3 support
+Plugin 'rizzatti/dash.vim'
 
 
 " All of your Plugins must be added before the following line
