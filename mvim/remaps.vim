@@ -2,6 +2,8 @@
 augroup MyIMAPs
         au!
         au VimEnter * call IMAP('(', '(<++>)<++>', 'tex')
+        au VimEnter * call IMAP('((', '((<++>)<++>)<++>', 'tex')
+        au VimEnter * call IMAP('(((', '(((<++>)<++>)<++>)<++>', 'tex')
         au VimEnter * call IMAP('{', '{<++>}<++>', 'tex')
         au VimEnter * call IMAP('\{', '\{<++>\}<++>', 'tex')
         au VimEnter * call IMAP('[', '[<++>]<++>', 'tex')
