@@ -28,6 +28,9 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 # setting java_home
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
+# settings for soccer-cli
+export SOCCER_CLI_API_TOKEN="6fb8bd71253d44aabc0a32260e570235"
+
 ############################### MY STUFF ENDS HERE ######################################
 
 # Path to your oh-my-zsh installation.
