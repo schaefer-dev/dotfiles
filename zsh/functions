@@ -4,6 +4,10 @@ chess(){
 	sudo ./sjeng.ChessEngine
 }
 
+dash(){
+    open "dash://$1"
+}
+
 # function to open livestream from twitch in a new window using multithreading
 livestream(){
     osascript <<-EOF
