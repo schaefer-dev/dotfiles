@@ -4,6 +4,7 @@
     ignore = untracked  # <====
 
 weechat/logs/*
+bin/JDownloader 2.0/*
 mvim/vim/bundle/*
 config/mps-youtube/input_history
 config/rtv/*
