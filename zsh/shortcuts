@@ -30,6 +30,8 @@ alias vimrc="vim ~/dotfiles/mvim/vimrc"
 alias pluginsettings="vim ~/dotfiles/mvim/pluginsettings.vim"
 alias remaps="vim ~/dotfiles/mvim/remaps.vim"
 alias tmuxconf="vim ~/dotfiles/tmux/tmux.conf"
+alias gitignore="vim .gitignore"
+alias gig="vim .gitignore"
 
 alias reddit="rtv"
 
