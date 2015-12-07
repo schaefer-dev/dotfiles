@@ -43,7 +43,7 @@ Plugin 'gi1242/vim-tex-autoclose'
 " using the Noun 's' for surround, for example change surrounding quotes into
 " brackets
 Plugin 'tpope/vim-surround'
-" enabled . do be able to repeat even more stuff
+" enabled . to be able to repeat even more stuff
 Plugin 'tpope/vim-repeat'
 " comment stuff out using vim
 Plugin 'tpope/vim-commentary'

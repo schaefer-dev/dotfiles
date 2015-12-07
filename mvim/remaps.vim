@@ -38,6 +38,7 @@ augroup MyIMAPs
         au VimEnter * call IMAP("''","''<++>''<++>",'tex')
 augroup END
 
+
 " set leader Key to space
 let mapleader=" "
 
