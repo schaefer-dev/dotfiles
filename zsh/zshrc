@@ -11,6 +11,9 @@ source ~/dotfiles/zsh/shortcuts
 # import my functions
 source ~/dotfiles/zsh/functions
 
+# source my completions
+source ~/dotfiles/zsh/completion/tmuxinator.zsh
+
 # enable interactive mode for mv, rm, cp (asks before overwriting)
 alias rm="rm -i"
 alias cp="cp -i"
