@@ -1,4 +1,5 @@
-" Python-mode
+" Python-mode Setup: --------------------------------------------
+
 " Activate rope
 " Keys
 " K             Show python docs
@@ -43,7 +44,10 @@ let g:pymode_folding = 0
 let g:pymode_python = 'python3'
 
 
-" Latex Suite setup:
+
+
+
+" Latex Suite setup:--------------------------------------------------
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
@@ -63,9 +67,36 @@ let g:tex_flavor='latex'
 let g:Tex_CompileRule_pdf = 'latexmk -pdf'
 
 
-set laststatus=2
 
-" => Lightline
+
+
+
+" ctrlP Settings: ----------------------------------------------------
+
+" ctrlP search for a git repo above the dirctory im in right now
+let g:ctrlp_working_path_mode = 'ra'
+
+"ctrlP default opens in tab not buffer
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
+
+
+" NerdTree setup: ----------------------------------------------------
+let g:ctrlp_open_func = { 'files': 'CustomOpenFunc' }
+function! CustomOpenFunc(action, line)
+        call call('ctrlp#acceptfile', [':t', a:line])
+    endfunction
+
+
+
+
+
+" => Lightline -------------------------------------------------------
+"
+set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'hybrid',
       \ 'component': {

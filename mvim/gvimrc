@@ -1,2 +1,4 @@
 set guifont=Inconsolata\ for\ Powerline:h15
 set guioptions-=r 
+
+hi StatusLine guibg=white guifg=black

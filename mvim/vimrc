@@ -30,6 +30,10 @@ Plugin 'cocopon/lightline-hybrid.vim'
 Plugin 'airblade/vim-gitgutter'
 " nerdtree file tree
 Plugin 'scrooloose/nerdtree'
+" some nerdtree tab fixes
+Plugin 'jistr/vim-nerdtree-tabs'
+" nerdtree git plugin
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 " shows indentationlevels nicer
 Plugin 'nathanaelkane/vim-indent-guides'
 " Big python functionality pack
@@ -55,6 +59,13 @@ Plugin 'christoomey/vim-system-copy'
 Plugin 'michaeljsmith/vim-indent-object'
 " Dash 3 support
 Plugin 'rizzatti/dash.vim'
+" An Interface to WEB APIs
+Plugin 'mattn/webapi-vim'
+" ctrlP vim
+Plugin 'ctrlpvim/ctrlp.vim'
+" Fancy Icons for ctrlp, nedtree usw
+Plugin 'ryanoasis/vim-devicons'
+
 
 
 " All of your Plugins must be added before the following line
@@ -132,14 +143,20 @@ set history=999
 set hlsearch
 set showmatch
 
+" enhanced tab completion, especially useful for tab/buffer navigation
+set wildmenu
+
 " Tomorrow-Night vim color setting
-"set t_Co=256
+set t_Co=256
 set background=dark
 "colorscheme Tomorrow-Night
 
 " hybrid color theme
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
+
+" Statusline color also used for wildmenu
+hi StatusLine ctermbg=white ctermfg=black
 
 " source my custom remaps
 source ~/dotfiles/mvim/remaps.vim
