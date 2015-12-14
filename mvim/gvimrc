@@ -1,6 +1,7 @@
 set guifont=Inconsolata\ for\ Powerline:h15
 set guioptions-=r 
 
+
 "disable autostart of nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0
 
