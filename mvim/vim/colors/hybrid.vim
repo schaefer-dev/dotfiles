@@ -75,7 +75,7 @@ let colors_name = "hybrid"
 " ----------------------------------------------------------------------------
 if has("gui_running")
   let s:vmode      = "gui"
-  let s:background = "#1d1f21"
+  let s:background = "#242831"
   let s:foreground = "#c5c8c6"
   let s:selection  = "#373b41"
   let s:line       = "#282a2e"
