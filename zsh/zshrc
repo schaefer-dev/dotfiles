@@ -90,6 +90,12 @@ plugins=(tmuxinator git tmux terminalapp brew textmate web-search sublime osx ba
 # User configuration
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/sbin:/bin:/usr/sbin:/sbin:/usr/local/lib/node_modules/bin:/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/daniel/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+ 
+# use GNU tools as default
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,3 +127,10 @@ source $ZSH/oh-my-zsh.sh
 
 # my own shit
 export RTV_EDITOR=vim
+
+# LS colors for zsh autocomplete
+LS_COLORS='no=00;37:ex=33:fi=00:di=1;34:ln=01;35:or=04;31:pi=40;33:so=01;35:bd=40;33;01:'
+export LS_COLORS
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+
