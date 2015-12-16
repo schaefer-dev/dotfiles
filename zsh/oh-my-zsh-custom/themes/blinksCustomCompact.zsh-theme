@@ -18,8 +18,8 @@ case ${SOLARIZED_THEME:-dark} in
     *)     bkg=none;;
 esac
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{bgk}%}]"
+ZSH_THEME_GIT_PROMPT_PREFIX=" %F{black}[%{%B%F{black}%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{bgk}%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}\u2718%{%f%k%b%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
