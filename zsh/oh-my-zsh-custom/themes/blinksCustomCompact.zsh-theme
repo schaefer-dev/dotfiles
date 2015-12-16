@@ -19,12 +19,12 @@ case ${SOLARIZED_THEME:-dark} in
 esac
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}]"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}*%{%f%k%b%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{bgk}%}]"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}\u2718%{%f%k%b%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 PROMPT='%{%f%k%b%}
-%{%K{${bkg}}%B%F{magenta}%}%n%{%B%F{bkg}%}@%{%B%F{yellow}%}%m%{%B%F{green}%} %{%F{blue}%K{${bkg}}%}%~%{%B%F{green}%}%{%B%F{bkg}%} ❯%{%K{${bkg}}%}%{%f%k%b%} '
+%{%K{${bkg}}%B%F{magenta}%}%n%{%B%F{bkg}%}@%{%B%F{yellow}%}%m%{%B%F{green}%} %{%F{blue}%K{${bkg}}%}%~%{%B%F{green}%}%{%B%F{bkg}%}$(parse_git_dirty) ❯%{%K{${bkg}}%}%{%f%k%b%} '
 
 RPROMPT='$(git_prompt_info)%E%{%f%k%b%}%{%K{${bkg}}%}'
 
