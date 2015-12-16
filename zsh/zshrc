@@ -129,7 +129,7 @@ source $ZSH/oh-my-zsh.sh
 export RTV_EDITOR=vim
 
 # LS colors for zsh autocomplete
-LS_COLORS='no=00;37:ex=33:fi=00:di=1;34:ln=01;35:or=04;31:pi=40;33:so=01;35:bd=40;33;01:'
+LS_COLORS='ex=33:fi=00:di=1;34:ln=01;35:or=04;31:'
 export LS_COLORS
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
