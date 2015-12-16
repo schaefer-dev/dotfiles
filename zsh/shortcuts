@@ -9,7 +9,8 @@ alias spiel="~/dropbox/uni/spieltheorie"
 alias personal="~/dropbox/uni/personalmanagement"
 
 # Shortcuts to directories or files
-alias c="cd; clear"
+alias cl="cd; clear"
+alias c="clear"
 alias dotfiles="~/dotfiles"
 alias cheatsheets="~/cheatsheets"
 alias scripts="~/scripts"
