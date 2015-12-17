@@ -1,7 +1,7 @@
 set guifont=Inconsolata\ for\ Powerline:h16.00
 
 " scrollbar disabled
-set guioptions-=r 
+set guioptions-=rL
 set guioptions-=e
 
 
