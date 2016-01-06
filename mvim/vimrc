@@ -155,6 +155,13 @@ set background=dark
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
 
+" color for cursor
+"hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
+
+" color for cursorline and cursorcolumn
+hi CursorColumn ctermbg=237 guibg=#373B40 
+hi CursorLine ctermbg=237 guibg=#373B40 
+
 " Statusline color also used for wildmenu
 hi StatusLine ctermbg=white ctermfg=black
 
