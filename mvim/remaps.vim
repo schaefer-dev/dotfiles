@@ -26,7 +26,7 @@ augroup MyIMAPs
         au VimEnter * call IMAP('\frac{','\frac{<++>}{<++>}<++>','tex')
         au VimEnter * call IMAP('\frac ','\frac{<++>}{<++>}<++>','tex')
         au VimEnter * call IMAP('\underbrace{','\underbrace{<++>}_{<++>}<++>','tex')
-        au VimEnter * call IMAP('\overbrace{','\overbrace{<++>}_{<++>}<++>','tex')
+        au VimEnter * call IMAP('\overbrace{','\overbrace{<++>}^{<++>}<++>','tex')
         au VimEnter * call IMAP('\underbrace ','\underbrace{<++>}_{<++>}<++>','tex')
         au VimEnter * call IMAP('\overbrace ','\overbrace{<++>}_{<++>}<++>','tex')
         au VimEnter * call IMAP('\Conc ','$\Rightarrow$ <++>','tex')
