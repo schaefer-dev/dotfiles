@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 printf "${CYANlight}"
 echo "pushing to my server ..."
 printf "${GREENlight}"
-git push -u server master;
+git push server master;
 printf "${NC}"
 echo "--------------------------------------------------------------"
 printf "${CYANlight}"
