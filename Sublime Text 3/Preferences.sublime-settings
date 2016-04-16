@@ -44,6 +44,6 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"spacegray_tabs_xlarge": true,
-	"theme": "predawn.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"word_wrap": true
 }

@@ -33518,15 +33518,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>408 496 445 94 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1138 959 606 456 0 0 2560 1417 </string>
+	<string>526 570 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 364 620 392 0 0 1440 877 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 240 1010 783 0 0 1680 1027 </string>
+	<string>0 241 1010 783 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>522 225 1010 783 0 0 1680 1027 </string>
+	<string>594 713 430 307 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33542,7 +33542,7 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>388 517 500 347 0 0 1680 1027 </string>
+	<string>1009 1103 430 307 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>383 642 500 347 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -33736,12 +33736,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.097707755863666534</real>
+				<real>0.14432241022586823</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.092142701148986816</real>
+				<real>0.11681361496448517</real>
 				<key>Red Component</key>
-				<real>0.086937598884105682</real>
+				<real>0.10636789351701736</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -34528,12 +34532,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.097707755863666534</real>
+				<real>0.14432241022586823</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.092142701148986816</real>
+				<real>0.11681361496448517</real>
 				<key>Red Component</key>
-				<real>0.086937598884105682</real>
+				<real>0.10636789351701736</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -35381,13 +35389,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.097707755863666534</real>
+				<real>0.14432241022586823</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.092142701148986816</real>
+				<real>0.11681361496448517</real>
 				<key>Red Component</key>
-				<real>0.086937598884105682</real>
+				<real>0.10636789351701736</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -36207,12 +36215,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.097707755863666534</real>
+				<real>0.14432241022586823</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.092142701148986816</real>
+				<real>0.11681361496448517</real>
 				<key>Red Component</key>
-				<real>0.086937598884105682</real>
+				<real>0.10636789351701736</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -36942,7 +36954,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-12-08T20:47:23Z</date>
+	<date>2016-01-14T14:54:31Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -36995,6 +37007,10 @@
 	<false/>
 	<key>iTerm Version</key>
 	<string>2.9.20151111</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 	<key>kCommandHistoryHasEverBeenUsed</key>
 	<true/>
 </dict>
