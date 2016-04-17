@@ -36,5 +36,7 @@ alias gig="vim .gitignore"
 
 alias reddit="rtv"
 
+alias livecheck="python3 ~/dotfiles/scripts/livecheck.py"
+
 alias postgrestart="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data start"
 alias postgrestop="sudo  -u postgres /Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data stop"
