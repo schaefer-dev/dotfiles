@@ -65,6 +65,8 @@ Plugin 'mattn/webapi-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fancy Icons for ctrlp, nedtree usw
 Plugin 'ryanoasis/vim-devicons'
+"c.vim plugin
+Plugin 'vim-scripts/c.vim'
 
 
 
@@ -164,6 +166,9 @@ hi CursorLine ctermbg=237 guibg=#373B40
 
 " Statusline color also used for wildmenu
 hi StatusLine ctermbg=white ctermfg=black
+
+"setting gcc to compiler for c files
+au BufEnter *.c compiler gcc
 
 " source my custom remaps
 source ~/dotfiles/mvim/remaps.vim

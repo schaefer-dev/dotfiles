@@ -71,3 +71,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Use <leader>l to toggle display of whitespace
 nmap <leader>l :set list!<CR>
+
+" Compile C Program with F8
+map <F8> :w <CR> :!gcc % && ./a.out <CR>

@@ -1,6 +1,15 @@
 # File to contain shortcuts into important folders or files
 
 # Shortcuts to University stuff
+alias vision="~/dropbox/uni/HLC-vision"
+alias computervision="~/dropbox/uni/HLC-vision"
+alias highlevel="~/dropbox/uni/HLC-vision"
+alias hlcv="~/dropbox/uni/HLC-vision"
+alias security="~/dropbox/uni/security"
+alias secrepo="~/drodbox/uni/security/repo"
+alias sec="~/dropbox/uni/security"
+alias hci="~/dropbox/uni/hci-dev"
+alias hcidev="~/dropbox/uni/hci-dev"
 
 # Shortcuts to directories or files
 alias cl="cd; clear"
