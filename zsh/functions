@@ -98,51 +98,48 @@ web(){
 		return
 	fi
 
-	if [ "$1" = "spieltheorie" ]; then
-        open 'http://wirtschaftstheorie.uni-saarland.de/index.php/teaching/spieltheorie/spieltheorie-uebersicht'
-        return
-    fi
 
-	if [ "$1" = "personal" ]; then
-        open 'http://orga.uni-sb.de/ihrbasics/'
+	if [ "$1" = "hlcv" ] || [ "$1" = "highlevel" ]; then
+        open 'http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/teaching/courses/high-level-computer-vision/'
 	fi
 
-	if [ "$1" = "personalmanagement" ]; then
-        open 'http://orga.uni-sb.de/ihrbasics/'
+	if [ "$1" = "hci" ] || [ "$1" = "hcidev" ]; then
+        open 'http://umtl.cs.uni-saarland.de/index.php?id=288'
 	fi
 
-	if [ "$1" = "invest" ] || [ "$1" = "investition" ]; then
-        open 'https://www.lsf.uni-saarland.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=88540&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&chco=y#mediafiles'
-	fi
-
-	if [ "$1" = "crypto" ] || [ "$1" = "cryptography" ]; then
+	if [ "$1" = "sec" ] || [ "$1" = "security" ]; then
         if [ "$2" = "piazza" ]; then
-            open "https://piazza.com/class/ib202zwjjs457f"
+            open "https://piazza.com/class/in00qm5p95r5oh"
+            return
+        fi
+        if [ "$2" = "material" ]; then
+            open "https://piazza.com/uni-saarland.de/spring2016/cs81908/resources"
+            return
+        fi
+        if [ "$2" = "resources" ]; then
+            open "https://piazza.com/uni-saarland.de/spring2016/cs81908/resources"
             return
         fi
         if [ "$2" = "ladmin" ]; then
-            open "https://ca.cs.uni-saarland.de/ladmin/introcryptws1516/"
+            open "https://www.sps.cs.uni-saarland.de/teaching/16SS/security/ladmin/index.php"
             return
         fi  
-		open 'https://ca.cs.uni-saarland.de/introcryptws1516/'
-		return
-	fi
-
-	if [ "$1" = "medien" ] || [ "$1" = "medieninformatik" ]; then
-        if [ "$2" = "piazza" ]; then
-            open "https://piazza.com/class/id5m0ouy5kt31i?cid=12"
-            return
-        fi
-        if [ "$2" = "korrektur" ]; then
-            open "https://drive.google.com/folderview?id=0B8yDtmmt2wclYllxT0FFRlpIS2c&usp=sharing_eid&invite=CM3R7p8E&ts=563fc51e"
-            return
-        fi  
-		open 'http://umtl.cs.uni-saarland.de/index.php?id=277'
+		open 'https://www.sps.cs.uni-saarland.de/teaching/16SS/security/index.html'
 		return
 	fi
 
     if [ "$1" = "netflix" ]; then
 		open 'http://www.netflix.com'
+		return
+	fi
+
+	if [ "$1" = "cal" ] || [ "$1" = "calendar" ]; then
+		open 'https://calendar.google.com/calendar/b/0/render#main_7'
+		return
+	fi
+
+	if [ "$1" = "gh" ] || [ "$1" = "github" ]; then
+		open 'https://github.com/schaefer-dev'
 		return
 	fi
 
