@@ -108,6 +108,26 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
+# launch apps with 'app'
+alias app="open -a"
+alias a="open -a"
+alias Battle.net="Battle.net.app"
+
+# open folder with 'o'
+alias o="open ."
+
+# sorts top list by cpu default
+alias top="top -o cpu"
+
+# archey is default colored
+alias archey="archey -c"
+
+# added alias 'filetree' which lists the filesystem graphically
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+#
+# use htop with sudo (to show ram/cpu) and also sort for cpu usage
+alias htop="sudo htop --sort-key PERCENT_CPU"
+
 # alias to cat this file to display
 alias acat='< ~/dotfiles/zsh/aliases.zsh'
 alias fcat='< ~/dotfiles/zsh/functions.zsh'
@@ -160,7 +180,48 @@ alias tmuxconf="mvim ~/dotfiles/tmux/tmux.conf"
 alias gitignore="vim .gitignore"
 alias gig="vim .gitignore"
 
+# -------------------------------------------------------------------
+# Quick Functions for personal use
+# -------------------------------------------------------------------
+
 alias reddit="rtv"
 
+# python3 script checking twitch streamers
 alias livecheck="python3 ~/dotfiles/scripts/livecheck.py"
 
+# speedtest
+alias speedtest="zsh ~/dotfiles/scripts/speedtest.sh"
+
+# git push to myserver + origin
+alias gpall="zsh ~/dotfiles/scripts/gpall.sh"
+
+# shortcut to restart notifyd process to avoid tmux bug/lag
+alias bug="sudo kill $(ps aux | grep '[n]otifyd' | awk '{print $2}'); echo fixed my friend!"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# vlc control
+alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
+
+# use htop with sudo (to show ram/cpu) and also sort for cpu usage
+alias htop="sudo htop --sort-key PERCENT_CPU"
+
+# alias for hidden files
+alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
+alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
