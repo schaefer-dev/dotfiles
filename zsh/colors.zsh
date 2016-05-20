@@ -15,8 +15,9 @@ export PR_BOLD_WHITE PR_BOLD_BLACK
 # Clear LSCOLORS
 unset LSCOLORS
 
-# Main change, you can see directories on a dark background
-#expor tLSCOLORS=gxfxcxdxbxegedabagacad
+# set LS_COLORS
+# the Setting of LS_COLORS has to be located in exports.zsh, check there for changes
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 export CLICOLOR=1
 export LS_COLORS=exfxcxdxbxegedabagacad

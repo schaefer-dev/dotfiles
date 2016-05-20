@@ -85,6 +85,8 @@ alias gss='git status -s'
 alias gst='git status'
 alias gsta='git stash'
 
+alias gp='git push'
+
 alias gpl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gcl='git clone'
 alias gta='git tag -a -m'
