@@ -16,8 +16,7 @@ export PR_BOLD_WHITE PR_BOLD_BLACK
 unset LSCOLORS
 
 # set LS_COLORS
-# the Setting of LS_COLORS has to be located in exports.zsh, check there for changes
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# the Setting of LS_COLORS has to be located in exports.zsh, always change there
 
 export CLICOLOR=1
 export LS_COLORS=exfxcxdxbxegedabagacad
