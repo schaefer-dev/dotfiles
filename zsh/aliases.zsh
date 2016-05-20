@@ -5,15 +5,6 @@
 alias g8='nocorrect g8'
 
 # -------------------------------------------------------------------
-# Ruby stuff
-# -------------------------------------------------------------------
-alias ri='ri -Tf ansi' # Search Ruby documentation
-alias rake="noglob rake" # necessary to make rake work inside of zsh
-#alias be='bundle exec'
-#alias bx='bundle exec'
-#alias gentags='ctags .'
-
-# -------------------------------------------------------------------
 # directory movement
 # -------------------------------------------------------------------
 alias ..='cd ..'
@@ -41,17 +32,11 @@ alias 'filecount=find . -type f | wc -l' # number of files (not directories)
 if [[ $IS_MAC -eq 1 ]]; then
     alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
     alias oo='open .' # open current directory in OS X Finder
-    alias 'today=calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
-    alias 'mailsize=du -hs ~/Library/mail'
     alias 'smart=diskutil info disk0 | grep SMART' # display SMART status of hard drive
     # Hall of the Mountain King
     alias cello='say -v cellos "di di di di di di di di di di di di di di di di di di di di di di di di di di"'
     # alias to show all Mac App store apps
     alias apps='mdfind "kMDItemAppStoreHasReceipt=1"'
-    # reset Address Book permissions in Mountain Lion (and later presumably)
-    alias resetaddressbook='tccutil reset AddressBook'
-    # refresh brew by upgrading all outdated casks
-    alias refreshbrew='brew outdated | while read cask; do brew upgrade $cask; done'
     # rebuild Launch Services to remove duplicate entries on Open With menu
     alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.fram ework/Support/lsregister -kill -r -domain local -domain system -domain user'
 fi
@@ -60,12 +45,7 @@ fi
 # -------------------------------------------------------------------
 # remote machines
 # -------------------------------------------------------------------
-alias 'palantir=ssh mhn@palantir.ome.ksu.edu -p 11122'
-alias 'pvnc=open vnc://palantir.ome.ksu.edu'
-alias 'ksunix=ssh mhn@unix.ksu.edu'
-alias 'veld=ssh mhn@veld.ome.ksu.edu'
-alias 'dev=ssh mhn@ome-dev-as1.ome.campus'
-alias 'wf=ssh markn@markn.webfactional.com'
+alias 'server=ssh server'
 
 # -------------------------------------------------------------------
 # database
@@ -76,47 +56,38 @@ alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
 #alias mysqladmin='mysqladmin -u root'
 
 # -------------------------------------------------------------------
-# ome devvm start, stop, ssh, and mount
-# -------------------------------------------------------------------
-alias 'startvm=VBoxHeadless --startvm devvm'
-alias 'stopvm=VBoxManage controlvm devvm poweroff'
-alias 'devvm=ssh -p 10022 ome@localhost'
-alias 'devmount=mount_smbfs //ome:ch1cag0@localhost:10139/ome /Users/$USERNAME/Projects/devvm/'
-
-# -------------------------------------------------------------------
-# Mercurial (hg)
-# -------------------------------------------------------------------
-alias 'h=hg status'
-alias 'hc=hg commit'
-alias 'push=hg push'
-alias 'pull=hg pull'
-alias 'clone=hg clone'
-
-# -------------------------------------------------------------------
 # Git
 # -------------------------------------------------------------------
+
+alias g='git'
 alias ga='git add'
-alias gp='git push'
-alias gl='git log'
-alias gpl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gs='git status'
+alias gaa='git add --all'
+alias gc='git commit -v'
+alias gclean='git clean -fd'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gcmsg='git commit -m'
+alias gcount='git shortlog -sn'
 alias gd='git diff'
-alias gm='git commit -m'
-alias gma='git commit -am'
-alias gb='git branch'
-alias gc='git checkout'
-alias gcb='git checkout -b'
+alias gf='git fetch'
+alias gfa='git fetch --all --prune'
+alias gl='git pull'
+alias glg='git log --stat'
+alias glog='git log --oneline --decorate --graph'
+alias gm='git merge'
+alias gmom='git merge origin/master'
+alias gr='git remote'
 alias gra='git remote add'
-alias grr='git remote rm'
-alias gpu='git pull'
+alias grb='git rebase'
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
+alias gss='git status -s'
+alias gst='git status'
+alias gsta='git stash'
+
+alias gpl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gcl='git clone'
 alias gta='git tag -a -m'
-alias gf='git reflog'
-alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
-
-# leverage aliases from ~/.gitconfig
-alias gh='git hist'
-alias gt='git today'
 
 # curiosities 
 # gsh shows the number of commits for the current repos for all developers
@@ -125,66 +96,20 @@ alias gsh="git shortlog | grep -E '^[ ]+\w+' | wc -l"
 # gu shows a list of all developers and the number of commits they've made
 alias gu="git shortlog | grep -E '^[^ ]'"
 
-# -------------------------------------------------------------------
-# Python virtualenv 
-# -------------------------------------------------------------------
-alias mkenv='mkvirtualenv'
-alias on="workon"
-alias off="deactivate"
 
 # -------------------------------------------------------------------
-# Oddball stuff
+# Useful Parameters
 # -------------------------------------------------------------------
-alias 'sloc=/usr/local/sloccount/bin/sloccount'
-alias 'adventure=emacs -batch -l dunnet' # play adventure in the console
-alias 'ttop=top -ocpu -R -F -s 2 -n30' # fancy top
-alias 'rm=rm -i' # make rm command (potentially) less destructive
 
-# Force tmux to use 256 colors
-alias tmux='TERM=screen-256color-bce tmux'
+# enable interactive mode for mv, rm, cp (asks before overwriting)
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
 
 # alias to cat this file to display
-alias acat='< ~/.zsh/aliases.zsh'
-alias fcat='< ~/.zsh/functions.zsh'
+alias acat='< ~/dotfiles/zsh/aliases.zsh'
+alias fcat='< ~/dotfiles/zsh/functions.zsh'
 alias sz='source ~/.zshrc'
-
-
-# -------------------------------------------------------------------
-# some Octopress helpers
-# -------------------------------------------------------------------
-alias 'generate=date ; rake generate ; date ;'
-alias 'gen=date ; rake generate ; date ;'
-alias 'ingen=date ; rake integrate ; generate ; date ;'
-alias 'deploy=rm deploy.log ; rake deploy > deploy.log ; tail -n 3 deploy.log ;'
-alias 'np=newpost.rb'
-
-# copy .htaccess files for zanshin.net and its image sub-directory
-alias 'htaccess=scp /Users/mark/Projects/octopress/zanshin/source/htaccess/.htaccess markn@markn.webfactional.com:~/webapps/zanshin ; scp /Users/mark/Projects/octopress/zanshin/source/images/.htaccess markn@markn.webfactional.com:~/webapps/zanshin/images ;'
-
-# deploy zanshin.net and move its .htaccess files
-alias 'dz=deploy ; htaccess ;'
-
-# -------------------------------------------------------------------
-# Source: http://aur.archlinux.org/packages/lolbash/lolbash/lolbash.sh
-# -------------------------------------------------------------------
-alias wtf='dmesg'
-alias onoz='cat /var/log/errors.log'
-alias rtfm='man'
-alias visible='echo'
-alias invisible='cat'
-alias moar='more'
-alias icanhas='mkdir'
-alias donotwant='rm'
-alias dowant='cp'
-alias gtfo='mv'
-alias hai='cd'
-alias plz='pwd'
-alias inur='locate'
-alias nomz='ps aux | less'
-alias nomnom='killall'
-alias cya='reboot'
-alias kthxbai='halt'
-
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
@@ -192,3 +117,48 @@ alias reload="exec $SHELL -l"
 # colortest_etc launch
 alias colortest="zsh ~/dotfiles/scripts/colortests/colors_esc"
 alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
+
+
+# -------------------------------------------------------------------
+# Directory Links
+# -------------------------------------------------------------------
+
+# Shortcuts to University stuff
+alias vision="~/dropbox/uni/HLC-vision"
+alias computervision="~/dropbox/uni/HLC-vision"
+alias highlevel="~/dropbox/uni/HLC-vision"
+alias hlcv="~/dropbox/uni/HLC-vision"
+alias security="~/dropbox/uni/security"
+alias secrepo="~/drodbox/uni/security/repo"
+alias sec="~/dropbox/uni/security"
+alias hci="~/dropbox/uni/hci-dev"
+alias hcidev="~/dropbox/uni/hci-dev"
+
+# Shortcuts to directories or files
+alias cl="cd; clear"
+alias c="clear"
+alias dotfiles="~/dotfiles"
+alias cheatsheets="~/cheatsheets"
+alias scripts="~/scripts"
+alias dl="~/Downloads"
+alias dt="~/Desktop"
+alias db="~/Dropbox"
+alias dropbox="~/Dropbox"
+alias doc="~/Documents"
+alias wallpaper="~/Dropbox/Wallpaper"
+alias icons="~/icons"
+alias euler="~/github/projecteuler"
+
+# important Files to quickedit
+alias zshrc="mvim ~/dotfiles/zsh/zshrc"
+alias aliases="mvim ~/dotfiles/zsh/aliases.zsh"
+alias functions="mvim ~/dotfiles/zsh/functions.zsh"
+alias vimrc="vim ~/dotfiles/mvim/vimrc"
+alias tmuxconf="mvim ~/dotfiles/tmux/tmux.conf"
+alias gitignore="vim .gitignore"
+alias gig="vim .gitignore"
+
+alias reddit="rtv"
+
+alias livecheck="python3 ~/dotfiles/scripts/livecheck.py"
+
