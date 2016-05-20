@@ -24,11 +24,11 @@ alias 'bk=cd $OLDPWD'
 # -------------------------------------------------------------------
 # directory information
 # -------------------------------------------------------------------
-alias lh='ls -d .*' # show hidden files/directories only
-alias lsd='ls -aFhlG'
-alias l='ls -al'
-alias ls='ls -GFh' # Colorize output, add file type indicator, and put sizes in human readable format
-alias ll='ls -GFhl' # Same as above, but in long listing format
+alias lh='ls --color=auto -d .*' # show hidden files/directories only
+alias lsd='ls --color=auto -aFhlG'
+alias l='ls --color=auto -al'
+alias ls='ls --color=auto -GFh' # Colorize output, add file type indicator, and put sizes in human readable format
+alias ll='ls --color=auto -GFhl' # Same as above, but in long listing format
 alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias 'dus=du -sckx * | sort -nr' #directories sorted by size
 
