@@ -184,3 +184,11 @@ alias nomz='ps aux | less'
 alias nomnom='killall'
 alias cya='reboot'
 alias kthxbai='halt'
+
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
+# colortest_etc launch
+alias colortest="zsh ~/dotfiles/scripts/colortests/colors_esc"
+alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
