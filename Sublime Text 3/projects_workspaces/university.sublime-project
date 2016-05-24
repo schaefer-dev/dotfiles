@@ -1,0 +1,114 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "HLCV",
+			"path": "/Users/daniel/Dropbox/uni/HLC-Vision"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "security",
+			"path": "/Users/daniel/Dropbox/uni/security"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "hci-dev",
+			"path": "/Users/daniel/Dropbox/uni/hci-dev"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "infosys_abgaben",
+			"path": "/Users/daniel/dotfiles"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.out",
+				"*.synctex.gz"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "daniel",
+			"path": "/Users/daniel"
+		}
+	]
+}
