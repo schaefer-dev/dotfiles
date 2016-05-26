@@ -1,3 +1,5 @@
+# Contains Functions and Tools used to generate Prompts
+
 function prompt_char {
     git branch >/dev/null 2>/dev/null && echo '❯' && return
     hg root >/dev/null 2>/dev/null && echo '❯' && return
@@ -96,10 +98,3 @@ function get_pwd(){
   echo $prompt_short_dir
 }
 
-
-PROMPT='
-${PR_BOLD_MAGENTA}%n%{$reset_color%}%{$FG[239]%}@${PR_BOLD_YELLOW}$(box_name)%{$reset_color%}%{$FG[239]%} %{$reset_color%}${PR_BOLD_BLUE}$(get_pwd)%{$reset_color%} $(prompt_char) '
-
-export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
-
-RPROMPT='$(git_prompt_string)%{$reset_color%}'
