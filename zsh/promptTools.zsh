@@ -19,7 +19,7 @@ autoload -U colors && colors # Enable colors in prompt
 
 # Modify the colors and symbols in these variables as desired.
 GIT_PROMPT_PREFIX=" %{$reset_color%}"
-GIT_PROMPT_SUFFIX="%{$reset_color%}"
+GIT_PROMPT_SUFFIX="%{$fg[blue]%}]%{$reset_color%}"
 GIT_PROMPT_AHEAD="${PR_BOLD_BLUE}+NUM%{$reset_color%}"
 GIT_PROMPT_BEHIND="${PR_BOLD_BLUE}-NUM%{$reset_color%}"
 GIT_PROMPT_MERGING="${PR_BOLD_MAGENTA}⚡︎%{$reset_color%}"
@@ -75,7 +75,7 @@ function parse_git_state() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "%{$fg[blue]%}${git_where#(refs/heads/|tags/)}$(parse_git_state)"
+  [ -n "$git_where" ] && echo " %{$fg[blue]%}[${git_where#(refs/heads/|tags/)}$(parse_git_state)"
 }
 
 function current_pwd {
