@@ -7,9 +7,9 @@ alias g8='nocorrect g8'
 # -------------------------------------------------------------------
 # directory movement
 # -------------------------------------------------------------------
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
+alias ..='..'
+alias ...='../..'
+alias ....='../../..'
 alias 'bk=cd $OLDPWD'
 
 # -------------------------------------------------------------------
@@ -225,3 +225,6 @@ alias htop="sudo htop --sort-key PERCENT_CPU"
 # alias for hidden files
 alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
 alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
+
+# open in mvim tab
+alias mvimt="mvim --remote-tab-silent"
