@@ -2,7 +2,8 @@ source ~/dotfiles/zsh/checks.zsh
 source ~/dotfiles/zsh/colors.zsh
 source ~/dotfiles/zsh/setopt.zsh
 source ~/dotfiles/zsh/exports.zsh
-source ~/dotfiles/zsh/prompt.zsh
+source ~/dotfiles/zsh/promptTools.zsh
+source ~/dotfiles/zsh/promptOneLine.zsh
 source ~/dotfiles/zsh/completion.zsh
 source ~/dotfiles/zsh/aliases.zsh
 source ~/dotfiles/zsh/bindkeys.zsh
