@@ -1,5 +1,5 @@
 function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo '❯' && return
+    git branch >/dev/null 2>/dev/null && echo "❯%{$reset_color%}" && return
     hg root >/dev/null 2>/dev/null && echo '❯' && return
     echo '❯'
 }
@@ -24,7 +24,7 @@ GIT_PROMPT_MERGING="${PR_BOLD_MAGENTA}⚡︎%{$reset_color%}"
 GIT_PROMPT_UNTRACKED="${PR_RED}u%{$reset_color%}"
 GIT_PROMPT_MODIFIED="${PR_YELLOW}m%{$reset_color%}"
 GIT_PROMPT_STAGED="${PR_GREEN}s%{$reset_color%}"
- 
+
 # Show Git branch/tag, or name-rev if on detached head
 function parse_git_branch() {
   (git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD) 2> /dev/null
@@ -73,7 +73,7 @@ function parse_git_state() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo "%{$fg[blue]%}${git_where#(refs/heads/|tags/)}$(parse_git_state)"
+  [ -n "$git_where" ] && echo "(${PR_BOLD_BLUE}${git_where#(refs/heads/|tags/)}$(parse_git_state))"
 }
 
 function current_pwd {
@@ -98,8 +98,7 @@ function get_pwd(){
 
 
 PROMPT='
-${PR_BOLD_MAGENTA}%n%{$reset_color%}%{$FG[239]%}@${PR_BOLD_YELLOW}$(box_name)%{$reset_color%}%{$FG[239]%} %{$reset_color%}${PR_BOLD_BLUE}$(get_pwd)%{$reset_color%} $(prompt_char) '
+${PR_BOLD_MAGENTA}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%} ${PR_YELLOW}$(box_name)%{$reset_color%} %{$FG[239]%}in%{$reset_color%} ${PR_BOLD_GREEN}$(current_pwd)%{$reset_color%} $(git_prompt_string)
+$(prompt_char) '
 
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
-
-RPROMPT='$(git_prompt_string)%{$reset_color%}'
