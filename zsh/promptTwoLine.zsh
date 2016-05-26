@@ -5,3 +5,5 @@ ${PR_BOLD_MAGENTA}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%} ${PR_YELLOW}
 $(prompt_char) '
 
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r$reset_color [(y)es (n)o (a)bort (e)dit]? "
+
+RPROMPT=''
