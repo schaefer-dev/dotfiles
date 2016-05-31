@@ -178,6 +178,7 @@ alias functions="mvim ~/dotfiles/zsh/functions.zsh"
 alias vimrc="vim ~/dotfiles/mvim/vimrc"
 alias tmuxconf="mvim ~/dotfiles/tmux/tmux.conf"
 alias gitignore="vim .gitignore"
+alias kwmrc="mvim ~/dotfiles/kwm/kwmrc"
 alias gig="vim .gitignore"
 
 # -------------------------------------------------------------------
