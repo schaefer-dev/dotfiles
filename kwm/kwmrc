@@ -126,8 +126,11 @@ kwmc config prefix-border radius 6
 # Quit Kwm
 kwmc bind cmd+alt+ctrl-q quit
 
+# load config
+kwmc bindsym prefix+shift-r config reload
+
 # Launch iTerm2
-kwmc bind cmd-return sys open -na /Applications/iTerm2.app
+# kwmc bind cmd-return sys open -na /Applications/iTerm2.app
 
 # Set Space Tiling Mode To BSP
 kwmc bind cmd+ctrl-a space -t bsp
@@ -143,8 +146,8 @@ kwmc bind cmd+ctrl-r tree rotate 90
 
 # Modify Container
 kwmc bind prefix-s window -c split-mode toggle
-kwmc bind prefix-h window -c reduce 0.05
-kwmc bind prefix-l window -c expand 0.05
+kwmc bind prefix-left window -c reduce 0.05
+kwmc bind prefix-right window -c expand 0.05
 kwmc bind prefix-< window -c type toggle
 
 # Set Temporary Window Container
@@ -160,10 +163,10 @@ kwmc bind cmd+alt+ctrl-j window -mk south wrap
 kwmc bind cmd+alt+ctrl-k window -mk north wrap
 
 # Give Focus To Window
-kwmc bind cmd+alt-h window -f west
-kwmc bind cmd+alt-l window -f east
-kwmc bind cmd+alt-j window -f south
-kwmc bind cmd+alt-k window -f north
+kwmc bind prefix-h window -f west
+kwmc bind prefix-l window -f east
+kwmc bind prefix-j window -f south
+kwmc bind prefix-k window -f north
 
 kwmc bind cmd+alt-n window -fm prev
 kwmc bind cmd+alt-m window -fm next
@@ -174,11 +177,11 @@ kwmc bind cmd+alt-2 display -f 1
 kwmc bind cmd+alt-3 display -f 2
 
 # Swap Focused Window
-kwmc bind ctrl+alt-h window -s west
-kwmc bind ctrl+alt-j window -s south
-kwmc bind ctrl+alt-k window -s north
-kwmc bind ctrl+alt-l window -s east
-kwmc bind ctrl+alt-m window -s mark
+kwmc bind ctrl+shift-h window -s west
+kwmc bind ctrl+shift-j window -s south
+kwmc bind ctrl+shift-k window -s north
+kwmc bind ctrl+shift-l window -s east
+kwmc bind ctrl+shift-m window -s mark
 
 # Pseudo containers
 kwmc bind cmd+ctrl+alt-p tree -pseudo create
@@ -187,10 +190,10 @@ kwmc bind ctrl+alt-p window -s prev
 kwmc bind ctrl+alt-n window -s next
 
 # Detach Focused Window And Reinsert In Direction
-kwmc bind ctrl+shift-k window -m north
-kwmc bind ctrl+shift-l window -m east
-kwmc bind ctrl+shift-j window -m south
-kwmc bind ctrl+shift-h window -m west
+kwmc bind ctrl+shift+cmd-k window -m north
+kwmc bind ctrl+shift+cmd-l window -m east
+kwmc bind ctrl+shift+cmd-j window -m south
+kwmc bind ctrl+shift+cmd-h window -m west
 
 # Detach Marked Window And Reinsert At Focused Window
 kwmc bind ctrl+shift-x window -m mark
@@ -200,9 +203,9 @@ kwmc bind ctrl+alt-left window -m space left
 kwmc bind ctrl+alt-right window -m space right
 
 # Move Focused Window To Screen
-kwmc bind ctrl+alt-1 window -m display 0
-kwmc bind ctrl+alt-2 window -m display 1
-kwmc bind ctrl+alt-3 window -m display 2
+kwmc bind ctrl+shift-1 window -m display 0
+kwmc bind ctrl+shift-2 window -m display 1
+kwmc bind ctrl+shift-3 window -m display 2
 
 # Increase Container Gaps
 kwmc bind prefix-x space -g increase horizontal
@@ -213,18 +216,18 @@ kwmc bind prefix+shift-x space -g decrease horizontal
 kwmc bind prefix+shift-y space -g decrease vertical
 
 # Increase Screen Padding
-kwmc bind prefix-left space -p increase left
-kwmc bind prefix-right space -p increase right
-kwmc bind prefix-up space -p increase top
-kwmc bind prefix-down space -p increase bottom
-kwmc bind prefix-p space -p increase all
+# kwmc bind prefix-left space -p increase left
+# kwmc bind prefix-right space -p increase right
+# kwmc bind prefix-up space -p increase top
+# kwmc bind prefix-down space -p increase bottom
+# kwmc bind prefix-p space -p increase all
 
 # Decrease Screen Padding
-kwmc bind prefix+shift-left space -p decrease left
-kwmc bind prefix+shift-right space -p decrease right
-kwmc bind prefix+shift-up space -p decrease top
-kwmc bind prefix+shift-down space -p decrease bottom
-kwmc bind prefix+shift-p space -p decrease all
+# kwmc bind prefix+shift-left space -p decrease left
+# kwmc bind prefix+shift-right space -p decrease right
+# kwmc bind prefix+shift-up space -p decrease top
+# kwmc bind prefix+shift-down space -p decrease bottom
+# kwmc bind prefix+shift-p space -p decrease all
 
 # Autowrite
 kwmc bind cmd-7 write \
