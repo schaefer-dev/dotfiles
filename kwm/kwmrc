@@ -28,7 +28,8 @@
 # define hyper cmd+ctrl+alt+shift
 # kwmc bind hyper-h window -f west
 
-# Set default values for screen padding
+# Set large or small values for screen padding
+# kwmc config padding 70 50 50 50
 kwmc config padding 40 20 20 20
 
 # Set default values for container gaps
