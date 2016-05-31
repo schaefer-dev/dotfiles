@@ -33518,15 +33518,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>408 496 445 94 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>526 570 606 456 0 0 1680 1027 </string>
+	<string>1138 959 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 477 620 392 0 0 1680 1027 </string>
+	<string>970 779 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 241 1010 783 0 0 1680 1027 </string>
+	<string>-2537 22 2514 1377 -2560 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>594 713 430 307 0 0 1680 1027 </string>
+	<string>1069 848 430 307 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33542,11 +33542,11 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1009 1103 430 307 0 0 2560 1417 </string>
+	<string>593 710 430 307 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>383 642 500 347 0 0 1680 1027 </string>
+	<string>383 192 1010 783 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>600 675 500 347 0 0 1680 1027 </string>
+	<string>600 225 1010 783 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>616 592 810 622 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -36839,6 +36839,8 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>30E8B2FB-5339-45CB-94AF-019086B82121</string>
 	<key>NoSyncLastTipTime</key>
 	<real>465397112.72308099</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
@@ -36950,15 +36952,15 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>https://iterm2.com/appcasts/testing3.xml?shard=33</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-14T14:54:31Z</date>
+	<date>2016-05-26T23:26:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
-	<true/>
+	<false/>
 	<key>ShowBookmarkName</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -37006,7 +37008,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20151111</string>
+	<string>2.9.20160523</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
