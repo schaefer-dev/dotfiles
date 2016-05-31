@@ -232,3 +232,6 @@ alias mvimt="mvim --remote-tab-silent"
 # aliases to switch between twoline and singleline Prompt
 alias twoLine="source ~/dotfiles/zsh/promptTwoLine.zsh"
 alias oneLine="source ~/dotfiles/zsh/promptOneLine.zsh"
+
+# start kwm tiling window manager
+alias kwmstart="brew services start homebrew/binary/kwm"
