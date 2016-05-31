@@ -234,7 +234,8 @@ alias twoLine="source ~/dotfiles/zsh/promptTwoLine.zsh"
 alias oneLine="source ~/dotfiles/zsh/promptOneLine.zsh"
 
 # start kwm tiling window manager
-alias kwmstart="brew services start homebrew/binary/kwm"
+alias kwmStart="brew services start homebrew/binary/kwm"
+alias kwmRestart="brew services restart kwm"
 alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseDisabled="kwmc config focus-follows-mouse off"
