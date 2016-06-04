@@ -170,7 +170,7 @@ alias dropbox="~/Dropbox"
 alias doc="~/Documents"
 alias wallpaper="~/Dropbox/Wallpaper"
 alias icons="~/icons"
-alias euler="~/github/projecteuler"
+alias euler="~/dev/gitHub/projecteuler"
 
 # important Files to quickedit
 alias zshrc="mvim ~/dotfiles/zsh/zshrc"
