@@ -6,7 +6,7 @@ _web() {
  
     _arguments \
         '1: :->Topic'\
-        '*: :->Param'
+        '2: :->Param'
  
     case $state in
     Topic)
@@ -30,7 +30,6 @@ _web() {
             compadd "$@" piazza material resources ladmin
         ;;
         *)
-            _files 
         esac
     esac
 }
