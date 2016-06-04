@@ -166,7 +166,7 @@ web(){
 		return
 	fi
 
-	if [ "$1" = "youtube" ]; then
+	if [ "$1" = "youtube" ] || [ "$1" = "yt" ]; then
 		if [ "$2" = "watchlater" ]; then
 			open 'https://www.youtube.com/playlist?list=WL'
 			return
