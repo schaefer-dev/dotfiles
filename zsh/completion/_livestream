@@ -1,0 +1,3 @@
+#compdef livestream
+
+_arguments "1: :(nl_Kripp riotgames NALCS1 NALCS2 EULCS1 EULCS2 Reckful Shroud roca2k9 AdreN_tv GoDazeD Steel_tv Imaqtpie Summit1G tarik_tv fl0m DreamhackCS MLG eleagueTV ESL_CSGO Venruki Hiko Asmongold)"

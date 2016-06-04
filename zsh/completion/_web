@@ -1,0 +1,38 @@
+#compdef web
+
+_web() { 
+    local curcontext="$curcontext" state line
+    typeset -A opt_args
+ 
+    _arguments \
+        '1: :->Topic'\
+        '*: :->Param'
+ 
+    case $state in
+    Topic)
+        _arguments '1:Topics:(hlcv sec security hci hcidev netflix cal gh github twitch yt youtube reddit)'
+    ;;
+    *)
+        case $words[2] in
+        reddit)
+            compadd "$@" headphones lol csgo mechs hearthstone hs
+        ;;
+        youtube)
+            compadd "$@" watchlater
+        ;;
+        yt)
+            compadd "$@" watchlater
+        ;;
+        security)
+            compadd "$@" piazza material resources ladmin
+        ;;
+        sec)
+            compadd "$@" piazza material resources ladmin
+        ;;
+        *)
+            _files 
+        esac
+    esac
+}
+ 
+_web "$@"
