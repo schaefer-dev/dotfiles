@@ -84,6 +84,7 @@ alias grhh='git reset HEAD --hard'
 alias gss='git status -s'
 alias gst='git status'
 alias gsta='git stash'
+alias gshow='git show'
 
 alias gp='git push'
 
