@@ -37,7 +37,9 @@ def check_user(user):
 # main
 userlist = ["Reckful", "Shroud", "roca2k9", "AdreN_tv",
             "GoDazeD", "Steel_tv", "Imaqtpie", "Summit1G",
-            "tarik_tv", "fl0m", "Riotgames", "Dreamhackcs", "MLG"]
+            "tarik_tv", "fl0m", "Riotgames", "Dreamhackcs", "MLG",
+            "nl_Kripp", "NALCS1", "NALCS2", "EULCS1", "EULCS2",
+            "Venruki", "Hiko", "Asmongold", "ESL_CSGO"]
 
 for user in userlist:
     try:
