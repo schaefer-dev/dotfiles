@@ -11,5 +11,12 @@ source ~/dotfiles/zsh/functions.zsh
 source ~/dotfiles/zsh/history.zsh
 source ~/dotfiles/zsh/zsh_hooks.zsh
 
+# add custom Completion
+fpath=(~/dotfiles/zsh/completion $fpath)
+
+# compsys initialization
+autoload -U compinit
+compinit
+
 #important for autojump to work properly
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
