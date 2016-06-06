@@ -171,6 +171,7 @@ alias doc="~/Documents"
 alias wallpaper="~/Dropbox/Wallpaper"
 alias icons="~/icons"
 alias euler="~/dev/gitHub/projecteuler"
+alias dev="~/dev"
 
 # important Files to quickedit
 alias zshrc="mvim ~/dotfiles/zsh/zshrc"
