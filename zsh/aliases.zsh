@@ -12,6 +12,25 @@ alias ...='../..'
 alias ....='../../..'
 alias 'bk=cd $OLDPWD'
 
+
+# -------------------------------------------------------------------
+# directory movement using pushd, popd
+# -------------------------------------------------------------------
+alias dirs='dirs -v'
+function mypushd {
+    pushd "${@}" >/dev/null;
+    dirs -v;
+}
+function mypopd {
+    popd "${@}" >/dev/null;
+    dirs -v;
+}
+alias d='dirs -v'
+alias p='mypushd'
+alias o='mypopd'
+
+
+
 # -------------------------------------------------------------------
 # directory information
 # -------------------------------------------------------------------
@@ -114,9 +133,6 @@ alias app="open -a"
 alias a="open -a"
 alias Battle.net="Battle.net.app"
 
-# open folder with 'o'
-alias o="open ."
-
 # sorts top list by cpu default
 alias top="top -o cpu"
 
@@ -147,31 +163,31 @@ alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
 # -------------------------------------------------------------------
 
 # Shortcuts to University stuff
-alias vision="~/dropbox/uni/HLC-vision"
-alias computervision="~/dropbox/uni/HLC-vision"
-alias highlevel="~/dropbox/uni/HLC-vision"
-alias hlcv="~/dropbox/uni/HLC-vision"
-alias security="~/dropbox/uni/security"
-alias secrepo="~/drodbox/uni/security/repo"
-alias sec="~/dropbox/uni/security"
-alias hci="~/dropbox/uni/hci-dev"
-alias hcidev="~/dropbox/uni/hci-dev"
+alias vision="mypushd ~/dropbox/uni/HLC-vision"
+alias computervision="mypushd ~/dropbox/uni/HLC-vision"
+alias highlevel="mypushd ~/dropbox/uni/HLC-vision"
+alias hlcv="mypushd ~/dropbox/uni/HLC-vision"
+alias security="mypushd ~/dropbox/uni/security"
+alias secrepo="mypushd ~/drodbox/uni/security/repo"
+alias sec="mypushd ~/dropbox/uni/security"
+alias hci="mypushd ~/dropbox/uni/hci-dev"
+alias hcidev="mypushd ~/dropbox/uni/hci-dev"
 
 # Shortcuts to directories or files
 alias cl="cd; clear"
 alias c="clear"
-alias dotfiles="~/dotfiles"
-alias cheatsheets="~/cheatsheets"
-alias scripts="~/scripts"
-alias dl="~/Downloads"
-alias dt="~/Desktop"
-alias db="~/Dropbox"
-alias dropbox="~/Dropbox"
-alias doc="~/Documents"
-alias wallpaper="~/Dropbox/Wallpaper"
-alias icons="~/icons"
-alias euler="~/dev/gitHub/projecteuler"
-alias dev="~/dev"
+alias dotfiles="mypushd ~/dotfiles"
+alias cheatsheets="mypushd ~/cheatsheets"
+alias scripts="mypushd ~/scripts"
+alias dl="mypushd ~/Downloads"
+alias dt="mypushd ~/Desktop"
+alias db="mypushd ~/Dropbox"
+alias dropbox="mypushd ~/Dropbox"
+alias doc="mypushd ~/Documents"
+alias wallpaper="mypushd ~/Dropbox/Wallpaper"
+alias icons="mypushd ~/icons"
+alias euler="mypushd ~/dev/gitHub/projecteuler"
+alias dev="mypushd ~/dev"
 
 # important Files to quickedit
 alias zshrc="mvim ~/dotfiles/zsh/zshrc"
@@ -244,3 +260,4 @@ alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseDisabled="kwmc config focus-follows-mouse off"
 alias MouseDisabled="kwmc config focus-follows-mouse off"
+alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.sublime-project"
