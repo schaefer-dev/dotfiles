@@ -12,3 +12,7 @@
 # bindkey "^F"      forward-char                         # ctrl-f
 # bindkey "^B"      backward-char                        # ctrl-b
 # bindkey -v   # Default to standard vi bindings, regardless of editor string
+
+
+# backwards completion
+bindkey '^[[Z' reverse-menu-complete
