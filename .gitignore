@@ -9,3 +9,4 @@ mvim/vim/bundle/*
 config/mps-youtube/input_history
 config/rtv/*
 zsh/cache/*
+config/xbuild
