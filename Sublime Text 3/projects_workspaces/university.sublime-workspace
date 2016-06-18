@@ -8,11 +8,11 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV/sheet05/code/cnn_init_4.m",
+			"file": "/Users/daniel/Dropbox/uni/hci-dev/repo_HCI-dev/.gitignore",
 			"settings":
 			{
-				"buffer_size": 1885,
-				"line_ending": "Windows"
+				"buffer_size": 2857,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -182,10 +182,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/daniel/Dropbox/uni/HLC-Vision",
 		"/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV",
 		"/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV/sheet05",
-		"/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV/sheet05/code"
+		"/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV/sheet05/code",
+		"/Users/daniel/Dropbox/uni/security/repo_security",
+		"/Users/daniel/Dropbox/uni/security/repo_security/project01",
+		"/Users/daniel/Dropbox/uni/hci-dev/repo_HCI-dev",
+		"/Users/daniel/Dropbox/uni/hci-dev/repo_HCI-dev/presentations",
+		"/Users/daniel/Dropbox/uni/hci-dev/repo_HCI-dev/presentations/presentation_03_wireframing"
 	],
 	"file_history":
 	[
@@ -364,19 +368,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/daniel/Dropbox/uni/HLC-Vision/repo_HLCV/sheet05/code/cnn_init_4.m",
+					"file": "/Users/daniel/Dropbox/uni/hci-dev/repo_HCI-dev/.gitignore",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1885,
+						"buffer_size": 2857,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								812,
-								812
+								0,
+								0
 							]
 						],
 						"settings":
@@ -440,13 +444,11 @@
 								"bh_angle_close",
 								"bh_angle_content"
 							],
-							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
-							"syntax_mgr_loaded": true,
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Seti_UI/icons/Langs/Git.tmLanguage",
+							"syntax_mgr_loaded": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 89.0,
+						"translation.y": 3328.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
