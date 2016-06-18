@@ -104,6 +104,7 @@ alias gss='git status -s'
 alias gst='git status'
 alias gsta='git stash'
 alias gshow='git show'
+alias gb='git branch'
 
 alias gp='git push'
 
