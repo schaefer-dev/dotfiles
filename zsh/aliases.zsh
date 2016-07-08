@@ -261,4 +261,9 @@ alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
 alias MouseDisabled="kwmc config focus-follows-mouse off"
 alias MouseDisabled="kwmc config focus-follows-mouse off"
+
+# start sublime university project
 alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.sublime-project"
+
+# proverif execution using pi calculus
+alias pv="proverif -in pi"
