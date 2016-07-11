@@ -1,0 +1,22 @@
+source ~/dotfiles/zsh/checks.zsh
+source ~/dotfiles/zsh/colors.zsh
+source ~/dotfiles/zsh/setopt.zsh
+source ~/dotfiles/zsh/exports.zsh
+source ~/dotfiles/zsh/promptTools.zsh
+source ~/dotfiles/zsh/promptTwoLine.zsh
+source ~/dotfiles/zsh/completion.zsh
+source ~/dotfiles/zsh/aliases_linux.zsh
+source ~/dotfiles/zsh/bindkeys.zsh
+source ~/dotfiles/zsh/functions.zsh
+source ~/dotfiles/zsh/history.zsh
+source ~/dotfiles/zsh/zsh_hooks.zsh
+
+# add custom Completion
+fpath=(~/dotfiles/zsh/completion $fpath)
+
+# compsys initialization
+autoload -U compinit
+compinit
+
+#important for autojump to work properly
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

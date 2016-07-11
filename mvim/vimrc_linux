@@ -1,0 +1,176 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" lightline
+Plugin 'itchyny/lightline.vim'
+"lightline theme for hybrid
+Plugin 'cocopon/lightline-hybrid.vim'
+" Gitgutter shows difference in git
+Plugin 'airblade/vim-gitgutter'
+" nerdtree file tree
+Plugin 'scrooloose/nerdtree'
+" some nerdtree tab fixes
+Plugin 'jistr/vim-nerdtree-tabs'
+" nerdtree git plugin
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+" shows indentationlevels nicer
+Plugin 'nathanaelkane/vim-indent-guides'
+" Big python functionality pack
+Plugin 'klen/python-mode'
+" Tmux navigaion with vim splits
+Plugin 'christoomey/vim-tmux-navigator'
+" Latex stuff for latexdev
+Plugin 'jcf/vim-latex'
+" Latex automatic closing of environment with ctrl c or \c
+Plugin 'gi1242/vim-tex-autoclose'
+" using the Noun 's' for surround, for example change surrounding quotes into
+" brackets
+Plugin 'tpope/vim-surround'
+" enabled . to be able to repeat even more stuff
+Plugin 'tpope/vim-repeat'
+" comment stuff out using vim
+Plugin 'tpope/vim-commentary'
+" replace something with something in the register
+Plugin 'vim-scripts/ReplaceWithRegister'
+" get stuff from vim into your system clipboard
+Plugin 'christoomey/vim-system-copy'
+" defines indent as an object using ii
+Plugin 'michaeljsmith/vim-indent-object'
+" Dash 3 support
+Plugin 'rizzatti/dash.vim'
+" An Interface to WEB APIs
+Plugin 'mattn/webapi-vim'
+" ctrlP vim
+Plugin 'ctrlpvim/ctrlp.vim'
+" Fancy Icons for ctrlp, nedtree usw
+Plugin 'ryanoasis/vim-devicons'
+"c.vim plugin
+Plugin 'vim-scripts/c.vim'
+
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"----------------------------------------------------------------------------
+
+"shows horizontal and vertical line where the cursor is in the file
+set cursorline cursorcolumn
+
+"linebreaks after long line are indented correctly
+set wrap
+
+" long lines have same indent
+set breakindent
+
+"show syntax colors
+syntax enable
+
+"enable filetype detection
+filetype on
+filetype plugin on
+filetype indent on
+
+"enable mouse usage in GUI
+if has("gui_running")
+    set mouse=a
+else
+    set mouse=
+endif
+
+" make backspace work like most other apps
+set backspace=2
+
+" show linenumbers
+set relativenumber
+set number
+
+"disable creating of all sort of swapfiles
+set nobackup
+set nowb
+set noswapfile
+
+"shows number of columns and lines in powerbar
+set ruler
+
+" hide -- INSERT --
+set noshowmode 
+
+"sets width for shifting with >> or << and tablength and converts tab to spaces
+set shiftwidth=4
+set tabstop=4
+set expandtab
+
+"sets character encoding
+set encoding=utf8
+
+" automatically change window's cwd to file's dir
+set autochdir
+
+" i want to see at least x lines above/below the cursor
+set scrolloff=10
+
+set history=999
+set hlsearch
+set showmatch
+
+" enhanced tab completion, especially useful for tab/buffer navigation
+set wildmenu
+
+" Tomorrow-Night vim color setting
+set t_Co=256
+set background=dark
+"colorscheme Tomorrow-Night
+
+" hybrid color theme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+
+" color for cursor
+"hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
+
+" color for cursorline and cursorcolumn
+hi CursorColumn ctermbg=237 guibg=#373B40 
+hi CursorLine ctermbg=237 guibg=#373B40 
+
+" Statusline color also used for wildmenu
+hi StatusLine ctermbg=white ctermfg=black
+
+"setting gcc to compiler for c files
+au BufEnter *.c compiler gcc
+
+" source my custom remaps
+source ~/dotfiles/mvim/remaps.vim
+
+" source my plugin settings
+source ~/dotfiles/mvim/pluginsettings.vim
