@@ -1,4 +1,6 @@
+# software aliases
 alias mvim="vim"
+alias pycharm="~/tools/pycharm/pycharm-2016.1.4/bin/pycharm.sh"
 
 # -------------------------------------------------------------------
 # use nocorrect alias to prevent auto correct from "fixing" these
