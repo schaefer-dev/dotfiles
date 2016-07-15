@@ -1,7 +1,7 @@
 source ~/dotfiles/zsh/checks.zsh
 source ~/dotfiles/zsh/colors.zsh
 source ~/dotfiles/zsh/setopt.zsh
-source ~/dotfiles/zsh/exports.zsh
+source ~/dotfiles/zsh/exports_linux.zsh
 source ~/dotfiles/zsh/promptTools.zsh
 source ~/dotfiles/zsh/promptTwoLine.zsh
 source ~/dotfiles/zsh/completion.zsh
