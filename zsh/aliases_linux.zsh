@@ -271,3 +271,6 @@ alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 
 # proverif execution using pi calculus
 alias pv="proverif -in pi"
+
+alias 1p="wine 'C:\Program Files (x86)\1Password 4\1Password.exe' &"  
+alias 1pAgent="wine 'C:\Program Files (x86)\1Password 4\Agile1pAgent.exe' &"  
