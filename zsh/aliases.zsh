@@ -174,6 +174,14 @@ alias sec="mypushd ~/dropbox/uni/security"
 alias hci="mypushd ~/dropbox/uni/hci-dev"
 alias hcidev="mypushd ~/dropbox/uni/hci-dev"
 
+# Shortcuts to University repos
+alias repo_security="mypushd ~/uni_repos/repo_security"
+alias repo_security_private="mypushd ~/uni_repos/repo_security_private"
+alias repo_hlcv="mypushd ~/uni_repos/repo_HLCV"
+alias repo_hci-dev="mypushd ~/uni_repos/repo_hci-dev"
+
+
+
 # Shortcuts to directories or files
 alias cl="cd; clear"
 alias c="clear"
