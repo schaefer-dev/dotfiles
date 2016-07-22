@@ -1,6 +1,6 @@
 # Currently this path is appended to dynamically when picking a ruby version
 # zshenv has already started PATH with rbenv so append only here
-export PATH=~/anaconda/bin:$PATH~/bin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH=~/anaconda/bin:$PATH~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
 
 # setting java_home
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
@@ -37,4 +37,13 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# CUDA Stuff
+export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
+
+# caffe stuff
+export DYLD_FALLBACK_LIBRARY_PATH=/usr/local/cuda/lib:$HOME/anaconda/lib:/usr/local/lib:/usr/lib:/opt/intel/composer_xe_2015.2.132/compiler/lib:/opt/intel/composer_xe_2015.2.132/mkl/lib
+
+# goLang stuff
+export GOPATH=~/goPath
 
