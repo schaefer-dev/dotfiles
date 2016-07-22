@@ -10,3 +10,18 @@ config/mps-youtube/input_history
 config/rtv/*
 zsh/cache/*
 config/xbuild
+
+# ST3 ignores
+
+Sublime\ Text\ 3/Packages/User/Package\ Control.cache
+Sublime\ Text\ 3/Packages/User/Package\ Control.ca-list
+Sublime\ Text\ 3/Packages/User/Package\ Control.ca-bundle
+Sublime\ Text\ 3/Packages/User/Package\ Control.ca-certs
+Sublime\ Text\ 3/Packages/User/Package\ Control.system-ca-bundle
+Sublime\ Text\ 3/Packages/User/ColorPicker/lib/linux_colorpicker.py
+Sublime\ Text\ 3/Packages/User/ColorPicker/lib/linux_colorpicker.py
+
+# linux ignores
+config/mimeapps.list
+config/user-dirs.dirs
+config/user-dirs.locale
