@@ -20,3 +20,16 @@ compinit
 
 #important for autojump to work properly
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# enable vim mode
+bindkey -v
+export KEYTIMEOUT=1
+
+function zle-line-init zle-keymap-select {
+    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+    RPS2=$RPS1
+    zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
