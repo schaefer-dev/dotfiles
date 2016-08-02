@@ -31,7 +31,7 @@ function zle-keymap-select zle-line-init
   esac
   
   # show mode on the right side of terminal
-  RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
+  RPS1="%{$fg[blue]%}${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}%{$reset_color%}"
   RPS2=$RPS1
 
   zle reset-prompt
