@@ -1,3 +1,6 @@
+# python 3 default!
+alias python=python3
+
 # -------------------------------------------------------------------
 # use nocorrect alias to prevent auto correct from "fixing" these
 # -------------------------------------------------------------------
