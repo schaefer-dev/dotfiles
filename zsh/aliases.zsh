@@ -203,14 +203,14 @@ alias euler="mypushd ~/dev/gitHub/projecteuler"
 alias dev="mypushd ~/dev"
 
 # important Files to quickedit
-alias zshrc="mvim ~/dotfiles/zsh/zshrc"
-alias aliases="mvim ~/dotfiles/zsh/aliases.zsh"
-alias functions="mvim ~/dotfiles/zsh/functions.zsh"
+alias zshrc="vim ~/dotfiles/zsh/zshrc"
+alias aliases="vim ~/dotfiles/zsh/aliases.zsh"
+alias functions="vim ~/dotfiles/zsh/functions.zsh"
 alias vimrc="vim ~/dotfiles/mvim/vimrc"
-alias nvimrc="nvim ~/dotfiles/config/nvim/init.vim"
-alias tmuxconf="mvim ~/dotfiles/tmux/tmux.conf"
+alias nvimrc="vim ~/dotfiles/config/nvim/init.vim"
+alias tmuxconf="vim ~/dotfiles/tmux/tmux.conf"
 alias gitignore="vim .gitignore"
-alias kwmrc="mvim ~/dotfiles/kwm/kwmrc"
+alias kwmrc="vim ~/dotfiles/kwm/kwmrc"
 alias gig="vim .gitignore"
 
 # -------------------------------------------------------------------
