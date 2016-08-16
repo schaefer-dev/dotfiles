@@ -286,11 +286,6 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
 
-
-
-
-
-
 " Latex Suite setup:--------------------------------------------------
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
@@ -313,17 +308,7 @@ let g:Tex_CompileRule_pdf = 'latexmk -pdf'
 
 
 
-
-
-
-
-
-
-
 " REMAPS START --------------------------------------------------------------------------------
-
-
-
 
 " Latex Suite remaps:
 augroup MyIMAPs
