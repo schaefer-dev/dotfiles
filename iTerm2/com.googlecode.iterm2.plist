@@ -33522,13 +33522,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 486 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>614 322 918 381 0 0 1680 1027 </string>
+	<string>614 300 796 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>430 217 1010 783 0 0 1680 1027 </string>
+	<string>170 114 1010 783 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>157 511 430 307 0 0 1280 777 </string>
+	<string>231 424 810 603 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33741,13 +33741,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.086809463798999786</real>
+				<real>0.097707763314247131</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.086808003485202789</real>
+				<real>0.092142708599567413</real>
 				<key>Red Component</key>
-				<real>0.086810596287250519</real>
+				<real>0.086937598884105682</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -34537,13 +34537,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14432241022586823</real>
+				<real>0.097707763314247131</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11681361496448517</real>
+				<real>0.092142708599567413</real>
 				<key>Red Component</key>
-				<real>0.10636789351701736</real>
+				<real>0.086937598884105682</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -35393,13 +35393,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14432241022586823</real>
+				<real>0.097707763314247131</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11681361496448517</real>
+				<real>0.092142708599567413</real>
 				<key>Red Component</key>
-				<real>0.10636789351701736</real>
+				<real>0.086937598884105682</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -36222,13 +36222,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14432241022586823</real>
+				<real>0.097707763314247131</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.11681361496448517</real>
+				<real>0.092142708599567413</real>
 				<key>Red Component</key>
-				<real>0.10636789351701736</real>
+				<real>0.086937598884105682</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
