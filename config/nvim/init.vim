@@ -26,8 +26,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'benekastah/neomake', { 'on': ['Neomake'] }
 " Autocomplete
 Plug 'Shougo/deoplete.nvim'
-" Automatically closing pair stuff
-Plug 'cohama/lexima.vim'
 " Snippet support (C-j)
 Plug 'SirVer/ultisnips'
 " Commenting support (gc)

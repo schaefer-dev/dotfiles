@@ -207,6 +207,7 @@ alias zshrc="mvim ~/dotfiles/zsh/zshrc"
 alias aliases="mvim ~/dotfiles/zsh/aliases.zsh"
 alias functions="mvim ~/dotfiles/zsh/functions.zsh"
 alias vimrc="vim ~/dotfiles/mvim/vimrc"
+alias nvimrc="nvim ~/dotfiles/config/nvim/init.vim"
 alias tmuxconf="mvim ~/dotfiles/tmux/tmux.conf"
 alias gitignore="vim .gitignore"
 alias kwmrc="mvim ~/dotfiles/kwm/kwmrc"
@@ -282,3 +283,7 @@ alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 
 # proverif execution using pi calculus
 alias pv="proverif -in pi"
+
+# neovim masterrace
+alias vim="nvim"
+

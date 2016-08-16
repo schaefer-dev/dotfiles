@@ -8,6 +8,7 @@ bin/JDownloader 2.0/*
 mvim/vim/bundle/*
 config/mps-youtube/input_history
 config/rtv/*
+config/nvim/*
 zsh/cache/*
 config/xbuild
 
