@@ -38,7 +38,6 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'tpope/vim-sleuth'
 "}}}
 "
-"
 
 " ---------------------------------------------------------------------------------------------------------------------
 " Other languages {{{
@@ -62,8 +61,6 @@ Plug 'keith/tmux.vim'
 " Lightline (simple status line)
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
-" Buffers tabline
-Plug 'ap/vim-buftabline'
 "}}}
 
 
@@ -73,14 +70,8 @@ Plug 'ap/vim-buftabline'
 
 " Fugitive
 Plug 'tpope/vim-fugitive'
-" Git log viewer (Gitv! for file mode)
-Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 " Git changes showed on line numbers
 Plug 'airblade/vim-gitgutter'
-" REST Console
-Plug 'diepm/vim-rest-console', { 'for': 'rest' }
-" Color picker
-Plug 'KabbAmine/vCoolor.vim', { 'on': ['VCoolor', 'VCase'] }
 "}}}
 
 
@@ -245,13 +236,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-"enable mouse usage in GUI
-if has("gui_running")
-    set mouse=a
-else
-    set mouse=
-endif
-
 " make backspace work like most other apps
 set backspace=2
 
@@ -291,14 +275,11 @@ set showmatch
 " enhanced tab completion, especially useful for tab/buffer navigation
 set wildmenu
 
-
-
-
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
 
 
 " END OLD VIM SETTINGS ---------------------------------------
-
-
 
 " NeoBundle Scripts-----------------------------
 if has('vim_starting')  
