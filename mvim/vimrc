@@ -161,8 +161,8 @@ colorscheme hybrid
 "hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 
 " color for cursorline and cursorcolumn
-hi CursorColumn ctermbg=237 guibg=#373B40 
-hi CursorLine ctermbg=237 guibg=#373B40 
+hi CursorColumn ctermbg=237 guibg=#282A2D 
+hi CursorLine ctermbg=237 guibg=#282A2D 
 
 " Statusline color also used for wildmenu
 hi StatusLine ctermbg=white ctermfg=black
