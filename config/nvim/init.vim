@@ -93,7 +93,7 @@ set cb=unnamed				" clipboard setting to make everything work in vim
 " Highlight term cursor differently
 highlight TermCursor ctermfg=green guifg=green
 let NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Listchars highlighting 
 highlight NonText ctermfg=235 guifg=gray
