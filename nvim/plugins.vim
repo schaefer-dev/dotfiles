@@ -71,6 +71,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 " Git changes showed on line numbers
 Plug 'airblade/vim-gitgutter'
+" sick fuzzy file searching using :File
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 "}}}
 
 
