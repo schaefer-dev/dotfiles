@@ -17,6 +17,9 @@ set termguicolors			" True color support
 hi CursorColumn ctermbg=237 guibg=#282A2D
 hi CursorLine ctermbg=237 guibg=#282A2D
 
+" Force buffers to be tabs
+:au BufAdd,BufNewFile * nested tab sball
+
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
