@@ -1,0 +1,36 @@
+#cheatsheets
+~/cheatsheets
+
+# main folders
+~/scripts
+~/Documents
+~/Downloads
+~/Dropbox
+~/Desktop
+~/dev
+
+# Projects
+~/dev/gitHub/projecteuler
+
+#just my dotfiles
+~/dotfiles
+~/dotfiles/bin
+~/dotfiles/fzf
+~/dotfiles/LaTex
+~/dotfiles/nvim
+~/dotfiles/scripts
+~/dotfiles/tmux
+~/dotfiles/zsh
+
+# University repos
+~/uni_repos/repo_hci-dev
+~/uni_repos/repo_HLCV
+~/uni_repos/repo_HLCV_private
+~/uni_repos/repo_security
+~/uni_repos/repo_security_private
+
+# Dropbox uni stuff
+~/Dropbox/uni/HCI-dev
+~/Dropbox/uni/HLC-vision
+~/Dropbox/uni/security
+

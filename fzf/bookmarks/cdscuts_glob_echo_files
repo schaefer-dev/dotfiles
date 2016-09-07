@@ -1,0 +1,13 @@
+#!/bin/bash
+ 
+system_wide_filelist=''
+user_filelist=''
+ 
+if [ -r /etc/cdg_files ]; then
+   system_wide_filelist=$(cdscuts_list_echo /etc/cdg_files)
+fi
+if [ -r ~/dotfiles/fzf/bookmarks/cdg_files ]; then
+   user_filelist=$(cdscuts_list_echo ~/dotfiles/fzf/bookmarks/cdg_files)
+fi
+ 
+echo -e "$system_wide_filelist\n$user_filelist" | sed '/^\s*$/d'

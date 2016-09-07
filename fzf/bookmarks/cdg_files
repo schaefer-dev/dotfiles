@@ -1,0 +1,30 @@
+# ZSH files
+~/dotfiles/zsh/aliases.zsh
+~/dotfiles/zsh/bindkeys.zsh
+~/dotfiles/zsh/colors.zsh
+~/dotfiles/zsh/completion.zsh
+~/dotfiles/zsh/exports.zsh
+~/dotfiles/zsh/functions.zsh
+~/dotfiles/zsh/fzf_functions.zsh
+~/dotfiles/zsh/zshrc
+~/dotfiles/zsh/zsh_hooks.zsh
+~/dotfiles/zsh/promptTools.zsh
+~/dotfiles/zsh/promptOneLine.zsh
+~/dotfiles/zsh/promptTwoLine.zsh
+
+# fzf bookmarks
+~/dotfiles/fzf/bookmarks/cdg_files
+~/dotfiles/fzf/bookmarks/cdg_paths
+
+# latex presets
+~/dotfiles/LaTex/presets/exercise-header.tex
+~/dotfiles/LaTex/presets/script.tex
+
+# vim stuff
+~/dotfiles/nvim/init.vim
+~/dotfiles/nvim/plugins.vim
+~/dotfiles/nvim/pluginSettings.vim
+~/dotfiles/nvim/remaps.vim
+
+# tmux stuff
+~/dotfiles/tmux/tmux.conf
