@@ -1,36 +1,36 @@
 #cheatsheets
-~/cheatsheets
+/Users/daniel/cheatsheets
 
 # main folders
-~/scripts
-~/Documents
-~/Downloads
-~/Dropbox
-~/Desktop
-~/dev
+/Users/daniel/scripts
+/Users/daniel/Documents
+/Users/daniel/Downloads
+/Users/daniel/Dropbox
+/Users/daniel/Desktop
+/Users/daniel/dev
 
 # Projects
-~/dev/gitHub/projecteuler
+/Users/daniel/dev/gitHub/projecteuler
 
 #just my dotfiles
-~/dotfiles
-~/dotfiles/bin
-~/dotfiles/fzf
-~/dotfiles/LaTex
-~/dotfiles/nvim
-~/dotfiles/scripts
-~/dotfiles/tmux
-~/dotfiles/zsh
+/Users/daniel/dotfiles
+/Users/daniel/dotfiles/bin
+/Users/daniel/dotfiles/fzf
+/Users/daniel/dotfiles/LaTex
+/Users/daniel/dotfiles/nvim
+/Users/daniel/dotfiles/scripts
+/Users/daniel/dotfiles/tmux
+/Users/daniel/dotfiles/zsh
 
 # University repos
-~/uni_repos/repo_hci-dev
-~/uni_repos/repo_HLCV
-~/uni_repos/repo_HLCV_private
-~/uni_repos/repo_security
-~/uni_repos/repo_security_private
+/Users/daniel/uni_repos/repo_hci-dev
+/Users/daniel/uni_repos/repo_HLCV
+/Users/daniel/uni_repos/repo_HLCV_private
+/Users/daniel/uni_repos/repo_security
+/Users/daniel/uni_repos/repo_security_private
 
 # Dropbox uni stuff
-~/Dropbox/uni/HCI-dev
-~/Dropbox/uni/HLC-vision
-~/Dropbox/uni/security
+/Users/daniel/Dropbox/uni/HCI-dev
+/Users/daniel/Dropbox/uni/HLC-vision
+/Users/daniel/Dropbox/uni/security
 

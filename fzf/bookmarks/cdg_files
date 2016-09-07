@@ -1,30 +1,31 @@
 # ZSH files
-~/dotfiles/zsh/aliases.zsh
-~/dotfiles/zsh/bindkeys.zsh
-~/dotfiles/zsh/colors.zsh
-~/dotfiles/zsh/completion.zsh
-~/dotfiles/zsh/exports.zsh
-~/dotfiles/zsh/functions.zsh
-~/dotfiles/zsh/fzf_functions.zsh
-~/dotfiles/zsh/zshrc
-~/dotfiles/zsh/zsh_hooks.zsh
-~/dotfiles/zsh/promptTools.zsh
-~/dotfiles/zsh/promptOneLine.zsh
-~/dotfiles/zsh/promptTwoLine.zsh
+/Users/daniel/dotfiles/zsh/aliases.zsh
+/Users/daniel/dotfiles/zsh/bindkeys.zsh
+/Users/daniel/dotfiles/zsh/colors.zsh
+/Users/daniel/dotfiles/zsh/completion.zsh
+/Users/daniel/dotfiles/zsh/exports.zsh
+/Users/daniel/dotfiles/zsh/functions.zsh
+/Users/daniel/dotfiles/zsh/fzf_functions.zsh
+/Users/daniel/dotfiles/zsh/zshrc
+/Users/daniel/dotfiles/zsh/zsh_hooks.zsh
+/Users/daniel/dotfiles/zsh/promptTools.zsh
+/Users/daniel/dotfiles/zsh/promptOneLine.zsh
+/Users/daniel/dotfiles/zsh/promptTwoLine.zsh
 
 # fzf bookmarks
-~/dotfiles/fzf/bookmarks/cdg_files
-~/dotfiles/fzf/bookmarks/cdg_paths
+/Users/daniel/dotfiles/fzf/bookmarks/cdg_files
+/Users/daniel/dotfiles/fzf/bookmarks/cdg_paths
 
 # latex presets
-~/dotfiles/LaTex/presets/exercise-header.tex
-~/dotfiles/LaTex/presets/script.tex
+/Users/daniel/dotfiles/LaTex/presets/exercise-header.tex
+/Users/daniel/dotfiles/LaTex/presets/script.tex
 
 # vim stuff
-~/dotfiles/nvim/init.vim
-~/dotfiles/nvim/plugins.vim
-~/dotfiles/nvim/pluginSettings.vim
-~/dotfiles/nvim/remaps.vim
+/Users/daniel/dotfiles/nvim/init.vim
+/Users/daniel/dotfiles/nvim/plugins.vim
+/Users/daniel/dotfiles/nvim/pluginSettings.vim
+/Users/daniel/dotfiles/nvim/remaps.vim
 
 # tmux stuff
-~/dotfiles/tmux/tmux.conf
+/Users/daniel/dotfiles/tmux/tmux.conf
+
