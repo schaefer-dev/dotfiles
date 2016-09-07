@@ -22,4 +22,5 @@ compinit
 #important for autojump to work properly
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-
+# important for fzf to work properly
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

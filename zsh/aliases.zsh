@@ -182,6 +182,7 @@ alias hcidev="mypushd ~/dropbox/uni/hci-dev"
 alias repo_security="mypushd ~/uni_repos/repo_security"
 alias repo_security_private="mypushd ~/uni_repos/repo_security_private"
 alias repo_hlcv="mypushd ~/uni_repos/repo_HLCV"
+alias repo_hlcv_private="mypushd ~/uni_repos/repo_HLCV_private"
 alias repo_hci-dev="mypushd ~/uni_repos/repo_hci-dev"
 
 
@@ -249,6 +250,9 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+# use caffeinate for x seconds
+alias caffeinate="caffeinate -i -t"
 
 # vlc control
 alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
