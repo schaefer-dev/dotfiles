@@ -167,41 +167,10 @@ alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
 # Directory Links
 # -------------------------------------------------------------------
 
-# Shortcuts to University stuff
-alias vision="mypushd ~/dropbox/uni/HLC-vision"
-alias computervision="mypushd ~/dropbox/uni/HLC-vision"
-alias highlevel="mypushd ~/dropbox/uni/HLC-vision"
-alias hlcv="mypushd ~/dropbox/uni/HLC-vision"
-alias security="mypushd ~/dropbox/uni/security"
-alias secrepo="mypushd ~/drodbox/uni/security/repo"
-alias sec="mypushd ~/dropbox/uni/security"
-alias hci="mypushd ~/dropbox/uni/hci-dev"
-alias hcidev="mypushd ~/dropbox/uni/hci-dev"
-
-# Shortcuts to University repos
-alias repo_security="mypushd ~/uni_repos/repo_security"
-alias repo_security_private="mypushd ~/uni_repos/repo_security_private"
-alias repo_hlcv="mypushd ~/uni_repos/repo_HLCV"
-alias repo_hlcv_private="mypushd ~/uni_repos/repo_HLCV_private"
-alias repo_hci-dev="mypushd ~/uni_repos/repo_hci-dev"
-
-
-
 # Shortcuts to directories or files
 alias cl="cd; clear"
 alias c="clear"
-alias dotfiles="mypushd ~/dotfiles"
-alias cheatsheets="mypushd ~/cheatsheets"
-alias scripts="mypushd ~/scripts"
-alias dl="mypushd ~/Downloads"
-alias dt="mypushd ~/Desktop"
-alias db="mypushd ~/Dropbox"
-alias dropbox="mypushd ~/Dropbox"
-alias doc="mypushd ~/Documents"
-alias wallpaper="mypushd ~/Dropbox/Wallpaper"
 alias icons="mypushd ~/icons"
-alias euler="mypushd ~/dev/gitHub/projecteuler"
-alias dev="mypushd ~/dev"
 
 # important Files to quickedit
 alias zshrc="vim ~/dotfiles/zsh/zshrc"
