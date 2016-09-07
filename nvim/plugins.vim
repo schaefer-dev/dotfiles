@@ -22,6 +22,8 @@ call plug#begin('~/.config/nvim/plugged')
 " Language agnostic plugins {{{
 " ---------------------------------------------------------------------------------------------------------------------
 
+" Fixes folds
+Plug 'Konfekt/FastFold'
 " Asynchronous maker and linter (needs linters to work)
 Plug 'benekastah/neomake', { 'on': ['Neomake'] }
 " Autocomplete
