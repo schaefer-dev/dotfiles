@@ -28,3 +28,13 @@ function cdb() {
       cd "$dest_dir"
    fi
 }
+
+# Setup fob function to edit bookmarks
+# ------------------
+unalias fob 2> /dev/null
+function fob() {
+   local dest_file=$(cdscuts_glob_echo_files | fzf-tmux )
+   if [[ $dest_file != '' ]]; then
+      vim "$dest_file"
+   fi
+}
