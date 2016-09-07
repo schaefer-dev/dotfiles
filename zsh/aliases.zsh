@@ -292,3 +292,6 @@ alias pv="proverif -in pi"
 # neovim masterrace
 alias vim="nvim"
 
+# using fzf tmux default
+alias fzf="fzf-tmux"
+
