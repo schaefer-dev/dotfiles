@@ -29,3 +29,11 @@
 # tmux stuff
 /Users/daniel/dotfiles/tmux/tmux.conf
 
+# Cheatsheets
+/Users/daniel/cheatsheets/fzf.md
+/Users/daniel/cheatsheets/git.md
+/Users/daniel/cheatsheets/tmux.md
+/Users/daniel/cheatsheets/commandline.md
+/Users/daniel/cheatsheets/vim.md
+/Users/daniel/cheatsheets/tmux.md
+/Users/daniel/cheatsheets/zsh.md
