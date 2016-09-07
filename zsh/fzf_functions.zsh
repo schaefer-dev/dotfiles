@@ -1,13 +1,34 @@
 # Modified version where you can press
 #   - CTRL-O to open with `open` command,
 #   - CTRL-E or Enter key to open with the $EDITOR
-function fo() {
+function vimf() {
   local out file key
   out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
   key=$(head -1 <<< "$out")
   file=$(head -2 <<< "$out" | tail -1)
   if [ -n "$file" ]; then
-    [ "$key" = ctrl-o ] && open "$file" || ${EDITOR:-vim} "$file"
+    ${EDITOR:-vim} "$file"
+  fi
+}
+
+function vimrf() {
+  local out file key
+  out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
+  key=$(head -1 <<< "$out")
+  file=$(head -2 <<< "$out" | tail -1)
+  if [ -n "$file" ]; then
+    open -a VimR.app "$file"
+  fi
+}
+
+
+function openf() {
+  local out file key
+  out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
+  key=$(head -1 <<< "$out")
+  file=$(head -2 <<< "$out" | tail -1)
+  if [ -n "$file" ]; then
+    open "$file"
   fi
 }
 
@@ -32,7 +53,7 @@ function cdb() {
 # Setup fob function to edit bookmarks
 # ------------------
 unalias fob 2> /dev/null
-function fob() {
+function vimb() {
    local dest_file=$(cdscuts_glob_echo_files | fzf-tmux )
    if [[ $dest_file != '' ]]; then
       vim $dest_file

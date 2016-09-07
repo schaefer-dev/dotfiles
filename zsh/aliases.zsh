@@ -172,16 +172,6 @@ alias cl="cd; clear"
 alias c="clear"
 alias icons="mypushd ~/icons"
 
-# important Files to quickedit
-alias zshrc="vim ~/dotfiles/zsh/zshrc"
-alias aliases="vim ~/dotfiles/zsh/aliases.zsh"
-alias functions="vim ~/dotfiles/zsh/functions.zsh"
-# alias vimrc="vim ~/dotfiles/mvim/vimrc"
-alias vimrc="nvimrc"
-alias nvimrc="vim ~/dotfiles/config/nvim/init.vim"
-alias tmuxconf="vim ~/dotfiles/tmux/tmux.conf"
-alias gitignore="vim .gitignore"
-alias kwmrc="vim ~/dotfiles/kwm/kwmrc"
 alias gig="vim .gitignore"
 
 # -------------------------------------------------------------------
@@ -260,6 +250,7 @@ alias pv="proverif -in pi"
 
 # neovim masterrace
 alias vim="nvim"
+alias vimr="open -a VimR.app"
 
 # using fzf tmux default
 alias fzf="fzf-tmux"
