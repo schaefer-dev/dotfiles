@@ -33522,11 +33522,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 486 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>614 300 796 473 0 0 1680 1027 </string>
+	<string>614 278 918 495 0 0 1680 1027 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>170 114 1010 783 0 0 1680 1027 </string>
+	<string>360 207 1010 783 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>231 424 810 603 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
@@ -33771,7 +33771,7 @@
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -33825,7 +33825,7 @@
 				<real>0.11772145330905914</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -36963,7 +36963,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-16T12:02:33Z</date>
+	<date>2016-08-19T11:19:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
