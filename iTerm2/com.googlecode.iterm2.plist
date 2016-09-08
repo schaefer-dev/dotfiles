@@ -33522,13 +33522,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 486 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>614 278 918 495 0 0 1680 1027 </string>
+	<string>77 121 796 473 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>360 207 1010 783 0 0 1680 1027 </string>
+	<string>167 221 1010 783 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>231 424 810 603 0 0 1680 1027 </string>
+	<string>394 801 810 603 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33544,7 +33544,7 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>129 327 430 307 0 0 2560 1417 </string>
+	<string>129 42 810 603 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>886 930 430 307 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -33829,7 +33829,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Advanced</string>
+			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -34373,7 +34373,7 @@
 			<key>AWDS Window Directory</key>
 			<string></string>
 			<key>AWDS Window Option</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Allow Title Setting</key>
@@ -34627,7 +34627,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Advanced</string>
+			<string>No</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -36963,7 +36963,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-08-19T11:19:07Z</date>
+	<date>2016-08-31T20:50:12Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -37015,7 +37015,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.7</string>
+	<string>3.0.8</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
