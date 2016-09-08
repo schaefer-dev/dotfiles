@@ -2,6 +2,9 @@
 alias python=python3
 alias pip=pip3
 
+# dock tmux
+alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
+
 # -------------------------------------------------------------------
 # use nocorrect alias to prevent auto correct from "fixing" these
 # -------------------------------------------------------------------

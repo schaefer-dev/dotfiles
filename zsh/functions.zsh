@@ -102,6 +102,24 @@ dash(){
     open "dash://$1"
 }
 
+# function to open Stuff in a new iTerm Window
+popout_helper(){
+    osascript <<-EOF
+    tell application "iTerm"
+    create window with profile "ZSH_noTmux"
+    select first window
+    launch session "Default Session"
+        tell current session of first window
+            write text "cd $1; ${@:2}"
+        end tell
+    end tell
+EOF
+}
+
+popout(){
+  popout_helper $(pwd) $@
+}
+
 # function to open livestream from twitch in a new window using multithreading
 livestream(){
     osascript <<-EOF
@@ -115,6 +133,7 @@ livestream(){
     end tell
 EOF
 }
+
 
 # function to download twitch vod using livestreamer
 # livestreamdl takes stream link as first parameter
