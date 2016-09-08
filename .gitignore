@@ -3,6 +3,9 @@
     url = http://github.com/username/repo.git
     ignore = untracked  # <====
 
+# ignore texmate
+config/xm1/
+
 weechat/logs/*
 bin/JDownloader 2.0/*
 mvim/vim/bundle/*
