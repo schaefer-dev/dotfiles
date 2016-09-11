@@ -1,7 +1,3 @@
-# python 3 default!
-alias python=python3
-alias pip=pip3
-
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
 
