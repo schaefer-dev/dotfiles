@@ -128,7 +128,7 @@ livestream(){
     select first window
     launch session "Default Session"
         tell current session of first window
-            write text "livestreamer twitch.tv/'$1' source --player-passthrough=hls --hls-segment-threads 2; exit"
+            write text "livestreamer twitch.tv/'$1' source --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6; exit"
         end tell
     end tell
 EOF
