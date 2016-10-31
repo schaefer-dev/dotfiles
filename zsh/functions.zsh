@@ -133,6 +133,18 @@ livestream(){
     end tell
 EOF
 }
+livestream1080p60(){
+    osascript <<-EOF
+    tell application "iTerm"
+    create window with profile "ZSH_livestream"
+    select first window
+    launch session "Default Session"
+        tell current session of first window
+            write text "livestreamer twitch.tv/'$1' 1080p60 --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6; exit"
+        end tell
+    end tell
+EOF
+}
 
 
 # function to download twitch vod using livestreamer
@@ -258,6 +270,22 @@ web(){
 
     if [ "$1" = "twitch" ]; then
 		open 'http://www.twitch.tv'
+		return
+	fi
+    if [ "$1" = "recht" ] || [ "$1" = "jura" ]; then
+        if [ "$2" = "material" ]; then
+            open "https://hyperion.cispa.saarland/folien/2016-WS/Recht-Cybersicherheit/"
+            return
+        fi
+		open 'http://www.uni-saarland.de/lehrstuhl/sorge/lehre/winter-20162017/vorlesung-recht-der-cybersicherheit.html'
+		return
+	fi
+    if [ "$1" = "pic" ] || [ "$1" = "pit" ]; then
+        if [ "$2" = "piazza" ]; then
+            open "https://piazza.com/uni-saarland.de/winter2017/cs17/home"
+            return
+        fi
+		open 'http://www.sps.cs.uni-saarland.de/teaching/16WS/pec/index.html'
 		return
 	fi
 
