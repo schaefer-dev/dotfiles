@@ -272,6 +272,16 @@ web(){
 		open 'http://www.twitch.tv'
 		return
 	fi
+
+    if [ "$1" = "gg" ]; then
+		open 'https://dejure.org/gesetze/GG'
+		return
+	fi
+
+    if [ "$1" = "stgb" ]; then
+		open 'https://dejure.org/gesetze/StGB'
+		return
+	fi
     if [ "$1" = "recht" ] || [ "$1" = "jura" ]; then
         if [ "$2" = "material" ]; then
             open "https://hyperion.cispa.saarland/folien/2016-WS/Recht-Cybersicherheit/"
