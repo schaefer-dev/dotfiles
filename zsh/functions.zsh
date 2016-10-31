@@ -280,7 +280,7 @@ web(){
 		open 'http://www.uni-saarland.de/lehrstuhl/sorge/lehre/winter-20162017/vorlesung-recht-der-cybersicherheit.html'
 		return
 	fi
-    if [ "$1" = "pic" ] || [ "$1" = "pit" ]; then
+    if [ "$1" = "pec" ] || [ "$1" = "pet" ]; then
         if [ "$2" = "piazza" ]; then
             open "https://piazza.com/uni-saarland.de/winter2017/cs17/home"
             return
