@@ -48,3 +48,9 @@ export PATH="/Users/daniel/anaconda/bin:$PATH"
 # goLang stuff
 export GOPATH=~/goPath
 
+# export UTF-8
+export LANG=en_US.UTF-8
+
+
+# Tensor flow OSX 64 | CPU only
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0-py3-none-any.whl
