@@ -55,6 +55,9 @@ augroup END
 " set leader Key to space
 let mapleader=" "
 
+" map jj to <esc> in insert mode
+:imap jj <Esc>
+
 " <Leader>rtw will remove all trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
