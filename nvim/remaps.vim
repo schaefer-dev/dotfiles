@@ -1,6 +1,9 @@
 " set leader Key to space
 let mapleader=" "
 
+" remap jj to esc only in insert mode
+:imap jj <Esc>
+
 set cb=unnamed
 
 " <Leader>rtw will remove all trailing whitespace
