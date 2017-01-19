@@ -10,7 +10,7 @@ source ~/dotfiles/zsh/bindkeys.zsh
 source ~/dotfiles/zsh/functions.zsh
 source ~/dotfiles/zsh/history.zsh
 source ~/dotfiles/zsh/zsh_hooks.zsh
-source ~/dotfiles/zsh/vimMode.zsh
+# source ~/dotfiles/zsh/vimMode.zsh
 source ~/dotfiles/zsh/fzf_functions.zsh
 
 # add custom Completion
