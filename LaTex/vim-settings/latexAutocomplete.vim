@@ -22,6 +22,6 @@ augroup MyIMAPs
         au VimEnter * call IMAP("''","''<++>''<++>",'tex')
 augroup END
 
-let g:Tex_CompileRule_pdf = 'latexmk -pdf'
+" let g:Tex_CompileRule_pdf = 'latexmk -pdf'
 
 
