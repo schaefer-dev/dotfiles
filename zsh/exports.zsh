@@ -44,6 +44,9 @@ export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 # Anaconda python 
 export PATH="/Users/daniel/anaconda/bin:$PATH"
 
+# Latex path
+export PATH="/Library/TeX/texbin:$PATH"
+
 
 # goLang stuff
 export GOPATH=~/goPath
