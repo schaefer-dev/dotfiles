@@ -4,9 +4,19 @@
 set laststatus=2
 " hide -- INSERT --
 set noshowmode 
+      
+" left right config for lightline
+      "\   'left': [ [ 'mode', 'paste' ]],
+      "\   'right': [ ['fugitive', 'filename']]
+      "\ },
 
+" lightline config
 let g:lightline = {
       \ 'colorscheme': 'hybrid',
+      \ 'active': {
+      \   'left': [ [ 'fugitive', 'filename', 'paste' ]],
+      \   'right': []
+      \ },
       \ 'component': {
       \   'readonly': '%{&readonly?"":""}',
       \ },
