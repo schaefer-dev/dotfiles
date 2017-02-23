@@ -11,6 +11,7 @@ syntax on
 " Color scheme 
 set bg=dark
 colorscheme hybrid
+"colorscheme gruvbox
 set termguicolors			" True color support
 
 " color for cursorline and cursorcolumn

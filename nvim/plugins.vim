@@ -133,6 +133,8 @@ Plug 'tomasr/molokai'
 Plug 'cocopon/iceberg.vim'
 " Tender
 Plug 'jacoborus/tender.vim'
+" gruvbox
+Plug 'morhetz/gruvbox'
 "}}}
 
 
