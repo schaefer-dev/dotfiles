@@ -13,6 +13,10 @@ source ~/dotfiles/zsh/zsh_hooks.zsh
 # source ~/dotfiles/zsh/vimMode.zsh
 source ~/dotfiles/zsh/fzf_functions.zsh
 
+# scripts
+source ~/dotfiles/scripts/livestream.zsh
+source ~/dotfiles/scripts/web.zsh
+
 # add custom Completion
 fpath=(~/dotfiles/zsh/completion $fpath)
 
