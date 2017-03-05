@@ -155,7 +155,7 @@ set background=dark
 
 " hybrid color theme
 let g:hybrid_use_Xresources = 1
-colorscheme hybrid
+colorscheme my-hybrid
 
 " color for cursor
 "hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
