@@ -113,6 +113,8 @@ hi! link BufTabLineHidden Comment
 hi! link BufTabLineFill Comment
 
 
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 
 source ~/dotfiles/config/nvim/remaps.vim

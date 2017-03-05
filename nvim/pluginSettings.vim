@@ -26,6 +26,13 @@ let g:lightline = {
 "}}}
 
 
+" -----------------------------------------------------
+" Python-mode settings {{{
+" -----------------------------------------------------
+let g:pymode_python = 'python3'
+"}}}
+
+
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 
