@@ -108,26 +108,26 @@ web(){
 		return
 	fi
 
-    if [ "$1" = "gg" ]; then
-		open 'https://dejure.org/gesetze/GG'
-		return
-	fi
-
-    if [ "$1" = "stgb" ]; then
-		open 'https://dejure.org/gesetze/StGB'
-		return
-	fi
-    if [ "$1" = "recht" ] || [ "$1" = "jura" ]; then
-        if [ "$2" = "material" ]; then
+    if [ "$1" = "hci" ]; then
+        if [ "$2" = "moodle" ]; then
             open "https://hyperion.cispa.saarland/folien/2016-WS/Recht-Cybersicherheit/"
             return
         fi
 		open 'http://www.uni-saarland.de/lehrstuhl/sorge/lehre/winter-20162017/vorlesung-recht-der-cybersicherheit.html'
 		return
 	fi
-    if [ "$1" = "pec" ] || [ "$1" = "pet" ]; then
-        if [ "$2" = "piazza" ]; then
-            open "https://piazza.com/uni-saarland.de/winter2017/cs17/home"
+
+    if [ "$1" = "ethic" ] || [ "$1" = "nerds" ]; then
+        if [ "$2" = "material" ]; then
+            open "https://hyperion.cispa.saarland/folien/2016-WS/Recht-Cybersicherheit"
+            return
+        fi
+		open 'https://dcms.cs.uni-saarland.de/ethics_17/students/view'
+		return
+	fi
+    if [ "$1" = "software" ] || [ "$1" = "engineering" ]; then
+        if [ "$2" = "placeholder" ]; then
+            open "placeholder"
             return
         fi
 		open 'http://www.sps.cs.uni-saarland.de/teaching/16WS/pec/index.html'
