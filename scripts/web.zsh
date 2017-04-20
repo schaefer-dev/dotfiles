@@ -59,15 +59,15 @@ web(){
 	fi
 
 
-	if [ "$1" = "hlcv" ] || [ "$1" = "highlevel" ]; then
+    if [ "$1" = "hlcv" ] || [ "$1" = "highlevel" ]; then
         open 'http://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/teaching/courses/high-level-computer-vision/'
 	fi
 
-	if [ "$1" = "hci" ] || [ "$1" = "hcidev" ]; then
+    if [ "$1" = "hci" ] || [ "$1" = "hcidev" ]; then
         open 'http://umtl.cs.uni-saarland.de/index.php?id=288'
 	fi
 
-	if [ "$1" = "sec" ] || [ "$1" = "security" ]; then
+    if [ "$1" = "sec" ] || [ "$1" = "security" ]; then
         if [ "$2" = "piazza" ]; then
             open "https://piazza.com/class/in00qm5p95r5oh"
             return
@@ -130,7 +130,7 @@ web(){
             open "placeholder"
             return
         fi
-		open 'http://www.sps.cs.uni-saarland.de/teaching/16WS/pec/index.html'
+		open 'https://www.st.cs.uni-saarland.de/edu/se/2017/projects.php'
 		return
 	fi
 
