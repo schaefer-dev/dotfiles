@@ -162,6 +162,7 @@ alias sz='source ~/.zshrc'
 alias reload="exec $SHELL -l"
 
 # colortest_etc launch
+alias colors="zsh ~/dotfiles/scripts/colortests/colors_esc"
 alias colortest="zsh ~/dotfiles/scripts/colortests/colors_esc"
 alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
 
