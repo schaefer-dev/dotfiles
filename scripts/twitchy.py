@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Requires: python3, livestreamer, requests
-# rev = 51
+# rev = 52
 
 
 import sys
@@ -37,6 +37,11 @@ class Colors:
 def configure_options(special_occasion):
 	try:
 		print(Colors.CYAN + ' Configure:' + Colors.ENDC)
+
+		backend = input(' Backend: (s)treamlink / (l)ivestreamer ')
+		if backend != 'l':
+			backend = 'streamlink'
+
 		player = input(' Media player [mpv]: ')
 		if which(player) is None:
 			if which('mpv') is not None:
@@ -83,18 +88,33 @@ def configure_options(special_occasion):
 			check_interval = int(check_int)
 
 		print('\n' + Colors.CYAN + ' Current Settings:' + Colors.ENDC)
-		penultimate_check = """ Media Player: {0}
+		penultimate_check = """ Backend: {6}
+ Media Player: {0}
  Default Quality: {1}
  Truncate status at: {2}
  Number of faves: {3}
  Display chat for multiple streams: {4}
- Check interval: {5}""".format(Colors.YELLOW + player + Colors.ENDC, Colors.YELLOW + default_quality + Colors.ENDC, Colors.YELLOW + str(truncate_status_at) + Colors.ENDC, Colors.YELLOW + str(number_of_faves_displayed) + Colors.ENDC, Colors.YELLOW + str(display_chat_for_multiple_twitch_streams) + Colors.ENDC, Colors.YELLOW + str(check_interval) + Colors.ENDC)
+ Check interval: {5}""".format(Colors.YELLOW + player + Colors.ENDC,
+								Colors.YELLOW + default_quality + Colors.ENDC,
+								Colors.YELLOW + str(truncate_status_at) + Colors.ENDC,
+								Colors.YELLOW + str(number_of_faves_displayed) + Colors.ENDC,
+								Colors.YELLOW + str(display_chat_for_multiple_twitch_streams) + Colors.ENDC,
+								Colors.YELLOW + str(check_interval) + Colors.ENDC,
+								Colors.YELLOW + backend + Colors.ENDC)
 
 		print(penultimate_check)
 
 		do_we_like = input(' Does this look correct to you? [Y/n]: ')
 		if do_we_like == 'Y' or do_we_like == 'yes' or do_we_like == 'y' or do_we_like == '':
-			options_to_insert = [['player', player], ['mpv_hardware_acceleration', mpv_hardware_acceleration], ['default_quality', default_quality], ['truncate_status_at', truncate_status_at], ['number_of_faves_displayed', number_of_faves_displayed], ['display_chat_for_multiple_twitch_streams', display_chat_for_multiple_twitch_streams], ['check_interval', check_interval]]
+			options_to_insert = [
+						['player', player],
+						['mpv_hardware_acceleration', mpv_hardware_acceleration],
+						['default_quality', default_quality],
+						['truncate_status_at', truncate_status_at],
+						['number_of_faves_displayed', number_of_faves_displayed],
+						['display_chat_for_multiple_twitch_streams', display_chat_for_multiple_twitch_streams],
+						['check_interval', check_interval],
+						['backend', backend]]
 
 			database = sqlite3.connect(database_path)
 			if special_occasion == 'FirstRun':
@@ -122,8 +142,8 @@ def configure_options(special_occasion):
 
 # Stuff that isn't options. Or optional. Lel.
 """ Check for requirements """
-if which('livestreamer') is None:
-	print(Colors.RED + ' livestreamer ' + Colors.ENDC + 'is not installed. FeelsBadMan.')
+if which('livestreamer') is None and which('streamlink') is None:
+	print(Colors.RED + ' livestreamer / streamlink' + Colors.ENDC + ' not installed. FeelsBadMan.')
 	exit()
 
 """ Existential doubts go here """
@@ -149,7 +169,8 @@ class Options:
 		3: truncate_status_at
 		4: number_of_faves_displayed
 		5: display_chat_for_multiple_twitch_streams
-		6: check_interval """
+		6: check_interval
+		7: backend """
 
 		player = options_from_database[0][0]
 		mpv_hardware_acceleration = literal_eval(options_from_database[1][0])
@@ -163,9 +184,18 @@ class Options:
 		number_of_faves_displayed = int(options_from_database[4][0])
 		display_chat_for_multiple_twitch_streams = literal_eval(options_from_database[5][0])
 		check_interval = int(options_from_database[6][0])
+		backend = options_from_database[7][0]
 
 		""" Run time option """
 		conky_run = False
+
+		""" Map to alternate quality settings """
+		alternate_quality = {
+			'low': '360p',
+			'medium': '480p',
+			'high': '720p',
+			'source': 'best'}
+
 	except:
 		print(Colors.RED + ' Error getting options. Running --configure:' + Colors.ENDC)
 		configure_options('TheDudeAbides')
@@ -516,7 +546,7 @@ def vod_watch(channel_input):
 	playtime_instances([[video_final, default_quality, display_name, game_name, [channel_input, title_final]]])
 
 
-# Generate stuff for livestreamer to agonize endless over. Is it fat? It's a program so no.
+# Generate stuff for livestreamer / streamlink to agonize endless over. Is it fat? It's a program so no.
 def watch(channel_input, argument):
 	database_status = database.execute("SELECT Name,AltName FROM channels").fetchall()
 	if not database_status:
@@ -702,11 +732,13 @@ def watch(channel_input, argument):
 		print(Colors.RED + ' Huh? Wut? Lel? Kappa?' + Colors.ENDC)
 
 
-# Takes care of the livestreamer process(es) as well as time tracking
+# Takes care of the livestreamer / streamlink process(es) as well as time tracking
 class Playtime:
 	def __init__(self, final_selection, stream_quality, display_name, game_name, show_chat, channel_name_if_vod):
 		self.final_selection = final_selection
 		self.stream_quality = stream_quality
+		self.stream_quality_alternate = Options.alternate_quality[self.stream_quality]
+		self.alternate_quality_tried = False  # In case the alternate quality doesn't work either
 		self.display_name = display_name
 		self.game_name = game_name
 		self.show_chat = show_chat
@@ -731,19 +763,34 @@ class Playtime:
 		if self.show_chat is True:
 			try:
 				webbrowser.get('chromium').open_new('--app=http://www.twitch.tv/%s/chat?popout=' % self.final_selection)
-			except:
+			except webbrowser.Error:
 				webbrowser.open_new('http://www.twitch.tv/%s/chat?popout=' % self.final_selection)
 
 		if self.channel_name_if_vod is None:
 			print(' ' + Colors.WHITE + self.display_name + Colors.ENDC + ' | ' + Colors.WHITE + self.stream_quality.title() + Colors.ENDC)
 			player_final = Options.player_final + ' --title ' + self.display_name.replace(' ', '')
-			self.args_to_subprocess = "livestreamer twitch.tv/'{0}' '{1}' --player '{2}' --hls-segment-threads 3 --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(self.final_selection, self.stream_quality, player_final)
+
+			self.args_to_subprocess = "{3} twitch.tv/'{0}' '{1}' --player '{2}' --hls-segment-threads 3 --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(
+				self.final_selection, self.stream_quality, player_final, Options.backend)
+
+			# Alternate quality in case the default one errors out
+			self.args_to_subprocess_alternate = "{3} twitch.tv/'{0}' '{1}' --player '{2}' --hls-segment-threads 3 --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(
+				self.final_selection, self.stream_quality_alternate, player_final, Options.backend)
 		else:
 			print(' ' + Colors.WHITE + self.display_name + ': ' + self.video_title_if_vod + Colors.ENDC + ' | ' + Colors.WHITE + self.stream_quality.title() + Colors.ENDC)
 			player_final = Options.player_final + ' --title ' + self.display_name
-			self.args_to_subprocess = "livestreamer '{0}' '{1}' --player '{2}' --hls-segment-threads 3 --player-passthrough=hls --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(self.final_selection, self.stream_quality, player_final)
+
+			self.args_to_subprocess = "{3} '{0}' '{1}' --player '{2}' --hls-segment-threads 3 --player-passthrough=hls --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(
+				self.final_selection, self.stream_quality, player_final, Options.backend)
+
+			# Alternate quality in case the default one errors out
+			self.args_to_subprocess_alternate = "{3} '{0}' '{1}' --player '{2}' --hls-segment-threads 3 --player-passthrough=hls --http-header Client-ID=guulhcvqo9djhuyhb2vi56wqnglc351".format(
+				self.final_selection, self.stream_quality_alternate, player_final, Options.backend)
 
 		self.args_to_subprocess = shlex.split(self.args_to_subprocess)
+		self.args_to_subprocess_alternate = shlex.split(self.args_to_subprocess_alternate)
+
+		# Starts with the default quality setting
 		self.livestreamer_process = subprocess.Popen(self.args_to_subprocess, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
 
 	def time_tracking(self):
@@ -831,13 +878,22 @@ def playtime_instances(final_selection):
 				if playtime_instance[k].livestreamer_process.returncode == 1:
 					stream_error = playtime_instance[k].livestreamer_process.stdout.read().decode('utf-8').split('\n')
 					error_message = [er for er in stream_error if 'error:' in er]
-					print(' ' + Colors.RED + playtime_instance[k].display_name + Colors.ENDC + ' (' + error_message[0] + ')')
-					# print(' ' + Colors.RED + playtime_instance[k].display_name + Colors.ENDC + ' (' + ' '.join(playtime_instance[k].args_to_subprocess) + ')')
-					database.execute("DELETE FROM miscellaneous WHERE Name = '{0}'".format(playtime_instance[k].display_name))
-					database.commit()
+
+					""" This hack is needed because the Twitch API does not give quality settings
+					We move on to the alternate quality settings specified in the Options class
+					OR we error out. It's a good day to die. """
+					if error_message[0][:30] == 'error: The specified stream(s)' and playtime_instance[k].alternate_quality_tried is False:
+						playtime_instance[k].livestreamer_process = subprocess.Popen(
+							playtime_instance[k].args_to_subprocess_alternate, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
+						playtime_instance[k].alternate_quality_tried = True
+					else:
+						print(' ' + Colors.RED + playtime_instance[k].display_name + Colors.ENDC + ' (' + error_message[0] + ')')
+						database.execute("DELETE FROM miscellaneous WHERE Name = '{0}'".format(playtime_instance[k].display_name))
+						database.commit()
+						playing_streams.remove(k)
 				else:
 					playtime_instance[k].time_tracking()
-				playing_streams.remove(k)
+					playing_streams.remove(k)
 		try:
 			keypress, o, e = select.select([sys.stdin], [], [], 0.8)
 			if keypress:
