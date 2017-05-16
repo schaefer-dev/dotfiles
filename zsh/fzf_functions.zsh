@@ -50,7 +50,17 @@ function cdb() {
    fi
 }
 
-# Setup fob function to edit bookmarks
+# Setup openb function to cd into bookmarks
+# ------------------
+unalias openb 2> /dev/null
+function openb() {
+   local dest_dir=$(cdscuts_glob_echo | fzf-tmux )
+   if [[ $dest_dir != '' ]]; then
+      open $dest_dir
+   fi
+}
+
+# Setup vimb function to edit bookmarks
 # ------------------
 unalias fob 2> /dev/null
 function vimb() {
