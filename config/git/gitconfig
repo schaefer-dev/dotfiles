@@ -1,0 +1,21 @@
+[user]
+	email = schaefer.dev@gmail.com
+	name = Daniel Schäfer
+[core]
+	edit = vim
+	editor = nvim
+	excludesfile = /Users/daniel/.gitignore_global
+[merge]
+	conflictstyle = diff3
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	l = rlog = !"git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\\]/aaaaaaaaaa/g' -e 's/[/]/\\\\\\\\/g' -e 's/aaaaaaaaaa/\\\\//g' | less -r +G -X"
+	lg = rlog = !"git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\\]/aaaaaaaaaa/g' -e 's/[/]/\\\\\\\\/g' -e 's/aaaaaaaaaa/\\\\//g' | less -r +G -X"
+[push]
+	default = upstream
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
