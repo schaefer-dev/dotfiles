@@ -182,6 +182,8 @@ alias gig="vim .gitignore"
 # Quick Functions for personal use
 # -------------------------------------------------------------------
 
+alias py="bpython"
+
 alias reddit="rtv"
 
 # python3 script checking twitch streamers
