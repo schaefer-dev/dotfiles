@@ -11,8 +11,6 @@
 	ui = auto
 [alias]
 	co = checkout
-	l = rlog = !"git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\\]/aaaaaaaaaa/g' -e 's/[/]/\\\\\\\\/g' -e 's/aaaaaaaaaa/\\\\//g' | less -r +G -X"
-	lg = rlog = !"git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\\]/aaaaaaaaaa/g' -e 's/[/]/\\\\\\\\/g' -e 's/aaaaaaaaaa/\\\\//g' | less -r +G -X"
 [push]
 	default = upstream
 [filter "lfs"]

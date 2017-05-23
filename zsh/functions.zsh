@@ -26,6 +26,10 @@ ex() {
     fi
 }
 
+testLoggit() {
+  echo  "$(git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\]/aaaaaaaaaa/g' -e 's/[/]/\\/g' -e 's/aaaaaaaaaa/\//g' | less -r +G -X)"
+}
+
 
 countdown(){
    date1=$((`date +%s` + $1)); 

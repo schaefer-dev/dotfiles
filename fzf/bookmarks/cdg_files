@@ -29,6 +29,9 @@
 # tmux stuff
 /Users/daniel/dotfiles/tmux/tmux.conf
 
+# git stuff
+/Users/daniel/dotfiles/config/git/gitconfig
+
 # Cheatsheets
 /Users/daniel/cheatsheets/fzf.md
 /Users/daniel/cheatsheets/git.md
