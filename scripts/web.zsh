@@ -125,12 +125,24 @@ web(){
 		open 'https://dcms.cs.uni-saarland.de/ethics_17/students/view'
 		return
 	fi
-    if [ "$1" = "software" ] || [ "$1" = "engineering" ]; then
-        if [ "$2" = "placeholder" ]; then
-            open "placeholder"
+    if [ "$1" = "ping" ]; then
+        if [ "$2" = "material" ]; then
+            open "https://piazza.com/uni-saarland.de/summer2017/ping2017/resources"
             return
         fi
-		open 'https://www.st.cs.uni-saarland.de/edu/se/2017/projects.php'
+		open 'https://piazza.com/class/iyvdm2lileg7hu'
+		return
+	fi
+    if [ "$1" = "software" ] || [ "$1" = "se" ]; then
+        if [ "$2" = "gitlab" ] || [ "$2" = "git" ]; then
+            open "https://repos.se.cispa.saarland/ezekiel_soremekun/projectp029-code-plagiarism-detection/issues"
+            return
+        fi
+	    if [ "$2" = "forum" ]; then
+		open "https://forum.st.cs.uni-saarland.de"
+		return
+	    fi
+		open 'https://www.st.cs.uni-saarland.de/edu/se/2017/lectures.php'
 		return
 	fi
 
