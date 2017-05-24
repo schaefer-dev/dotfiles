@@ -4,7 +4,6 @@ let mapleader=" "
 " remap jj to esc only in insert mode
 :imap jj <Esc>
 
-set cb=unnamed
 
 " <Leader>rtw will remove all trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
@@ -19,3 +18,16 @@ nmap <leader>l :set list!<CR>
 " Compile C Program with F8
 map <F8> :w <CR> :!gcc % && ./a.out <CR>
 
+"" copy and paste from system clipboard by using leader key
+
+" " Copy to system clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" " Paste from system clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P

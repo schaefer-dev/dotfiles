@@ -42,7 +42,7 @@ set foldnestmax=10          " deepest fold is 10 levels
 set nofoldenable            " don't fold by default
 set foldlevel=1
 
-set clipboard=unnamed
+set clipboard+=unnamedplus
 
 set ttyfast                 " faster redrawing
 set diffopt+=vertical
@@ -78,7 +78,7 @@ set encoding=utf8           " sets character encoding
 set scrolloff=10			" show at least x lines above/below the cursor
 set history=999
 
-set cb=unnamed				" clipboard setting to make everything work in vim
+" set cb=unnamed				" clipboard setting to make everything work in vim
 
 
 " vim tab navigation
