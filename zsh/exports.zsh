@@ -40,6 +40,9 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
 export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 
+# homebrew default override
+export PATH="/usr/local/bin:$PATH"
+
 # Anaconda python 
 export PATH="/Users/daniel/anaconda/bin:$PATH"
 
@@ -56,3 +59,4 @@ export LANG=en_US.UTF-8
 
 # Tensor flow OSX 64 | CPU only
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0-py3-none-any.whl
+
