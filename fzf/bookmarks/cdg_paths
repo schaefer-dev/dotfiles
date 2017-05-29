@@ -27,32 +27,33 @@
 /Users/daniel/dotfiles/zsh
 
 # University repos
-/Users/daniel/uni_repos/repo_hci-dev
-/Users/daniel/uni_repos/repo_HLCV
-/Users/daniel/uni_repos/repo_HLCV_private
-/Users/daniel/uni_repos/repo_security
-/Users/daniel/uni_repos/repo_security_private
-/Users/daniel/uni_repos/repo_prog_for_engineers
-/Users/daniel/uni_repos/repo_human_computer_interaction
-/Users/daniel/uni_repos/repo_ethic_for_nerds
+/Users/daniel/uni_repos/repo_ping
+/Users/daniel/uni_repos/repo_hci
+/Users/daniel/uni_repos/repo_ethic
 /Users/daniel/uni_repos/repo_se17
 /Users/daniel/Dropbox/uni/repo_bachelorArbeit
 
 # Dropbox uni stuff
-/Users/daniel/Dropbox/uni/software_engineering
-/Users/daniel/Dropbox/uni/human_computer_interaction
-/Users/daniel/Dropbox/uni/ethic_for_nerds
-/Users/daniel/Dropbox/uni/prog_for_engineers
+/Users/daniel/Dropbox/uni/se
+/Users/daniel/Dropbox/uni/hci
+/Users/daniel/Dropbox/uni/ethic
+/Users/daniel/Dropbox/uni/ping
 
 # Archiv uni stuff
 /Users/daniel/Documents/Uni Archiv + Fachschaft/cryptography
 /Users/daniel/Documents/Uni Archiv + Fachschaft/hacking
 /Users/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev
+/Users/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev/repo_human_computer_interaction_dev
 /Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision
+/Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV
+/Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV_private
 /Users/daniel/Documents/Uni Archiv + Fachschaft/security
+/Users/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security
+/Users/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security_private
 /Users/daniel/Documents/Uni Archiv + Fachschaft/medieninformatik
 /Users/daniel/Documents/Uni Archiv + Fachschaft/recht_der_cybersicherheit
-/Users/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks
+/Users/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/repo_neuralNetworks
+/Users/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/
 
 
 # Courses
