@@ -4,6 +4,9 @@ set guifont=Inconsolata\ for\ Powerline:h16.00
 set guioptions-=rL
 set guioptions-=e
 
+set visualbell                  "No sounds
+set autoread                    "Reload files changed outside vim
+
 
 "disable autostart of nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0
