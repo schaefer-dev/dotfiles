@@ -29,3 +29,9 @@ compinit
 
 # important for fzf to work properly
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# load RVM Ruby Manager
+source /Users/daniel/.rvm/scripts/rvm
+
+# load Tmuxinator
+source /Users/daniel/dotfiles/bin/tmuxinator.zsh
