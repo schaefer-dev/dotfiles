@@ -261,3 +261,6 @@ alias vimr="open -a VimR.app"
 # using fzf tmux default
 alias fzf="fzf-tmux"
 
+# alias for gitinspector
+alias gitinspector="python2 /Users/daniel/dev/gitinspector/gitinspector.py"
+
