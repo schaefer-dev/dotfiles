@@ -13,8 +13,6 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
-(require 'evil)
-(evil-mode t)
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -25,13 +23,43 @@
 
 (use-package evil
   :ensure t)
+(require 'evil)
+(evil-mode t)
 (use-package projectile
   :ensure t)
+(require 'projectile)
 (use-package magit
   :ensure t)
+(require 'magit)
 (use-package powerline
   :ensure t)
+(use-package auto-complete
+  :ensure t)
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+(use-package yasnippet
+  :ensure t)
+(require 'yasnippet)
+(yas-global-mode 1)
+(use-package auto-complete-c-headers
+  :ensure t)
 
+
+
+;; PLUGIN CUSTOMIZATION
+;; --------------------------------------
+
+; Function which initializes auto-complete-c-headers and gets called for c/c++ hooks
+(defun my:ac-c-header-init ()
+    (require 'auto-complete-c-headers)
+    (add-to-list 'ac-sources 'ac-source-c-headers)
+    (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include")
+)
+
+; Function gets called from c/c++ hooks:
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
 
 
 ;; BASIC CUSTOMIZATION
@@ -109,13 +137,19 @@
 
 
 (custom-set-variables
- ;; Theme set to gruvbox-theme
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (powerline gruvbox-theme use-package evil-visual-mark-mode))))
+    (auto-complete powerline gruvbox-theme use-package evil-visual-mark-mode))))
 (custom-set-faces
- ;; Custom Font
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(default ((t (:height 130 :family "Menlo")))))
 
 

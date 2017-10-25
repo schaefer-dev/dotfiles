@@ -37,3 +37,7 @@ Sublime\ Text\ 3/Packages/User/ColorPicker/lib/linux_colorpicker.py
 config/mimeapps.list
 config/user-dirs.dirs
 config/user-dirs.locale
+
+config/.isolated-storage/
+emacs.d/auto-save-list/
+emacs.d/elpa/
