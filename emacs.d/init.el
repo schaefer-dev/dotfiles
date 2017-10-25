@@ -88,6 +88,16 @@
 ;; alternative bell warning when performing illegal operation
 (setq visible-bell t)
 
+;; all backup files go into .saves
+(setq backup-directory-alist `(("." . "~/.saves")))
+
+;; backup files are created by copying the file
+(setq backup-by-copying t)
+(setq delete-old-versions t
+  kept-new-versions 6
+  kept-old-versions 2
+  version-control t)
+
 
 
 ;; OTHER CUSTOMIZATION
