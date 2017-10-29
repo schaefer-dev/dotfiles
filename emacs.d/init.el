@@ -6,12 +6,25 @@
 
 (require 'package)
 
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+(defvar gnu '("gnu" . "https://elpa.gnu.org/packages/"))
+(defvar melpa '("melpa" . "https://melpa.org/packages/"))
+(defvar melpa-stable '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(defvar org-elpa '("org" . "http://orgmode.org/elpa/"))
 
+;; Add marmalade to package repos
+(setq package-archives nil)
+(add-to-list 'package-archives melpa-stable t)
+(add-to-list 'package-archives melpa t)
+(add-to-list 'package-archives gnu t)
+(add-to-list 'package-archives org-elpa t)
+
+
+;; Initialize the archive and refresh the contents in case there is no cached archive.
 (setq package-enable-at-startup nil)
 (package-initialize)
+
+;; only neccessary the first time
+;; (package-refresh-contents)
 
 
 (unless (package-installed-p 'use-package)
@@ -45,6 +58,13 @@
 (use-package auto-complete-c-headers
   :ensure t)
 
+(use-package command-log-mode
+  :ensure t)
+(use-package markdown-mode
+  :ensure t)
+
+
+
 
 ;; KEYBINDS
 ;; --------------------------------------
@@ -74,9 +94,13 @@
 ;(add-hook 'c-mode-hook 'my:ac-c-header-init)
 
 
+
+
 ;; BASIC CUSTOMIZATION
 ;; --------------------------------------
 
+;; ask for y/n instead of yes/no
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; custom folder for themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -109,6 +133,11 @@
   kept-new-versions 6
   kept-old-versions 2
   version-control t)
+
+;; Keyboard settings
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'none)
+(setq ns-function-modifier 'hyper)
 
 
 
@@ -166,7 +195,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (auto-complete powerline gruvbox-theme use-package evil-visual-mark-mode))))
+    (counsel auto-complete powerline gruvbox-theme use-package evil-visual-mark-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
