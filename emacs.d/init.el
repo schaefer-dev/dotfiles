@@ -66,20 +66,32 @@
 
 
 
+;; KEYBINDS
+;; --------------------------------------
+(global-set-key (kbd "M-.") 'find-tag);
+(define-key evil-normal-state-map (kbd "M-.") 'find-tag);
+(define-key evil-visual-state-map (kbd "M-.") 'find-tag);
+(define-key evil-insert-state-map (kbd "M-.") 'find-tag);
+(define-key evil-normal-state-map (kbd "M-*") 'pop-tag-mark);
+(define-key evil-visual-state-map (kbd "M-*") 'pop-tag-mark);
+(define-key evil-insert-state-map (kbd "M-*") 'pop-tag-mark);
+(define-key evil-normal-state-map (kbd "M-x") 'find-tag-other-window);
+(define-key evil-visual-state-map (kbd "M-x") 'find-tag-other-window);
+(define-key evil-insert-state-map (kbd "M-x") 'find-tag-other-window);
 
 ;; PLUGIN CUSTOMIZATION
 ;; --------------------------------------
 
 ; Function which initializes auto-complete-c-headers and gets called for c/c++ hooks
-(defun my:ac-c-header-init ()
-    (require 'auto-complete-c-headers)
-    (add-to-list 'ac-sources 'ac-source-c-headers)
-    (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include")
-)
+;(defun my:ac-c-header-init ()
+;   (require 'auto-complete-c-headers)
+;   (add-to-list 'ac-sources 'ac-source-c-headers)
+;   (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include")
+;)
 
 ; Function gets called from c/c++ hooks:
-(add-hook 'c++-mode-hook 'my:ac-c-header-init)
-(add-hook 'c-mode-hook 'my:ac-c-header-init)
+;(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+;(add-hook 'c-mode-hook 'my:ac-c-header-init)
 
 
 
