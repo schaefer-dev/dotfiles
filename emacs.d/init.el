@@ -6,8 +6,7 @@
 
 (require 'package)
 
-(defvar gnu '("gnu" . "https://elpa.gnu.org/packages/"))
-(defvar melpa '("melpa" . "https://melpa.org/packages/"))
+(defvar gnu '("gnu" . "https://elpa.gnu.org/packages/")) (defvar melpa '("melpa" . "https://melpa.org/packages/"))
 (defvar melpa-stable '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (defvar org-elpa '("org" . "http://orgmode.org/elpa/"))
 
@@ -62,6 +61,8 @@
   :ensure t)
 (use-package markdown-mode
   :ensure t)
+(use-package linum-relative
+  :ensure t)
 
 
 
@@ -83,15 +84,15 @@
 ;; --------------------------------------
 
 ; Function which initializes auto-complete-c-headers and gets called for c/c++ hooks
-;(defun my:ac-c-header-init ()
-;   (require 'auto-complete-c-headers)
-;   (add-to-list 'ac-sources 'ac-source-c-headers)
-;   (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include")
-;)
+(defun my:ac-c-header-init ()
+   (require 'auto-complete-c-headers)
+   (add-to-list 'ac-sources 'ac-source-c-headers)
+   (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include")
+)
 
 ; Function gets called from c/c++ hooks:
-;(add-hook 'c++-mode-hook 'my:ac-c-header-init)
-;(add-hook 'c-mode-hook 'my:ac-c-header-init)
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
 
 
 
@@ -140,10 +141,28 @@
 (setq ns-function-modifier 'hyper)
 
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
+;; (setq-default tab-width 2)
 
+
+;; define tabulator size for these languages
 (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
 
+(add-hook 'c-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width c-indent))))
+(add-hook 'c++-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width c++-indent))))
+
+(setq-default c-basic-offset 2)
+(setq-default evil-shift-width 2)
+
+;; show relative line numbers
+(linum-mode)
+(linum-relative-global-mode)
+
+;; show absolute line number in current line
+(setq linum-relative-current-symbol "")
 
 ;; OTHER CUSTOMIZATION
 ;; --------------------------------------
@@ -208,6 +227,53 @@
  '(default ((t (:height 130 :family "Menlo")))))
 
 
+;; highlight long lines
+(setq whitespace-style '(lines))
+(setq whitespace-line-column 78)
+(global-whitespace-mode 1)
 
+;; highlight other nasty things
+(setq whitespace-style '(lines))
+(setq whitespace-line-column 79)
+(global-whitespace-mode 1)
+
+
+;; stile use M-x to execute stuff
+(global-set-key (kbd "M-x") 'smex)
+(define-key evil-insert-state-map (kbd "M-x") 'execute-extended-command)
+(define-key evil-normal-state-map (kbd "M-x") 'execute-extended-command)
+
+
+;;; esc quits
+(defun minibuffer-keyboard-quit ()
+  "Abort recursive edit.
+In Delete Selection mode, if the mark is active, just deactivate it;
+then it takes a second \\[keyboard-quit] to abort the minibuffer."
+  (interactive)
+  (if (and delete-selection-mode transient-mark-mode mark-active)
+      (setq deactivate-mark  t)
+    (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
+    (abort-recursive-edit)))
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
+
+;; Remap org-mode meta keys for convenience
+(mapcar (lambda (state)
+    (evil-declare-key state org-mode-map
+      (kbd "M-l") 'org-metaright
+      (kbd "M-h") 'org-metaleft
+      (kbd "M-k") 'org-metaup
+      (kbd "M-j") 'org-metadown
+      (kbd "M-L") 'org-shiftmetaright
+      (kbd "M-H") 'org-shiftmetaleft
+      (kbd "M-K") 'org-shiftmetaup
+      (kbd "M-J") 'org-shiftmetadown))
+  '(normal insert))
 
 ;; init.el ends here
