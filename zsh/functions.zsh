@@ -1,30 +1,71 @@
 # -------------------------------------------------------------------
-# compressed file expander 
-# (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
+# Mac specific functions
 # -------------------------------------------------------------------
-ex() {
-    if [[ -f $1 ]]; then
-        case $1 in
-          *.tar.bz2) tar xvjf $1;;
-          *.tar.gz) tar xvzf $1;;
-          *.tar.xz) tar xvJf $1;;
-          *.tar.lzma) tar --lzma xvf $1;;
-          *.bz2) bunzip $1;;
-          *.rar) unrar $1;;
-          *.gz) gunzip $1;;
-          *.tar) tar xvf $1;;
-          *.tbz2) tar xvjf $1;;
-          *.tgz) tar xvzf $1;;
-          *.zip) unzip $1;;
-          *.Z) uncompress $1;;
-          *.7z) 7z x $1;;
-          *.dmg) hdiutul mount $1;; # mount OS X disk images
-          *) echo "'$1' cannot be extracted via >ex<";;
-    esac
-    else
-        echo "'$1' is not a valid file"
-    fi
+if [[ $IS_MAC -eq 1 ]]; then
+  # -------------------------------------------------------------------
+  # compressed file expander 
+  # (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
+  # -------------------------------------------------------------------
+  ex() {
+      if [[ -f $1 ]]; then
+          case $1 in
+            *.tar.bz2) tar xvjf $1;;
+            *.tar.gz) tar xvzf $1;;
+            *.tar.xz) tar xvJf $1;;
+            *.tar.lzma) tar --lzma xvf $1;;
+            *.bz2) bunzip $1;;
+            *.rar) unrar $1;;
+            *.gz) gunzip $1;;
+            *.tar) tar xvf $1;;
+            *.tbz2) tar xvjf $1;;
+            *.tgz) tar xvzf $1;;
+            *.zip) unzip $1;;
+            *.Z) uncompress $1;;
+            *.7z) 7z x $1;;
+            *.dmg) hdiutul mount $1;; # mount OS X disk images
+            *) echo "'$1' cannot be extracted via >ex<";;
+      esac
+      else
+          echo "'$1' is not a valid file"
+      fi
+  }
+
+  # view man pages in Preview
+  pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps" ; }
+
+  # notify function - http://hints.macworld.com/article.php?story=20120831112030251
+  notify() { automator -D title=$1 -D subtitle=$2 -D message=$3 ~/Library/Workflows/DisplayNotification.wflow }
+
+  # function to start terminal chess
+  chess(){
+          cd /Applications/Chess.app/Contents/Resources/
+          sudo ./sjeng.ChessEngine
+  }
+
+  dash(){
+      open "dash://$1"
+  }
+
+# function to open Stuff in a new iTerm Window
+popout_helper(){
+    osascript <<-EOF
+    tell application "iTerm"
+    create window with profile "ZSH_noTmux"
+    select first window
+    launch session "Default Session"
+        tell current session of first window
+            write text "cd $1; ${@:2}"
+        end tell
+    end tell
+EOF
 }
+
+popout(){
+  popout_helper $(pwd) $@
+}
+
+fi
+
 
 testLoggit() {
   echo  "$(git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\]/aaaaaaaaaa/g' -e 's/[/]/\\/g' -e 's/aaaaaaaaaa/\//g' | less -r +G -X)"
@@ -38,6 +79,7 @@ countdown(){
      sleep 0.1
    done
 }
+
 stopwatch(){
   date1=`date +%s`; 
    while true; do 
@@ -45,6 +87,7 @@ stopwatch(){
     sleep 0.1
    done
 }
+
 
 # -------------------------------------------------------------------
 # any function from http://onethingwell.org/post/14669173541/any
@@ -61,17 +104,6 @@ any() {
     fi
 }
 
-# -------------------------------------------------------------------
-# Mac specific functions
-# -------------------------------------------------------------------
-if [[ $IS_MAC -eq 1 ]]; then
-
-    # view man pages in Preview
-    pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps" ; }
-
-    # notify function - http://hints.macworld.com/article.php?story=20120831112030251
-    notify() { automator -D title=$1 -D subtitle=$2 -D message=$3 ~/Library/Workflows/DisplayNotification.wflow }
-fi
 
 # -------------------------------------------------------------------
 # nice mount (http://catonmat.net/blog/another-ten-one-liners-from-commandlingfu-explained)
@@ -95,34 +127,6 @@ function myip() {
 # -------------------------------------------------------------------
 s() { pwd > ~/.save_dir ; }
 i() { cd "$(cat ~/.save_dir)" ; }
-
-# function to start terminal chess
-chess(){
-	cd /Applications/Chess.app/Contents/Resources/
-	sudo ./sjeng.ChessEngine
-}
-
-dash(){
-    open "dash://$1"
-}
-
-# function to open Stuff in a new iTerm Window
-popout_helper(){
-    osascript <<-EOF
-    tell application "iTerm"
-    create window with profile "ZSH_noTmux"
-    select first window
-    launch session "Default Session"
-        tell current session of first window
-            write text "cd $1; ${@:2}"
-        end tell
-    end tell
-EOF
-}
-
-popout(){
-  popout_helper $(pwd) $@
-}
 
 
 # web_search from terminal
@@ -177,4 +181,3 @@ function web_search() {
 
   open "$url"
 }
-
