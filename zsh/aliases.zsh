@@ -18,6 +18,8 @@ alias ..='..'
 alias ...='../..'
 alias ....='../../..'
 alias 'bk=cd $OLDPWD'
+alias tmuxs="tmux attach -t MAIN; tmux new -s MAIN; clear;"
+alias tmuxa="tmux attach -t SECONDARY; tmux new -s SECONDARY; clear;"
 
 
 # -------------------------------------------------------------------
