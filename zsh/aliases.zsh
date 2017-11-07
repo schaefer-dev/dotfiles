@@ -65,6 +65,53 @@ if [[ $IS_MAC -eq 1 ]]; then
     alias apps='mdfind "kMDItemAppStoreHasReceipt=1"'
     # rebuild Launch Services to remove duplicate entries on Open With menu
     alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.fram ework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
+    # -------------------------------------------------------------------
+    # database
+    # -------------------------------------------------------------------
+    alias 'psqlstart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start'
+    alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
+    #alias mysql='mysql -u root'
+    #alias mysqladmin='mysqladmin -u root'
+    # -------------------------------------------------------------------
+    
+
+    # launch apps with 'app'
+    alias app="open -a"
+    alias a="open -a"
+    alias Battle.net="Battle.net.app"
+    alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
+    alias vimr="open -a VimR.app"
+
+    # archey is default colored
+    alias archey="archey -c"
+
+    # use caffeinate for x seconds
+    alias caffeinate="caffeinate -i -t"
+
+    # -------------------------------------------------------------------
+    # KWM Tiling Window manager config
+    # -------------------------------------------------------------------
+    alias kwmStop="brew services stop kwm"
+    alias kwmStart="brew services start homebrew/binary/kwm"
+    alias kwmRestart="brew services restart kwm"
+    alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
+    alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
+    alias MouseDisabled="kwmc config focus-follows-mouse off"
+    alias MouseDisabled="kwmc config focus-follows-mouse off"
+    # -------------------------------------------------------------------
+
+
+    # alias for gitinspector
+    alias gitinspector="python2 /Users/daniel/dev/gitinspector/gitinspector.py"
+
+    # alias for hidden files
+    alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
+    alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
+
+    # open in mvim tab
+    alias mvimt="mvim --remote-tab-silent"
+
 fi
 
 
@@ -72,14 +119,6 @@ fi
 # remote machines
 # -------------------------------------------------------------------
 alias 'server=ssh server'
-
-# -------------------------------------------------------------------
-# database
-# -------------------------------------------------------------------
-alias 'psqlstart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start'
-alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
-#alias mysql='mysql -u root'
-#alias mysqladmin='mysqladmin -u root'
 
 # -------------------------------------------------------------------
 # Git
@@ -136,16 +175,8 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
-# launch apps with 'app'
-alias app="open -a"
-alias a="open -a"
-alias Battle.net="Battle.net.app"
-
 # sorts top list by cpu default
 alias top="top -o cpu"
-
-# archey is default colored
-alias archey="archey -c"
 
 # added alias 'filetree' which lists the filesystem graphically
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
@@ -174,7 +205,6 @@ alias colortest_etc="zsh ~/dotfiles/scripts/colortests/colors_etc"
 # Shortcuts to directories or files
 alias cl="cd; clear"
 alias c="clear"
-alias icons="mypushd ~/icons"
 
 alias gig="vim .gitignore"
 
@@ -185,9 +215,6 @@ alias gig="vim .gitignore"
 alias py="bpython"
 
 alias reddit="rtv"
-
-# python3 script checking twitch streamers
-alias livecheck="python3 ~/dotfiles/scripts/livecheck.py"
 
 # speedtest
 alias speedtest="zsh ~/dotfiles/scripts/speedtest.sh"
@@ -216,21 +243,8 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
-# use caffeinate for x seconds
-alias caffeinate="caffeinate -i -t"
-
-# vlc control
-alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
-
 # use htop with sudo (to show ram/cpu) and also sort for cpu usage
 alias htop="sudo htop --sort-key PERCENT_CPU"
-
-# alias for hidden files
-alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
-alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
-
-# open in mvim tab
-alias mvimt="mvim --remote-tab-silent"
 
 # alias to start twitchy
 # alias twitchy="python3 ~/dotfiles/scripts/twitchy.py"
@@ -238,15 +252,6 @@ alias mvimt="mvim --remote-tab-silent"
 # aliases to switch between twoline and singleline Prompt
 alias twoLine="source ~/dotfiles/zsh/promptTwoLine.zsh"
 alias oneLine="source ~/dotfiles/zsh/promptOneLine.zsh"
-
-# start kwm tiling window manager
-alias kwmStop="brew services stop kwm"
-alias kwmStart="brew services start homebrew/binary/kwm"
-alias kwmRestart="brew services restart kwm"
-alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
-alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
-alias MouseDisabled="kwmc config focus-follows-mouse off"
-alias MouseDisabled="kwmc config focus-follows-mouse off"
 
 # start sublime university project
 alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.sublime-project"
@@ -256,11 +261,6 @@ alias pv="proverif -in pi"
 
 # neovim masterrace
 alias vim="nvim"
-alias vimr="open -a VimR.app"
 
 # using fzf tmux default
 alias fzf="fzf-tmux"
-
-# alias for gitinspector
-alias gitinspector="python2 /Users/daniel/dev/gitinspector/gitinspector.py"
-
