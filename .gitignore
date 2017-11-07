@@ -6,6 +6,9 @@
 # ignore texmate
 config/xm1/
 
+# ignore emacs stuff
+emacs.d/ac-comphist.dat
+
 # ignore pintos binaries for OS course
 bin/pintos_support
 
