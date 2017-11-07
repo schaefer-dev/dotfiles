@@ -1,77 +1,57 @@
 #cheatsheets
-/Users/daniel/cheatsheets
+/home/daniel/cheatsheets
 
 # main folders
-/Users/daniel/scripts
-/Users/daniel/Documents
-/Users/daniel/Downloads
-/Users/daniel/Dropbox
-/Users/daniel/Desktop
-/Users/daniel/Pictures
-/Users/daniel/dev
-/Users/daniel/Dropbox/wallpaper
-/Users/daniel/Dropbox/Notability
+/home/daniel/scripts
+/home/daniel/Documents
+/home/daniel/Downloads
+/home/daniel/Dropbox
+/home/daniel/Desktop
+/home/daniel/Pictures
+/home/daniel/dev
+/home/daniel/Dropbox/wallpaper
+/home/daniel/Dropbox/Notability
 /Applications
 
 # Projects
 /Users/daniel/dev/gitHub/projecteuler
 
 #just my dotfiles
-/Users/daniel/dotfiles
-/Users/daniel/dotfiles/bin
-/Users/daniel/dotfiles/fzf
-/Users/daniel/dotfiles/LaTex
-/Users/daniel/dotfiles/nvim
-/Users/daniel/dotfiles/scripts
-/Users/daniel/dotfiles/tmux
-/Users/daniel/dotfiles/zsh
+/home/daniel/dotfiles
+/home/daniel/dotfiles/bin
+/home/daniel/dotfiles/fzf
+/home/daniel/dotfiles/LaTex
+/home/daniel/dotfiles/nvim
+/home/daniel/dotfiles/scripts
+/home/daniel/dotfiles/tmux
+/home/daniel/dotfiles/zsh
 
 # University repos
-/Users/daniel/uni_repos/repo_ping
-/Users/daniel/uni_repos/repo_hci
-/Users/daniel/uni_repos/repo_ethic
-/Users/daniel/uni_repos/repo_se17
-/Users/daniel/uni_repos/repo_bachelorUnity
-/Users/daniel/Dropbox/uni/repo_bachelorArbeit
-/Users/daniel/uni_repos/repo_planningSheet
-/Users/daniel/uni_repos/repo_planning
-/Users/daniel/uni_repos/repo_operatingSystems
+/home/daniel/uni_repos/repo_bachelor-unity
+/home/daniel/Dropbox/uni/repo_bachelorArbeit
+/home/daniel/uni_repos/repo_planning-sheet
+/home/daniel/uni_repos/repo_planning-project
+/home/daniel/uni_repos/repo_operatingSystems
 
 # Dropbox uni stuff
-/Users/daniel/Dropbox/uni/se
-/Users/daniel/Dropbox/uni/hci
-/Users/daniel/Dropbox/uni/ethic
-/Users/daniel/Dropbox/uni/ping
+/home/daniel/dropbox/uni/informationRetrieval/
+/home/daniel/dropbox/uni/operatingSystems/
+/home/daniel/dropbox/uni/imageAquisitionMethods/
+/home/daniel/dropbox/uni/planning/
 
 # Archiv uni stuff
-/Users/daniel/Documents/Uni Archiv + Fachschaft/cryptography
-/Users/daniel/Documents/Uni Archiv + Fachschaft/hacking
-/Users/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev
-/Users/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev/repo_human_computer_interaction_dev
-/Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision
-/Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV
-/Users/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV_private
-/Users/daniel/Documents/Uni Archiv + Fachschaft/security
-/Users/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security
-/Users/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security_private
-/Users/daniel/Documents/Uni Archiv + Fachschaft/medieninformatik
-/Users/daniel/Documents/Uni Archiv + Fachschaft/recht_der_cybersicherheit
-/Users/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/repo_neuralNetworks
-/Users/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/
+/home/daniel/Documents/Uni Archiv + Fachschaft/cryptography
+/home/daniel/Documents/Uni Archiv + Fachschaft/hacking
+/home/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev
+/home/daniel/Documents/Uni Archiv + Fachschaft/HCI-dev/repo_human_computer_interaction_dev
+/home/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision
+/home/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV
+/home/daniel/Documents/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV_private
+/home/daniel/Documents/Uni Archiv + Fachschaft/security
+/home/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security
+/home/daniel/Documents/Uni Archiv + Fachschaft/security/repo_security_private
+/home/daniel/Documents/Uni Archiv + Fachschaft/medieninformatik
+/home/daniel/Documents/Uni Archiv + Fachschaft/recht_der_cybersicherheit
+/home/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/repo_neuralNetworks
+/home/daniel/Documents/Uni Archiv + Fachschaft/neuralNetworks/
 
-
-# Courses
-/Users/daniel/Dropbox/uni/courses/algorithmic-thinking-1
-/Users/daniel/Dropbox/uni/courses/algorithmic-thinking-2
-/Users/daniel/Dropbox/uni/courses/arduino-platform
-/Users/daniel/Dropbox/uni/courses/compilers-004
-/Users/daniel/Dropbox/uni/courses/learning-how-to-learn
-/Users/daniel/Dropbox/uni/courses/machine-learning
-/Users/daniel/Dropbox/uni/courses/ml-foundations
-/Users/daniel/Dropbox/uni/courses/progfun1
-/Users/daniel/Dropbox/uni/courses/progfun2
-/Users/daniel/Dropbox/uni/courses/python-data
-/Users/daniel/Dropbox/uni/courses/python-databases
-/Users/daniel/Dropbox/uni/courses/python-network-data
-/Users/daniel/Dropbox/uni/courses/ruby-on-rails-intro
-/Users/daniel/Dropbox/uni/courses/website-coding
