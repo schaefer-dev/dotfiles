@@ -1,9 +1,38 @@
-# Currently this path is appended to dynamically when picking a ruby version
-# zshenv has already started PATH with rbenv so append only here
-export PATH=$PATH~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
+if [[ $IS_MAC -eq 1 ]]; then
+    # Currently this path is appended to dynamically when picking a ruby version
+    # zshenv has already started PATH with rbenv so append only here
+    export PATH=$PATH~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
 
-# setting java_home
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+    # setting java_home
+    export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
+    # important for lesspipe to work properly
+    export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
+
+    # use GNU tools as default
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+    export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+    # CUDA Stuff
+    export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
+    export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
+
+    # homebrew default override
+    export PATH="/usr/local/bin:$PATH"
+
+    # Anaconda python 
+    export PATH="/Users/daniel/anaconda/bin:$PATH"
+
+    # Latex path
+    export PATH="/Library/TeX/texbin:$PATH"
+
+    # goLang stuff
+    export GOPATH=~/goPath
+
+    # Tensor flow OSX 64 | CPU only
+    export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0-py3-none-any.whl
+
+fi
 
 # Setup terminal, and turn on colors
 export TERM=xterm-256color
@@ -29,36 +58,8 @@ export EDITOR='nvim'
 # CTAGS Sorting in VIM/Emacs is better behaved with this in place
 export LC_COLLATE=C 
 
-# important for lesspipe to work properly
-export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
-
-# use GNU tools as default
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-
-# CUDA Stuff
-export PATH=/Developer/NVIDIA/CUDA-7.0/bin:$PATH
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
-
-# homebrew default override
-export PATH="/usr/local/bin:$PATH"
-
-# Anaconda python 
-export PATH="/Users/daniel/anaconda/bin:$PATH"
-
-# Latex path
-export PATH="/Library/TeX/texbin:$PATH"
-
-
-# goLang stuff
-export GOPATH=~/goPath
-
 # export UTF-8
 export LANG=en_US.UTF-8
-
-
-# Tensor flow OSX 64 | CPU only
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0-py3-none-any.whl
 
 # Fix python utf8
 export LC_ALL=en_US.UTF-8
