@@ -6,6 +6,9 @@
 # ignore texmate
 config/xm1/
 
+# ignore pintos binaries for OS course
+bin/pintos_support
+
 weechat/logs/*
 bin/JDownloader 2.0/*
 mvim/vim/bundle/*
