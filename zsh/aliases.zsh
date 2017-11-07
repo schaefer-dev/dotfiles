@@ -233,7 +233,7 @@ alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Fi
 alias mvimt="mvim --remote-tab-silent"
 
 # alias to start twitchy
-alias twitchy="python3 ~/dotfiles/scripts/twitchy.py"
+# alias twitchy="python3 ~/dotfiles/scripts/twitchy.py"
 
 # aliases to switch between twoline and singleline Prompt
 alias twoLine="source ~/dotfiles/zsh/promptTwoLine.zsh"
