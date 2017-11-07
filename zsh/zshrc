@@ -17,21 +17,24 @@ source ~/dotfiles/zsh/fzf_functions.zsh
 source ~/dotfiles/scripts/livestream.zsh
 source ~/dotfiles/scripts/web.zsh
 
-# add custom Completion
-fpath=(~/dotfiles/zsh/completion $fpath)
+if [[ $IS_MAC -eq 1 ]]; then
+    # add custom Completion
+    fpath=(~/dotfiles/zsh/completion $fpath)
+
+  #important for autojump to work properly
+  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+  # load RVM Ruby Manager
+  source /Users/daniel/.rvm/scripts/rvm
+
+  # load Tmuxinator
+  source /Users/daniel/dotfiles/bin/tmuxinator.zsh
+fi
 
 # compsys initialization
 autoload -U compinit
 compinit
 
-#important for autojump to work properly
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # important for fzf to work properly
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# load RVM Ruby Manager
-source /Users/daniel/.rvm/scripts/rvm
-
-# load Tmuxinator
-source /Users/daniel/dotfiles/bin/tmuxinator.zsh
