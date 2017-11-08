@@ -9,6 +9,8 @@ if [[ $IS_MAC -eq 1 ]]; then
     # important for lesspipe to work properly
     export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 
+    export SHELL="/bin/zsh"
+
     # use GNU tools as default
     export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
