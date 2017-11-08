@@ -64,3 +64,7 @@ export LANG=en_US.UTF-8
 # Fix python utf8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# pintos stuff
+export PINTOSPATH=~/uni_repos/repo_operatingSystems/src
+export PATH=$PATH:$PINTOSPATH/utils
