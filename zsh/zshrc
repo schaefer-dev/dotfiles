@@ -38,3 +38,6 @@ compinit
 
 # important for fzf to work properly
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# load hhkb super alt swap
+xmodmap ~/.xmodmaprc
