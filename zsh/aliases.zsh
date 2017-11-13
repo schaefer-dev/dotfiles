@@ -268,4 +268,6 @@ alias sshome="ssh daniel@schaeferdev.hopto.org"
 # using fzf tmux default
 alias fzf="fzf-tmux"
 
+# OS VM aliases for ssh and emacs
 alias emacsvm="emacs /ssh:pintos@192.168.56.101:/home/pintos/pintos/src &"
+alias sshvm="ssh pintos@192.168.56.101"
