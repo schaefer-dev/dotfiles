@@ -1,4 +1,4 @@
-;; init.el --- Emacs configuration
+; init.el --- Emacs configuration
 
 
 ;; INSTALL PACKAGES
@@ -62,6 +62,12 @@
 (use-package markdown-mode
   :ensure t)
 (use-package linum-relative
+  :ensure t)
+(use-package gruvbox-theme
+  :ensure t)
+(use-package flymake
+  :ensure t)
+(use-package adaptive-wrap
   :ensure t)
 
 
@@ -164,6 +170,17 @@
 ;; show absolute line number in current line
 (setq linum-relative-current-symbol "")
 
+;; Wrap lines like it should be
+(with-eval-after-load 'adaptive-wrap
+  (setq-default adaptive-wrap-extra-indent 2))
+
+(add-hook 'visual-line-mode-hook
+  (lambda ()
+    (adaptive-wrap-prefix-mode +1)
+    (diminish 'visual-line-mode)))
+
+(global-visual-line-mode +1)
+
 ;; OTHER CUSTOMIZATION
 ;; --------------------------------------
 
@@ -224,7 +241,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 130 :family "Menlo")))))
+ '(default ((t (:height 120 :family "Menlo for Powerline")))))
 
 
 ;; highlight long lines
@@ -275,5 +292,36 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
       (kbd "M-K") 'org-shiftmetaup
       (kbd "M-J") 'org-shiftmetadown))
   '(normal insert))
+
+
+;; --------------------------------------------------------
+;; Latex customization
+;; source: http://piotrkazmierczak.com/2010/emacs-as-the-ultimate-latex-editor/
+
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq TeX-save-query nil)
+;(setq TeX-PDF-mode t) ;PDF  Latex mode for all documents
+
+;; Flymake Syntax check (Lots of CPU!)
+(defun flymake-get-tex-args (file-name)
+(list "pdflatex"
+(list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
+(add-hook 'LaTeX-mode-hook 'flymake-mode)
+
+;; Flymake spell checking
+(setq ispell-program-name "aspell") ; could be ispell as well, depending on your preferences
+(setq ispell-dictionary "english") ; this can obviously be set to any language your spell-checking program supports
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'flyspell-buffer)
+
+
+;; Outline Mode: Hide parts of tex file
+(defun turn-on-outline-minor-mode ()
+(outline-minor-mode 1))
+(add-hook 'LaTeX-mode-hook 'turn-on-outline-minor-mode)
+(add-hook 'latex-mode-hook 'turn-on-outline-minor-mode)
+(setq outline-minor-mode-prefix "\C-c \C-o") ; Or something else
+
 
 ;; init.el ends here
