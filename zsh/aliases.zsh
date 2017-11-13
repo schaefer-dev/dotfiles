@@ -262,5 +262,8 @@ alias pv="proverif -in pi"
 # neovim masterrace
 alias vim="nvim"
 
+# alias to ubuntu home
+alias sshome="ssh daniel@schaeferdev.hopto.org"
+
 # using fzf tmux default
 alias fzf="fzf-tmux"

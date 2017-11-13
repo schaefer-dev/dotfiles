@@ -33484,7 +33484,7 @@
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
+	<string>1, 0</string>
 	<key>NSFontPanelPreviewHeight</key>
 	<real>0.0</real>
 	<key>NSNavLastRootDirectory</key>
@@ -33532,17 +33532,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>238 247 445 77 0 0 1680 1050 </string>
+	<string>238 113 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>526 570 606 456 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 494 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>161 219 918 416 0 0 1680 1050 </string>
+	<string>221 462 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 70 840 980 0 0 1680 1050 </string>
+	<string>0 4 838 1046 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>260 4 840 638 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
@@ -34193,11 +34193,11 @@
 			<key>Name</key>
 			<string> </string>
 			<key>Non Ascii Font</key>
-			<string>MenloForPowerline-Regular 13</string>
+			<string>FontAwesome 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MenloForPowerline-Regular 14</string>
+			<string>InconsolataForPowerlineNerdFontComplete 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prevent Opening in a Tab</key>
