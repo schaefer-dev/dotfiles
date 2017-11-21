@@ -36,6 +36,8 @@ Plug 'tpope/vim-commentary'
 Plug 'bkad/CamelCaseMotion'
 " Heuristically set indent settings
 Plug 'tpope/vim-sleuth'
+" VIM One theme
+Plug 'rakr/vim-one'
 "}}}
 "
 
