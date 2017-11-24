@@ -262,7 +262,7 @@ alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 alias pv="proverif -in pi"
 
 # neovim masterrace
-alias vim="nvim"
+alias vim="vim"
 
 # using fzf tmux default
 alias fzf="fzf-tmux"

@@ -68,5 +68,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # pintos stuff
-export PINTOSPATH=~/uni_repos/repo_operatingSystems/src
+export PINTOSPATH=~/pintos/src
+export PINTOS_HOME=~/pintos/src/utils
 export PATH=$PATH:$PINTOSPATH/utils
