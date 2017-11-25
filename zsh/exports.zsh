@@ -45,7 +45,6 @@ LS_COLORS='rs=0:di=100;32;01:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;
 export LS_COLORS
 
 # Enable color in grep
-export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
 
 # This resolves issues install the mysql, postgres, and other gems with native non universal binary extensions
