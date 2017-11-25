@@ -266,3 +266,10 @@ alias vim="vim"
 
 # using fzf tmux default
 alias fzf="fzf-tmux"
+
+# open with default app for ubuntu
+alias open="xdg-open"
+
+# OS shortcuts to ssh into VM
+alias emacsvm="emacs /ssh:pintos@192.168.56.101:/home/pintos/pintos/src &"
+alias sshvm="ssh pintos@192.168.56.101"
