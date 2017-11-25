@@ -41,4 +41,4 @@ compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # load hhkb super alt swap
-xmodmap ~/.xmodmaprc
+# xmodmap ~/.xmodmaprc

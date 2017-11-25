@@ -8,6 +8,8 @@ config/xm1/
 
 # ignore emacs stuff
 emacs.d/ac-comphist.dat
+emacs.d/tramp
+emacs.d/session*
 
 # ignore pintos binaries for OS course
 bin/pintos_support
