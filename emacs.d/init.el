@@ -86,6 +86,9 @@
 (define-key evil-visual-state-map (kbd "M-x") 'find-tag-other-window);
 (define-key evil-insert-state-map (kbd "M-x") 'find-tag-other-window);
 
+;; Buffer manager
+(global-set-key (kbd "C-x C-b") 'bs-show)
+
 ;; PLUGIN CUSTOMIZATION
 ;; --------------------------------------
 
