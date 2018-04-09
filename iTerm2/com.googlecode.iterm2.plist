@@ -6,6 +6,8 @@
 	<true/>
 	<key>AllowClipboardAccess</key>
 	<false/>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AnimateDimming</key>
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
@@ -14,6 +16,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -33538,13 +33542,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 494 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>221 462 796 473 0 0 1680 1050 </string>
+	<string>162 67 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 4 838 1046 0 0 1680 1050 </string>
+	<string>0 274 915 776 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>260 4 840 638 0 0 1680 1050 </string>
+	<string>1212 175 840 638 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33560,9 +33564,9 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>417 411 840 638 0 0 1680 1050 </string>
+	<string>0 4 784 530 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>853 433 460 342 0 0 2560 1418 </string>
+	<string>18 74 915 776 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>1710 742 850 675 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -35197,9 +35201,9 @@
 			<key>AWDS Window Option</key>
 			<string>Recycle</string>
 			<key>Allow Title Reporting</key>
-			<false/>
+			<true/>
 			<key>Allow Title Setting</key>
-			<false/>
+			<true/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -37741,6 +37745,8 @@
 	<false/>
 	<key>PasteFromClipboard</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -37793,9 +37799,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-06T18:43:29Z</date>
-	<key>SUSkippedVersion</key>
-	<string>3.1.20171031-nightly</string>
+	<date>2018-03-26T14:14:51Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -37851,7 +37855,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20170717-nightly</string>
+	<string>3.2.20180319-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
