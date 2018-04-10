@@ -1,1 +1,8 @@
-[]
+[
+  {
+    title: "Dotfiles"
+    paths: [
+      "/Users/daniel/dotfiles"
+    ]
+  }
+]

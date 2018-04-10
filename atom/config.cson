@@ -3,7 +3,9 @@
     telemetryConsent: "no"
   editor:
     invisibles: {}
+    scrollPastEnd: true
     showIndentGuide: true
+    softWrap: true
   "exception-reporting":
     userId: "a712f91e-6cda-a635-06b8-60cad4a59786"
   welcome:
