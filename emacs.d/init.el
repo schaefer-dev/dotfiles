@@ -263,6 +263,9 @@
 (define-key evil-insert-state-map (kbd "M-x") 'execute-extended-command)
 (define-key evil-normal-state-map (kbd "M-x") 'execute-extended-command)
 
+;; scrolloff before last line is reached
+(setq scroll-margin 10)
+
 
 ;;; esc quits
 (defun minibuffer-keyboard-quit ()
