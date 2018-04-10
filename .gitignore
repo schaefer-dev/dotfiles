@@ -3,6 +3,15 @@
     url = http://github.com/username/repo.git
     ignore = untracked  # <====
 
+# ignore atom stuff
+atom/blob-store
+atom/compiler-cache
+atom/packages
+atom/storage
+atom/.apm
+atom/github.cson
+
+
 # ignore texmate
 config/xm1/
 
