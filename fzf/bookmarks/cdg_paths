@@ -25,6 +25,7 @@
 /Users/daniel/dotfiles/scripts
 /Users/daniel/dotfiles/tmux
 /Users/daniel/dotfiles/zsh
+/Users/daniel/dotfiles/atom
 
 # University repos
 /Users/daniel/uni_repos/repo_ping
@@ -37,8 +38,12 @@
 /Users/daniel/uni_repos/repo_planningSheet
 /Users/daniel/uni_repos/repo_planning
 /Users/daniel/uni_repos/repo_operatingSystems
+/Users/daniel/uni_repos/repo_webSecurity
 
 # Dropbox uni stuff
+/Users/daniel/Dropbox/uni/webSecurity
+/Users/daniel/Dropbox/uni/cryptography
+/Users/daniel/Dropbox/uni/embeddedSystems
 
 # Archiv uni stuff
 /Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/se
