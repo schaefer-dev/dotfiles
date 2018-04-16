@@ -11,6 +11,10 @@ atom/storage
 atom/.apm
 atom/github.cson
 
+# ignore tmux logs
+zsh/tmux-client*
+zsh/tmux-server*
+
 
 # ignore texmate
 config/xm1/
