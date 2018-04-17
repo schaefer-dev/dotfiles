@@ -5,4 +5,10 @@
       "/Users/daniel/dotfiles"
     ]
   }
+  {
+    title: "Project Euler"
+    paths: [
+      "/Users/daniel/dev/gitHub/projecteuler"
+    ]
+  }
 ]
