@@ -11,4 +11,17 @@
       "/Users/daniel/dev/gitHub/projecteuler"
     ]
   }
+  {
+    title: "Embedded Systems"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_embeddedSystems"
+    ]
+  }
+  {
+    title: "Cryptography"
+    paths: [
+      "/Users/daniel/uni_repos/repo_cryptography"
+    ]
+  }
 ]
