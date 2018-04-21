@@ -5,4 +5,18 @@
       "/Users/daniel/dotfiles"
     ]
   }
+  {
+    title: "Web Security"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_webSecurity"
+    ]
+  }
+  {
+    title: "Cryptography"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_cryptography"
+    ]
+  }
 ]
