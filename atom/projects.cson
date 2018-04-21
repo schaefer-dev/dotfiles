@@ -13,6 +13,19 @@
     ]
   }
   {
+    title: "Project Euler"
+    paths: [
+      "/Users/daniel/dev/gitHub/projecteuler"
+    ]
+  }
+  {
+    title: "Embedded Systems"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_embeddedSystems"
+    ]
+  }
+  {
     title: "Cryptography"
     group: "University"
     paths: [
