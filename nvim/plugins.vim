@@ -27,7 +27,7 @@ Plug 'Konfekt/FastFold'
 " Asynchronous maker and linter (needs linters to work)
 Plug 'benekastah/neomake', { 'on': ['Neomake'] }
 " Autocomplete
-Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim'
 " Snippet support (C-j)
 Plug 'SirVer/ultisnips'
 " Commenting support (gc)

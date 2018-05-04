@@ -6,6 +6,13 @@
     ]
   }
   {
+    title: "Web Security"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_webSecurity"
+    ]
+  }
+  {
     title: "Project Euler"
     paths: [
       "/Users/daniel/dev/gitHub/projecteuler"
@@ -20,6 +27,7 @@
   }
   {
     title: "Cryptography"
+    group: "University"
     paths: [
       "/Users/daniel/uni_repos/repo_cryptography"
     ]
