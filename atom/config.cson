@@ -8,5 +8,9 @@
     softWrap: true
   "exception-reporting":
     userId: "a712f91e-6cda-a635-06b8-60cad4a59786"
+  latex:
+    openResultAfterBuild: false
+    openResultInBackground: false
+    viewerPath: "/Applications/PDF\\ Expert.app"
   welcome:
     showOnStartup: false
