@@ -24,4 +24,11 @@
       "/Users/daniel/uni_repos/repo_cryptography"
     ]
   }
+  {
+    title: "Web Security"
+    group: "University"
+    paths: [
+      "/Users/daniel/uni_repos/repo_webSecurity"
+    ]
+  }
 ]
