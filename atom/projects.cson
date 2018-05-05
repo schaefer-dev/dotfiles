@@ -10,6 +10,8 @@
     group: "University"
     paths: [
       "/Users/daniel/uni_repos/repo_webSecurity"
+      "/Users/daniel/uni_repos/repo_websec_screecher"
+      "/Users/daniel/uni_repos/repo_websec_attacker"
     ]
   }
   {
@@ -30,13 +32,6 @@
     group: "University"
     paths: [
       "/Users/daniel/uni_repos/repo_cryptography"
-    ]
-  }
-  {
-    title: "Web Security"
-    group: "University"
-    paths: [
-      "/Users/daniel/uni_repos/repo_webSecurity"
     ]
   }
 ]
