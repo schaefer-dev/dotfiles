@@ -30,7 +30,7 @@ source ~/dotfiles/scripts/web.zsh
 source /Users/daniel/.rvm/scripts/rvm
 
 # load Tmuxinator
-source /Users/daniel/dotfiles/bin/tmuxinator.zsh
+# source /Users/daniel/dotfiles/bin/tmuxinator.zsh
 #fi
 
 # compsys initialization
