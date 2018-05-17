@@ -3,8 +3,10 @@
     url = http://github.com/username/repo.git
     ignore = untracked  # <====
 
-# ignore ftp config
+# ignore some configs
+config/twitchy3/
 config/filezilla/
+config/qBittorrent
 
 # ignore atom stuff
 atom/blob-store
