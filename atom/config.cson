@@ -12,5 +12,6 @@
     openResultAfterBuild: false
     openResultInBackground: false
     viewerPath: "/Applications/PDF\\ Expert.app"
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
