@@ -31,8 +31,8 @@ GIT_PROMPT_MODIFIED="${PR_YELLOW}m%{$reset_color%}"
 GIT_PROMPT_STAGED="${PR_GREEN}s%{$reset_color%}"
 
 # no color
-GIT_PROMPT_PREFIX=""
-GIT_PROMPT_SUFFIX=""
+GIT_PROMPT_PREFIX="["
+GIT_PROMPT_SUFFIX="]"
 GIT_PROMPT_AHEAD="+NUM"
 GIT_PROMPT_BEHIND="-NUM"
 GIT_PROMPT_MERGING="⚡︎"
@@ -91,7 +91,7 @@ function git_prompt_string() {
   #[ -n "$git_where" ] && echo " %{$fg[green]%}[${git_where#(refs/heads/|tags/)}$(parse_git_state)%{$fg[green]%}]"
 
   # minimalistic alternative without branch name and colors
-  [ -n "$git_where" ] && echo "[$(parse_git_state)]"
+  [ -n "$git_where" ] && echo "$(parse_git_state)"
 }
 
 function current_pwd {
