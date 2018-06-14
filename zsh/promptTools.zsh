@@ -1,9 +1,12 @@
 # Contains Functions and Tools used to generate Prompts
 
 function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo '❯' && return
-    hg root >/dev/null 2>/dev/null && echo '❯' && return
-    echo '❯'
+    #git branch >/dev/null 2>/dev/null && echo '❯' && return
+    #hg root >/dev/null 2>/dev/null && echo '❯' && return
+    #echo '❯'
+    git branch >/dev/null 2>/dev/null && echo '' && return
+    hg root >/dev/null 2>/dev/null && echo '' && return
+    echo ''
 }
 
 function box_name {
@@ -26,6 +29,16 @@ GIT_PROMPT_MERGING="${PR_BOLD_MAGENTA}⚡︎%{$reset_color%}"
 GIT_PROMPT_UNTRACKED="${PR_RED}u%{$reset_color%}"
 GIT_PROMPT_MODIFIED="${PR_YELLOW}m%{$reset_color%}"
 GIT_PROMPT_STAGED="${PR_GREEN}s%{$reset_color%}"
+
+# no color
+GIT_PROMPT_PREFIX=""
+GIT_PROMPT_SUFFIX=""
+GIT_PROMPT_AHEAD="+NUM"
+GIT_PROMPT_BEHIND="-NUM"
+GIT_PROMPT_MERGING="⚡︎"
+GIT_PROMPT_UNTRACKED="u"
+GIT_PROMPT_MODIFIED="m"
+GIT_PROMPT_STAGED="s"
  
 # Show Git branch/tag, or name-rev if on detached head
 function parse_git_branch() {
@@ -75,7 +88,10 @@ function parse_git_state() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  [ -n "$git_where" ] && echo " %{$fg[green]%}[${git_where#(refs/heads/|tags/)}$(parse_git_state)%{$fg[green]%}]"
+  #[ -n "$git_where" ] && echo " %{$fg[green]%}[${git_where#(refs/heads/|tags/)}$(parse_git_state)%{$fg[green]%}]"
+
+  # minimalistic alternative without branch name and colors
+  [ -n "$git_where" ] && echo "[$(parse_git_state)]"
 }
 
 function current_pwd {
