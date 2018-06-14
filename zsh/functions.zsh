@@ -46,6 +46,7 @@ if [[ $IS_MAC -eq 1 ]]; then
       open "dash://$1"
   }
 
+
 # function to open Stuff in a new iTerm Window
 popout_helper(){
     osascript <<-EOF
