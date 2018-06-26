@@ -33523,9 +33523,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 782 620 392 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1402 872 796 486 0 0 2560 1418 </string>
+	<string>-1645 875 796 486 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>913 307 1040 818 0 0 2560 1418 </string>
+	<string>-1164 388 1040 818 -2560 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>65 333 740 510 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_32DEF520-535B-42BA-B654-7B4C3C864568</key>
@@ -33560,13 +33560,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 				<key>Red Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -33716,13 +33716,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 				<key>Red Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.14901960784313725</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -37704,7 +37704,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-14T13:51:43Z</date>
+	<date>2018-06-26T15:12:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

@@ -51,7 +51,7 @@ export ARCHFLAGS='-arch x86_64'
 
 export LESS='--ignore-case --raw-control-chars'
 export PAGER='less'
-export EDITOR='nvim'
+export EDITOR='vim'
 
 #export NODE_PATH=/opt/github/homebrew/lib/node_modules
 #export PYTHONPATH=/usr/local/lib/python2.6/site-packages

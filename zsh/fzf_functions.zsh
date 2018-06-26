@@ -11,6 +11,17 @@ function vimf() {
   fi
 }
 
+function mvimf() {
+  local out file key
+  out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
+  key=$(head -1 <<< "$out")
+  file=$(head -2 <<< "$out" | tail -1)
+  if [ -n "$file" ]; then
+    open -a MacVim.app "$file"
+  fi
+}
+
+
 function vimrf() {
   local out file key
   out=$(fzf-tmux --query="$1" --exit-0 --expect=ctrl-o,ctrl-e)
