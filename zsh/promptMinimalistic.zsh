@@ -1,7 +1,7 @@
 # Loading a Prompt in one Line Format
 
 PROMPT='
-${PR_BOLD_MAGENTA}$(prompt_char)${PR_BOLD_GREEN}  '
+${PR_BOLD_MAGENTA} $(prompt_char)${PR_BOLD_GREEN}  '
 
 zle_highlight=( default:bold,fg=green )
 
