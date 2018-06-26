@@ -61,12 +61,15 @@ let mapleader=" "
 " <Leader>rtw will remove all trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
-" toggle NerdTree
-map <leader>k :NERDTreeToggle<CR>
-
 " next and previous tab
 map <leader>p :tabp<CR>
 map <leader>n :tabn<CR>
+
+" FZF keybinds
+map <leader>ff :Files<CR>
+map <leader>fg :GFiles<CR>
+map <leader>fb :Buffers<CR>
+map <leader>fl :Lines<CR>
 
 " toggle ctrlP
 let g:ctrlp_map = '<c-p>'
