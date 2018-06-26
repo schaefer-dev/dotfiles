@@ -110,6 +110,7 @@ if [[ $IS_MAC -eq 1 ]]; then
     alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
 
     # open in mvim tab
+    alias mvim="open -a MacVim.app"
     alias mvimt="mvim --remote-tab-silent"
 
 fi

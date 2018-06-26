@@ -47,6 +47,8 @@ nvim/bundle/
 nvim/plugged/
 
 
+mvim/vim/.netrwhist
+
 
 # ST3 ignores
 
