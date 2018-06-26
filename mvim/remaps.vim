@@ -67,7 +67,7 @@ map <leader>n :tabn<CR>
 
 " FZF keybinds
 map <leader>ff :Files<CR>
-map <leader>fg :GFiles<CR>
+map <leader>fg :GFiles --exclude-standard -c -m -o<CR>
 map <leader>fb :Buffers<CR>
 map <leader>fl :Lines<CR>
 
