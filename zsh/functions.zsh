@@ -68,6 +68,12 @@ popout(){
 fi
 
 
+# generate ctags starting at current directory down
+generateCtags(){
+    ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
+}
+
+
 testLoggit() {
   echo  "$(git --no-pager log --all --graph --decorate --oneline --color=always | tac | sed -e 's/[\]/aaaaaaaaaa/g' -e 's/[/]/\\/g' -e 's/aaaaaaaaaa/\//g' | less -r +G -X)"
 }

@@ -20,11 +20,14 @@
 /Users/daniel/dotfiles/LaTex/presets/exercise-header.tex
 /Users/daniel/dotfiles/LaTex/presets/script.tex
 
-# vim stuff
+# nvim stuff
 /Users/daniel/dotfiles/nvim/init.vim
 /Users/daniel/dotfiles/nvim/plugins.vim
 /Users/daniel/dotfiles/nvim/pluginSettings.vim
 /Users/daniel/dotfiles/nvim/remaps.vim
+
+# vim stuff
+/Users/daniel/dotfiles/mvim/vimrc
 
 # tmux stuff
 /Users/daniel/dotfiles/tmux/tmux.conf
