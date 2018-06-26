@@ -17,6 +17,14 @@
 "
 " The is code taken from solarized.vim:
 " https://github.com/altercation/vim-colors-solarized
+" 
+"
+"
+" USEFUL DOC FOR COLOR CODES TO RGB
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+"
+"
+"
 
 "}}}
 " Requirements And Recommendations:"{{{
