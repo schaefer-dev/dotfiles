@@ -28,6 +28,8 @@
 
 # vim stuff
 /Users/daniel/dotfiles/mvim/vimrc
+/Users/daniel/dotfiles/mvim/remaps.vim
+/Users/daniel/dotfiles/mvim/pluginsettings.vim
 
 # tmux stuff
 /Users/daniel/dotfiles/tmux/tmux.conf

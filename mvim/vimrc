@@ -28,12 +28,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'cocopon/lightline-hybrid.vim'
 " Gitgutter shows difference in git
 Plugin 'airblade/vim-gitgutter'
-" nerdtree file tree
-Plugin 'scrooloose/nerdtree'
-" some nerdtree tab fixes
-Plugin 'jistr/vim-nerdtree-tabs'
-" nerdtree git plugin
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 " shows indentationlevels nicer
 Plugin 'nathanaelkane/vim-indent-guides'
 " Big python functionality pack
@@ -57,16 +51,13 @@ Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'christoomey/vim-system-copy'
 " defines indent as an object using ii
 Plugin 'michaeljsmith/vim-indent-object'
-" Dash 3 support
-Plugin 'rizzatti/dash.vim'
 " An Interface to WEB APIs
 Plugin 'mattn/webapi-vim'
-" ctrlP vim
-Plugin 'ctrlpvim/ctrlp.vim'
-" Fancy Icons for ctrlp, nedtree usw
-Plugin 'ryanoasis/vim-devicons'
 "c.vim plugin
 Plugin 'vim-scripts/c.vim'
+" FZF plugin
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 
 
 
