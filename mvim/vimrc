@@ -155,7 +155,7 @@ set background=dark
 
 " hybrid color theme
 let g:hybrid_use_Xresources = 1
-colorscheme my-hybrid
+colorscheme my-hybrid2
 
 " disable sounds
 set visualbell                  "No sounds

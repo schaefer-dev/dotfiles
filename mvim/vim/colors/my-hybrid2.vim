@@ -85,7 +85,7 @@ let g:colors_name = "hybrid"
 let s:palette = {'gui' : {} , 'cterm' : {}}
 
 if exists("g:hybrid_reduced_contrast") && g:hybrid_reduced_contrast == 1
-  let s:gui_background = "#292929"
+  let s:gui_background = "#262626"
   let s:gui_selection  = "#425059"
   let s:gui_line       = "#2d3c46"
   let s:gui_comment    = "#6c7a80"
@@ -148,9 +148,9 @@ else
   let s:cterm_delbg      = "167"
 endif
 
-let s:palette.cterm.background = { 'dark' : "236"              , 'light' : "254" }
+let s:palette.cterm.background = { 'dark' : "235"              , 'light' : "254" }
 let s:palette.cterm.foreground = { 'dark' : s:cterm_foreground , 'light' : "16"  }
-let s:palette.cterm.window     = { 'dark' : "236"              , 'light' : "247" }
+let s:palette.cterm.window     = { 'dark' : "235"              , 'light' : "247" }
 let s:palette.cterm.selection  = { 'dark' : s:cterm_selection  , 'light' : "250" }
 let s:palette.cterm.line       = { 'dark' : s:cterm_line       , 'light' : "252" }
 let s:palette.cterm.comment    = { 'dark' : s:cterm_comment    , 'light' : "59"  }
