@@ -259,8 +259,8 @@ alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 # proverif execution using pi calculus
 alias pv="proverif -in pi"
 
-# neovim masterrace
-alias vim="nvim"
+# default vim to use neovim instead
+# alias vim="nvim"
 
 # alias to ubuntu home
 alias sshome="ssh daniel@schaeferdev.hopto.org"
