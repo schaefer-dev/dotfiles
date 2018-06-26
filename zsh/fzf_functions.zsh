@@ -71,6 +71,17 @@ function openb() {
    fi
 }
 
+# Setup openb function to cd into bookmarks
+# ------------------
+unalias mvimb 2> /dev/null
+function mvimb() {
+   local dest_dir=$(cdscuts_glob_echo | fzf-tmux )
+   if [[ $dest_dir != '' ]]; then
+      mvim $dest_dir
+   fi
+}
+
+
 # Setup vimb function to edit bookmarks
 # ------------------
 unalias fob 2> /dev/null

@@ -38,6 +38,8 @@ augroup MyIMAPs
         au VimEnter * call IMAP('\margin ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
         au VimEnter * call IMAP('\mar ','\begin{addmargin}[2em]{2em}% 2em left, 2em right <++>','tex')
         au VimEnter * call IMAP("''","''<++>''<++>",'tex')
+        au VimEnter * call IMAP('\lst ','\begin{lstlisting}[basicstyle=\small,]<++>','tex')
+        au VimEnter * call IMAP('\lstlisting ','\begin{lstlisting}[basicstyle=\small,]<++>','tex')
 augroup END
 
 " vim tab navigation
