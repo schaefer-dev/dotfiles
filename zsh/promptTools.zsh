@@ -88,10 +88,10 @@ function parse_git_state() {
 # If inside a Git repository, print its branch and state
 function git_prompt_string() {
   local git_where="$(parse_git_branch)"
-  #[ -n "$git_where" ] && echo " %{$fg[green]%}[${git_where#(refs/heads/|tags/)}$(parse_git_state)%{$fg[green]%}]"
+  [ -n "$git_where" ] && echo " %{$fg[white]%}${git_where#(refs/heads/|tags/)}$(parse_git_state)%{$fg[white]%}"
 
   # minimalistic alternative without branch name and colors
-  [ -n "$git_where" ] && echo "$(parse_git_state)"
+  # [ -n "$git_where" ] && echo "$(parse_git_state)"
 }
 
 function current_pwd {
