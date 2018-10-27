@@ -6,8 +6,11 @@ set __fish_git_prompt_showupstream 'none'
 set -g fish_prompt_pwd_dir_length 3
 
 
+# set some useful variables
 setenv EDITOR vim
 setenv NAME "Daniel Schaefer"
+set -x LC_ALL en_US.UTF-8
+set -x LC_CTYPE en_US.UTF-8
 
 
 # Pretty ls colors
