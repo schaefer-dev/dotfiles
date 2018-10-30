@@ -3,6 +3,7 @@
     "workbench.statusBar.feedback.visible": false,
     "window.zoomLevel": -1,
     "editor.fontSize": 14,
+    "files.trimTrailingWhitespace": true,
     "editor.scrollbar.verticalScrollbarSize": 5,
     "markdown.preview.fontSize": 16,
     "terminal.integrated.fontSize": 14,
@@ -28,4 +29,8 @@
     },
     "materialTheme.accentPrevious": "Graphite",
     "materialTheme.accent": "Orange",
+    "arduino.additionalUrls": [
+        "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+    ],
+
 }
