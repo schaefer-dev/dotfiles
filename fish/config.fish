@@ -26,9 +26,12 @@ if test -e ~/.dir_colors
 end
 
 # some fzf aliases
-# alias vimf "vim (fzf)"
-# alias mvimf "mvim (fzf)"
-# alias codef "code (fzf)"
+alias cdb "cd ~/links; __fzf_cd"
+alias cdf "__fzf_cd"
+alias openb "cd ~/links; __fzf_open"
+alias openf "__fzf_open"
+alias vimf "__fzf_open --editor"
+alias vimb "cd ~/links; __fzf_open --editor"
 
 # important exports
 set PATH $PATH ~/dotfiles/bin
