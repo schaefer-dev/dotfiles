@@ -11,12 +11,20 @@ setenv EDITOR vim
 setenv NAME "Daniel Schaefer"
 set -x LC_ALL en_US.UTF-8
 set -x LC_CTYPE en_US.UTF-8
+set -x LANGUAGE en_US.UTF-8
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
 
 
 # Pretty ls colors
 if test -e ~/.dir_colors
 	setenv LS_COLORS (sh --noprofile -c 'eval "$(dircolors -b ~/.dir_colors)"; echo $LS_COLORS')
 end
+
+# some fzf aliases
+alias vimf "vim (fzf)"
+alias mvimf "mvim (fzf)"
+alias codef "code (fzf)"
 
 # important exports
 set PATH $PATH ~/dotfiles/bin
