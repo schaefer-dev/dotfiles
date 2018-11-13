@@ -6,6 +6,10 @@ set __fish_git_prompt_showupstream 'none'
 set -g fish_prompt_pwd_dir_length 3
 
 
+
+# disable old fish bindings
+set -U FZF_LEGACY_KEYBINDINGS 0
+
 # set some useful variables
 setenv EDITOR vim
 setenv NAME "Daniel Schaefer"
@@ -22,9 +26,9 @@ if test -e ~/.dir_colors
 end
 
 # some fzf aliases
-alias vimf "vim (fzf)"
-alias mvimf "mvim (fzf)"
-alias codef "code (fzf)"
+# alias vimf "vim (fzf)"
+# alias mvimf "mvim (fzf)"
+# alias codef "code (fzf)"
 
 # important exports
 set PATH $PATH ~/dotfiles/bin
