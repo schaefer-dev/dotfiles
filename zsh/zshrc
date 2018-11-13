@@ -1,10 +1,13 @@
+# Enable to debug time of zsh startup
+# zmodload zsh/zprof
+
 source ~/dotfiles/zsh/checks.zsh
 source ~/dotfiles/zsh/colors.zsh
 source ~/dotfiles/zsh/setopt.zsh
 source ~/dotfiles/zsh/exports.zsh
 source ~/dotfiles/zsh/promptTools.zsh
-source ~/dotfiles/zsh/promptMinimalistic.zsh
-#source ~/dotfiles/zsh/promptOneBigLine.zsh
+#source ~/dotfiles/zsh/promptMinimalistic.zsh
+source ~/dotfiles/zsh/promptOneBigLine.zsh
 #source ~/dotfiles/zsh/completion.zsh
 source ~/dotfiles/zsh/aliases.zsh
 source ~/dotfiles/zsh/bindkeys.zsh
@@ -25,8 +28,8 @@ source ~/dotfiles/scripts/web.zsh
 #important for autojump to work properly
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-# load RVM Ruby Manager
-source /Users/daniel/.rvm/scripts/rvm
+# load RVM Ruby Manager (this slows down shell a lot)
+# source /Users/daniel/.rvm/scripts/rvm
 
 # compsys initialization
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
@@ -39,3 +42,6 @@ compinit
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Enable to debug time of zsh startup
+# zprof

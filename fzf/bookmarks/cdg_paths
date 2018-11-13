@@ -28,65 +28,21 @@
 /Users/daniel/dotfiles/atom
 
 # University repos
-/Users/daniel/uni_repos/repo_ping
-/Users/daniel/uni_repos/repo_hci
-/Users/daniel/uni_repos/repo_ethic
 /Users/daniel/uni_repos/repo_se17
-/Users/daniel/uni_repos/repo_bachelorUnity
-/Users/daniel/uni_repos/repo_bachelorPresentation
 /Users/daniel/Dropbox/uni/repo_bachelorArbeit
-/Users/daniel/uni_repos/repo_planningSheet
-/Users/daniel/uni_repos/repo_planning
 /Users/daniel/uni_repos/repo_operatingSystems
-/Users/daniel/uni_repos/repo_webSecurity
 /Users/daniel/uni_repos/repo_cryptography
 /Users/daniel/uni_repos/repo_embeddedSystems
-/Users/daniel/uni_repos/repo_websec_screecher
-/Users/daniel/uni_repos/repo_websec_attacker
+/Users/daniel/uni_repos/repo_trex
+/Users/daniel/uni_repos/repo_formalVerification
 
 # Dropbox uni stuff
 /Users/daniel/Dropbox/uni/embeddedSystems
 /Users/daniel/Dropbox/uni/automataGamesVerification
 /Users/daniel/Dropbox/uni/formalSecurity
 
-# Archiv uni stuff
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/cryptography
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/webSecurity
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/se
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/hci
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/ethic
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/ping
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/planning
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/operatingSystems
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/imageAquisitionMethods
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/cryptography
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/hacking
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/HCI-dev
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/HCI-dev/repo_human_computer_interaction_dev
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/HLC-vision
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/HLC-vision/repo_HLCV_private
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/security
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/security/repo_security
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/security/repo_security_private
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/medieninformatik
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/recht_der_cybersicherheit
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/neuralNetworks/repo_neuralNetworks
-/Users/daniel/Dropbox/uni/Uni Archiv + Fachschaft/neuralNetworks/
-
-
-# Courses
-/Users/daniel/Dropbox/uni/courses/algorithmic-thinking-1
-/Users/daniel/Dropbox/uni/courses/algorithmic-thinking-2
-/Users/daniel/Dropbox/uni/courses/arduino-platform
-/Users/daniel/Dropbox/uni/courses/compilers-004
-/Users/daniel/Dropbox/uni/courses/learning-how-to-learn
-/Users/daniel/Dropbox/uni/courses/machine-learning
-/Users/daniel/Dropbox/uni/courses/ml-foundations
-/Users/daniel/Dropbox/uni/courses/progfun1
-/Users/daniel/Dropbox/uni/courses/progfun2
-/Users/daniel/Dropbox/uni/courses/python-data
-/Users/daniel/Dropbox/uni/courses/python-databases
-/Users/daniel/Dropbox/uni/courses/python-network-data
-/Users/daniel/Dropbox/uni/courses/ruby-on-rails-intro
-/Users/daniel/Dropbox/uni/courses/website-coding
+# Notability uni stuff
+/Users/daniel/Dropbox/Notability/Automata Games Verification
+/Users/daniel/Dropbox/Notability/Embedded Systems
+/Users/daniel/Dropbox/Notability/Formal Security
+/Users/daniel/Dropbox/Notability/HiWi
