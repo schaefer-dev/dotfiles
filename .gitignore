@@ -6,6 +6,7 @@
 # ignore fish stuff
 fish/fishd.*
 fish/fish_history
+config/fisher
 
 # ignore some configs
 config/twitchy3/
