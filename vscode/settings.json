@@ -38,5 +38,11 @@
     "arduino.ignoreBoards": [
         "Adafruit HUZZAH ESP8266"
     ],
+    "rust.mode": "rls",
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-x86_64-apple-darwin"
+    },
+    "editor.lineNumbers": "relative",
 
 }
