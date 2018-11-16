@@ -32,6 +32,9 @@ if [[ $IS_MAC -eq 1 ]]; then
     # Tensor flow OSX 64 | CPU only
     export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0-py3-none-any.whl
 
+    # Rust path
+    export PATH="~/.cargo/bin:$PATH"
+
 fi
 
 # Setup terminal, and turn on colors
