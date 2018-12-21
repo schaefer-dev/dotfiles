@@ -5,6 +5,8 @@
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
 
+alias macminissl="zsh ~/Desktop/macMiniSSL.zsh"
+
 # -------------------------------------------------------------------
 # use nocorrect alias to prevent auto correct from "fixing" these
 # -------------------------------------------------------------------
@@ -261,7 +263,7 @@ alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.subli
 alias pv="proverif -in pi"
 
 # default vim to use neovim instead
-# alias vim="nvim"
+alias vim="nvim"
 
 # alias to ubuntu home
 alias sshome="ssh daniel@schaeferdev.hopto.org"
