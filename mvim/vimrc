@@ -18,7 +18,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'wincent/command-t'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -31,7 +31,7 @@ Plugin 'airblade/vim-gitgutter'
 " shows indentationlevels nicer
 Plugin 'nathanaelkane/vim-indent-guides'
 " Big python functionality pack
-Plugin 'klen/python-mode'
+Plugin 'python-mode/python-mode'
 " Tmux navigaion with vim splits
 Plugin 'christoomey/vim-tmux-navigator'
 " Latex stuff for latexdev
