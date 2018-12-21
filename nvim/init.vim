@@ -1,6 +1,5 @@
 source ~/dotfiles/config/nvim/plugins.vim
 
-source ~/dotfiles/config/nvim/pluginSettings.vim
 
 " =====================================================================================================================
 " 6.0 Color and highlighting settings
@@ -118,3 +117,5 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 
 source ~/dotfiles/config/nvim/remaps.vim
+
+source ~/dotfiles/config/nvim/pluginSettings.vim

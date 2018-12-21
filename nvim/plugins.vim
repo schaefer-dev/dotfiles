@@ -92,6 +92,8 @@ Plug 'ferranpm/vim-isolate', { 'on':  ['Isolate', 'UnIsolate'] }
 Plug 'zef/vim-cycle'
 " Titlecase motion (gt)
 Plug 'christoomey/vim-titlecase'
+" Highlight the lines for a second when yanking/marking them
+Plug 'machakann/vim-highlightedyank'
 "}}}
 
 " ---------------------------------------------------------------------------------------------------------------------

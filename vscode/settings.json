@@ -44,5 +44,6 @@
         "nightlyToolchain": "nightly-x86_64-apple-darwin"
     },
     "editor.lineNumbers": "relative",
+    "sync.gist": "87ad453268e4e9e39e4ce11e4a04a3e3",
 
 }

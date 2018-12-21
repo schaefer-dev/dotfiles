@@ -1,4 +1,3 @@
-if [[ $IS_MAC -eq 1 ]]; then
     # Currently this path is appended to dynamically when picking a ruby version
     # zshenv has already started PATH with rbenv so append only here
     export PATH=$PATH~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
@@ -21,7 +20,7 @@ if [[ $IS_MAC -eq 1 ]]; then
     export PATH="/usr/local/bin:$PATH"
 
     # Anaconda python 
-    export PATH="/Users/daniel/anaconda/bin:$PATH"
+    # export PATH="/Users/daniel/anaconda/bin:$PATH"
 
     # Latex path
     export PATH="/Library/TeX/texbin:$PATH"
@@ -35,10 +34,8 @@ if [[ $IS_MAC -eq 1 ]]; then
     # Rust path
     export PATH="~/.cargo/bin:$PATH"
 
-fi
 
 # Setup terminal, and turn on colors
-export TERM=xterm-256color
 export CLICOLOR=1
 
 # set LS_COLORS
