@@ -24,18 +24,28 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Fixes folds
 Plug 'Konfekt/FastFold'
-" Asynchronous maker and linter (needs linters to work)
-Plug 'benekastah/neomake', { 'on': ['Neomake'] }
-" Snippet support (C-j)
-Plug 'SirVer/ultisnips'
-" Commenting support (gc)
-Plug 'tpope/vim-commentary'
 " CamelCase and snake_case motions
 Plug 'bkad/CamelCaseMotion'
 " Heuristically set indent settings
 Plug 'tpope/vim-sleuth'
+" Language Servers
+Plug 'w0rp/ale'
+" Autocompletoin
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+" LanguageClient enhancements
+" Showing function signature and inline doc.
+Plug 'Shougo/echodoc.vim'
+
 "}}}
-"
+
 
 " ---------------------------------------------------------------------------------------------------------------------
 " Other languages {{{
@@ -51,6 +61,8 @@ Plug 'tpope/vim-git'
 Plug 'keith/tmux.vim'
 " Python allrounder
 Plug 'python-mode/python-mode'
+" Rust language support
+Plug 'rust-lang/rust.vim'
 "}}}
 
 

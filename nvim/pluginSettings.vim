@@ -136,4 +136,31 @@ let g:fzf_history_dir = '~/.fzf-history'
 
 " Highlights the yanked lines for a second
 let g:highlightedyank_highlight_duration = 1000
-highlight HighlightedyankRegion cterm=reverse gui=reverse
+" highlight HighlightedyankRegion cterm=reverse gui=reverse
+
+
+
+" Settings for autocomplete
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANTE: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+
+
+
+""""""""" ALE Settings
+let g:ale_linters = {'rust': ['rls']}
+
+
+
+""""""""" Language servers
+" language server protocol
+let g:LanguageClient_settingsPath = "/Users/daniel/dotfiles/nvim/settings.json"
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['env', 'CARGO_TARGET_DIR=/data/jon/cargo-target/rls', 'rls'],
+    \ }
+let g:LanguageClient_autoStart = 1
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>

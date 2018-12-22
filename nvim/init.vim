@@ -41,8 +41,6 @@ set foldnestmax=10          " deepest fold is 10 levels
 set nofoldenable            " don't fold by default
 set foldlevel=1
 
-set clipboard+=unnamedplus
-
 set ttyfast                 " faster redrawing
 set diffopt+=vertical
 set laststatus=2            " show the satus line all the time
