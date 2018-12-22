@@ -159,7 +159,7 @@ let g:ale_linters = {'rust': ['rls']}
 " language server protocol
 let g:LanguageClient_settingsPath = "/Users/daniel/dotfiles/nvim/settings.json"
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['env', 'CARGO_TARGET_DIR=/data/jon/cargo-target/rls', 'rls'],
+    \ 'rust': ['env', 'CARGO_TARGET_DIR=/Users/daniel/.rustup/toolchains/stable-x86_64-apple-darwin/bin', 'rls'],
     \ }
 let g:LanguageClient_autoStart = 1
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>

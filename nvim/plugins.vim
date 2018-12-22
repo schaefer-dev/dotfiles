@@ -164,6 +164,8 @@ Plug 'edsono/vim-matchit'
 Plug 'tpope/vim-repeat'
 " Populate arglist with buffers in quickfix list
 Plug 'nelstrom/vim-qargs', { 'on': 'Qargs' }
+" Set vim into directory of git root
+Plug 'airblade/vim-rooter'
 "}}}
 
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
