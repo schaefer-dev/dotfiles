@@ -110,6 +110,16 @@ hi! link BufTabLineHidden Comment
 hi! link BufTabLineFill Comment
 
 
+" Proper search
+set incsearch
+set ignorecase
+set smartcase
+set gdefault
+
+" Permanent undo
+set undodir=~/.vimdid
+set undofile
+
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
