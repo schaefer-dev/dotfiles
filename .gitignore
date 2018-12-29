@@ -1,8 +1,3 @@
-[submodule "mvim/vim/bundle/L9"]
-    path = path/to/submodule
-    url = http://github.com/username/repo.git
-    ignore = untracked  # <====
-
 # ignore fish stuff
 fish/fishd.*
 fish/fish_history
@@ -38,7 +33,7 @@ bin/pintos_support
 
 weechat/logs/*
 bin/JDownloader 2.0/*
-mvim/vim/bundle/*
+mvim/bundle/*
 config/mps-youtube/input_history
 config/rtv/*
 config/nvim/*
@@ -52,7 +47,7 @@ nvim/bundle/
 nvim/plugged/
 
 
-mvim/vim/.netrwhist
+mvim/.netrwhist
 
 
 # ST3 ignores
