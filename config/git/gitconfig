@@ -4,7 +4,7 @@
 [core]
 	edit = vim
 	editor = nvim
-	excludesfile = /Users/daniel/.gitignore_global
+	excludesfile = /Users/daniel/dotfiles/config/git/ignore
 [merge]
 	conflictstyle = diff3
 [color]
