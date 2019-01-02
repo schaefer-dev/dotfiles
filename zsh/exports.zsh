@@ -19,6 +19,9 @@
     # homebrew default override
     export PATH="/usr/local/bin:$PATH"
 
+    # load bins from dotfiles
+    export PATH="/Users/daniel/dotfiles/bin:$PATH"
+
     # Anaconda python 
     # export PATH="/Users/daniel/anaconda/bin:$PATH"
 
