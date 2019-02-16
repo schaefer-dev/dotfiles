@@ -36,6 +36,8 @@ zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
 
+# small case letters will match to capital letters
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # important for fzf to work properly
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
