@@ -13,10 +13,10 @@ export PR_BOLD_RED PR_BOLD_GREEN PR_BOLD_YELLOW PR_BOLD_BLUE PR_BOLD_MAGENTA
 export PR_BOLD_WHITE PR_BOLD_BLACK
 
 # Clear LSCOLORS
-unset LSCOLORS
+# unset LSCOLORS
 
 # set LS_COLORS
 # the Setting of LS_COLORS has to be located in exports.zsh, always change there
 
-export CLICOLOR=1
-export LS_COLORS=exfxcxdxbxegedabagacad
+# export CLICOLOR=1
+# export LS_COLORS=exfxcxdxbxegedabagacad

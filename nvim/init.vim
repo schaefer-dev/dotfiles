@@ -1,4 +1,4 @@
-source ~/dotfiles/config/nvim/plugins.vim
+source ~/dotfiles/nvim/plugins.vim
 
 
 " =====================================================================================================================
@@ -11,7 +11,7 @@ syntax on
 set bg=dark
 colorscheme hybrid
 "colorscheme gruvbox
-set termguicolors			" True color support
+"set termguicolors			" True color support
 
 " color for cursorline and cursorcolumn
 hi CursorColumn ctermbg=237 guibg=#282A2D
@@ -124,6 +124,7 @@ let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 
-source ~/dotfiles/config/nvim/remaps.vim
+source ~/dotfiles/nvim/remaps.vim
 
-source ~/dotfiles/config/nvim/pluginSettings.vim
+source ~/dotfiles/nvim/pluginSettings.vim
+let $VTE_VERSION="100"
