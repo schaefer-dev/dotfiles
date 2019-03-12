@@ -28,8 +28,8 @@ Plug 'Konfekt/FastFold'
 Plug 'bkad/CamelCaseMotion'
 " Heuristically set indent settings
 Plug 'tpope/vim-sleuth'
-" Language Servers
-Plug 'w0rp/ale'
+" Language servers
+" Plug 'w0rp/ale'
 " Autocompletoin
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
@@ -59,8 +59,6 @@ Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-git'
 " Tmux syntax
 Plug 'keith/tmux.vim'
-" Python allrounder
-Plug 'python-mode/python-mode'
 " Rust language support
 Plug 'rust-lang/rust.vim'
 "}}}
