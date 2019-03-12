@@ -26,6 +26,9 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " make backspace behave in a sane manner
 set backspace=indent,eol,start
 
+" fix broken insert cursor
+set guicursor=
+
 " Tab control
 set expandtab               " insert spaces rather than tabs for <Tab>
 set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
@@ -93,8 +96,8 @@ set history=999
 
 " Highlight term cursor differently
 highlight TermCursor ctermfg=green guifg=green
-let NVIM_TUI_ENABLE_CURSOR_SHAPE=1
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+" let NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+" let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 " Listchars highlighting 
 highlight NonText ctermfg=235 guifg=gray
