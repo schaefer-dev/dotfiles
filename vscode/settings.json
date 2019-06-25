@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+
     "workbench.statusBar.feedback.visible": false,
     "window.zoomLevel": -1,
     "editor.fontSize": 14,
@@ -10,22 +11,28 @@
     "editor.wordWrap": "on",
     "editor.cursorStyle": "block",
     "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.colorTheme": "Egoist One",
     "materialTheme.fixIconsRunning": false,
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#FF7042",
-        "list.activeSelectionForeground": "#FF7042",
-        "list.inactiveSelectionForeground": "#FF7042",
-        "list.highlightForeground": "#FF7042",
-        "scrollbarSlider.activeBackground": "#FF704250",
-        "editorSuggestWidget.highlightForeground": "#FF7042",
-        "textLink.foreground": "#FF7042",
-        "progressBar.background": "#FF7042",
-        "pickerGroup.foreground": "#FF7042",
-        "tab.activeBorder": "#FF7042",
-        "notificationLink.foreground": "#FF7042",
-        "editor.findWidgetResizeBorder": "#FF7042",
-        "editorWidget.border": "#FF7042"
+    //"workbench.colorCustomizations": {
+        //"activityBarBadge.background": "#FF7042",
+        //"list.activeSelectionForeground": "#FF7042",
+        //"list.inactiveSelectionForeground": "#FF7042",
+        //"list.highlightForeground": "#FF7042",
+        //"scrollbarSlider.activeBackground": "#FF704250",
+        //"editorSuggestWidget.highlightForeground": "#FF7042",
+        //"textLink.foreground": "#FF7042",
+        //"progressBar.background": "#FF7042",
+        //"pickerGroup.foreground": "#FF7042",
+        //"tab.activeBorder": "#FF7042",
+        //"notificationLink.foreground": "#FF7042",
+        //"editor.findWidgetResizeBorder": "#FF7042",
+        //"editorWidget.border": "#FF7042"
+    //},
+    "workbench.colorCustomizations":{
+        "tab.activeBackground": "#282c34",
+        "activityBar.background": "#282c34",
+        "editorGroup.background": "#282c34",
+        "sideBar.background": "#282c34"
     },
     "materialTheme.accentPrevious": "Graphite",
     "materialTheme.accent": "Orange",
@@ -44,6 +51,8 @@
         "nightlyToolchain": "nightly-x86_64-apple-darwin"
     },
     "editor.lineNumbers": "relative",
-    "sync.gist": "87ad453268e4e9e39e4ce11e4a04a3e3",
+    "sync.gist": "a21839fa9c59c2ef61808a3fdffb98b5",
+    "editor.formatOnSave": true,
+    "editor.matchBrackets": false,
 
 }

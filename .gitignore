@@ -1,3 +1,8 @@
+# ignore vim bundle/color downloads
+mvim/vim
+
+scripts/.ropeproject/
+
 # ignore fish stuff
 fish/fishd.*
 fish/fish_history

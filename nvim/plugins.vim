@@ -60,7 +60,7 @@ Plug 'tpope/vim-git'
 " Tmux syntax
 Plug 'keith/tmux.vim'
 " Python allrounder
-Plug 'python-mode/python-mode'
+" Plug 'python-mode/python-mode'
 " Rust language support
 Plug 'rust-lang/rust.vim'
 "}}}
