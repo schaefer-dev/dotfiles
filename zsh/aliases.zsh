@@ -185,7 +185,7 @@ alias top="top -o cpu"
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
 #
 # use htop with sudo (to show ram/cpu) and also sort for cpu usage
-alias htop="sudo htop --sort-key PERCENT_CPU"
+alias htop="htop --sort-key PERCENT_CPU"
 
 # alias to cat this file to display
 alias acat='< ~/dotfiles/zsh/aliases.zsh'

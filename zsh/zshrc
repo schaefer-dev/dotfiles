@@ -2,6 +2,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/dotfiles/zsh/exports.zsh
 source ~/dotfiles/zsh/aliases.zsh
 
+source ~/dotfiles/zsh/fzf_functions.zsh
+
 # pure power prompt style
 source ~/dotfiles/zsh/prompts/purepower
 

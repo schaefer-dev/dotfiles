@@ -1,6 +1,7 @@
 # ignore vim bundle/color downloads
 mvim/vim
 
+# scripts ropreproject
 scripts/.ropeproject/
 
 # ignore fish stuff
@@ -13,6 +14,7 @@ config/twitchy3/
 config/filezilla/
 config/qBittorrent
 config/configstore/
+config/htop/
 
 # ignore atom stuff
 atom/blob-store
