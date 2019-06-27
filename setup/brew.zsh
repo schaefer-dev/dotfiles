@@ -25,7 +25,6 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 
 echo "brew install all my old stuff"
-brew install postgresql
 brew install youtube-dl
 brew install archey
 brew install grep
@@ -42,26 +41,10 @@ brew install mpv
 brew install grep
 brew install autojump
 brew install mplayer
-brew install weechat
-
-# Install more recent versions of some OS X tools.
-echo "Install more recent versions of some OS X tools."
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
-
-# Install other useful binaries.
-echo"Install other useful binaries."
-brew install ack
-brew install dark-mode
-
-#brew install exiv2
-echo "brew install exiv2"
 brew install git
 brew install rename
 brew install speedtest_cli
-brew install ssh-copy-id
 
-# Remove outdated versions from the cellar.
-brew cleanup
+# Install more recent versions of some OS X tools.
+echo "Install more recent versions of some OS X tools."
+brew install homebrew/dupes/openssh
