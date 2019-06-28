@@ -9,6 +9,7 @@ source ~/dotfiles/zsh/prompts/purepower
 
 # scripts
 source ~/dotfiles/scripts/livestream.zsh
+source ~/dotfiles/scripts/web.zsh
 
 # compsys initialization
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
