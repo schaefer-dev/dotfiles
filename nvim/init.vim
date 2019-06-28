@@ -23,7 +23,6 @@ endif
 " Color scheme 
 colorscheme one
 set bg=dark
-"colorscheme gruvbox
 
 " color for cursorline and cursorcolumn
 hi CursorColumn ctermbg=237 guibg=#282A2D
