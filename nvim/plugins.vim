@@ -149,6 +149,8 @@ Plug 'cocopon/iceberg.vim'
 Plug 'jacoborus/tender.vim'
 " gruvbox
 Plug 'morhetz/gruvbox'
+" vim-one
+Plug 'rakr/vim-one'
 "}}}
 
 

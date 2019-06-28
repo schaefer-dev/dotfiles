@@ -1,0 +1,3 @@
+[console_scripts]
+twitchy = twitchy.__main__:main
+

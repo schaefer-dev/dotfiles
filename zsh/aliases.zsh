@@ -57,65 +57,63 @@ alias 'filecount=find . -type f | wc -l' # number of files (not directories)
 # -------------------------------------------------------------------
 # Mac only
 # -------------------------------------------------------------------
-if [[ $IS_MAC -eq 1 ]]; then
-    alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
-    alias oo='open .' # open current directory in OS X Finder
-    alias 'smart=diskutil info disk0 | grep SMART' # display SMART status of hard drive
-    # Hall of the Mountain King
-    alias cello='say -v cellos "di di di di di di di di di di di di di di di di di di di di di di di di di di"'
-    # alias to show all Mac App store apps
-    alias apps='mdfind "kMDItemAppStoreHasReceipt=1"'
-    # rebuild Launch Services to remove duplicate entries on Open With menu
-    alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.fram ework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
+alias oo='open .' # open current directory in OS X Finder
+alias 'smart=diskutil info disk0 | grep SMART' # display SMART status of hard drive
+# Hall of the Mountain King
+alias cello='say -v cellos "di di di di di di di di di di di di di di di di di di di di di di di di di di"'
+# alias to show all Mac App store apps
+alias apps='mdfind "kMDItemAppStoreHasReceipt=1"'
+# rebuild Launch Services to remove duplicate entries on Open With menu
+alias rebuildopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.fram ework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
-    # -------------------------------------------------------------------
-    # database
-    # -------------------------------------------------------------------
-    alias 'psqlstart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start'
-    alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
-    #alias mysql='mysql -u root'
-    #alias mysqladmin='mysqladmin -u root'
-    # -------------------------------------------------------------------
-    
-
-    # launch apps with 'app'
-    alias app="open -a"
-    alias a="open -a"
-    alias Battle.net="Battle.net.app"
-    alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
-    alias vimr="open -a VimR.app"
-
-    # archey is default colored
-    alias archey="archey -c"
-
-    # use caffeinate for x seconds
-    alias caffeinate="caffeinate -i -t"
-
-    # -------------------------------------------------------------------
-    # KWM Tiling Window manager config
-    # -------------------------------------------------------------------
-    alias kwmStop="brew services stop kwm"
-    alias kwmStart="brew services start homebrew/binary/kwm"
-    alias kwmRestart="brew services restart kwm"
-    alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
-    alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
-    alias MouseDisabled="kwmc config focus-follows-mouse off"
-    alias MouseDisabled="kwmc config focus-follows-mouse off"
-    # -------------------------------------------------------------------
+# -------------------------------------------------------------------
+# database
+# -------------------------------------------------------------------
+alias 'psqlstart=/usr/local/pgsql/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start'
+alias 'psqlstop=/usr/local/pgsql/bin/pg_ctl stop'
+#alias mysql='mysql -u root'
+#alias mysqladmin='mysqladmin -u root'
+# -------------------------------------------------------------------
 
 
-    # alias for gitinspector
-    alias gitinspector="python2 /Users/daniel/dev/gitinspector/gitinspector.py"
+# launch apps with 'app'
+alias app="open -a"
+alias a="open -a"
+alias Battle.net="Battle.net.app"
+alias vlc="/applications/VLC.app/Contents/MacOS/VLC"
+alias vimr="open -a VimR.app"
 
-    # alias for hidden files
-    alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
-    alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
+# archey is default colored
+alias archey="archey -c"
 
-    # open in mvim tab
-    alias mvim="open -a MacVim.app"
-    alias mvimt="mvim --remote-tab-silent"
+# use caffeinate for x seconds
+alias caffeinate="caffeinate -i -t"
 
-fi
+# -------------------------------------------------------------------
+# KWM Tiling Window manager config
+# -------------------------------------------------------------------
+alias kwmStop="brew services stop kwm"
+alias kwmStart="brew services start homebrew/binary/kwm"
+alias kwmRestart="brew services restart kwm"
+alias kwmcMouseEnabled="kwmc config focus-follows-mouse autoraise"
+alias MouseEnabled="kwmc config focus-follows-mouse autoraise"
+alias MouseDisabled="kwmc config focus-follows-mouse off"
+alias MouseDisabled="kwmc config focus-follows-mouse off"
+# -------------------------------------------------------------------
+
+
+# alias for gitinspector
+alias gitinspector="python2 /Users/daniel/dev/gitinspector/gitinspector.py"
+
+# alias for hidden files
+alias hiddenon="defaults write com.apple.finder AppleShowAllFiles 1; killall Finder; open -a XtraFinder"
+alias hiddenoff="defaults write com.apple.finder AppleShowAllFiles 0; killall Finder; open -a XtraFinder"
+
+# open in mvim tab
+alias mvim="open -a MacVim.app"
+alias mvimt="mvim --remote-tab-silent"
+
 
 
 # -------------------------------------------------------------------

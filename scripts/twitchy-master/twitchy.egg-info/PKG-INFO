@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: twitchy
+Version: 3.4.0
+Summary: Command line streamlink wrapper for twitch.tv
+Home-page: https://github.com/BasioMeusPuga/twitchy
+Author: BasioMeusPuga
+Author-email: disgruntled.mob@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: any
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Multimedia :: Video :: Display

@@ -85,12 +85,12 @@ let g:colors_name = "hybrid"
 let s:palette = {'gui' : {} , 'cterm' : {}}
 
 if exists("g:hybrid_reduced_contrast") && g:hybrid_reduced_contrast == 1
-  let s:gui_background = "#0"
+  let s:gui_background = "#262626"
   let s:gui_selection  = "#425059"
   let s:gui_line       = "#2d3c46"
   let s:gui_comment    = "#6c7a80"
 else
-  let s:gui_background = "#0"
+  let s:gui_background = "#262626"
   let s:gui_selection  = "#373b41"
   let s:gui_line       = "#282a2e"
   let s:gui_comment    = "#707880"
