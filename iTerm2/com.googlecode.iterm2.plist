@@ -33545,7 +33545,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>0 137 224 275 0 0 3440 1417 </string>
+	<string>0 137 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>238 113 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame Preferences</key>
@@ -33557,9 +33557,9 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>230 833 592 584 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1854 405 1020 798 0 0 3440 1417 </string>
+	<string>1124 54 556 973 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1149 689 440 322 0 0 3440 1417 </string>
+	<string>475 444 440 322 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 10</key>
 	<string>372 340 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 11</key>
@@ -33575,7 +33575,7 @@
 	<key>NSWindow Frame iTerm Window 16</key>
 	<string>498 202 570 451 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 4 784 530 0 0 1680 1050 </string>
+	<string>0 203 440 322 0 0 3440 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>18 74 915 776 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -37093,13 +37093,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.217987060546875</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.1338836238719523</real>
 				<key>Red Component</key>
-				<real>0.16078431372549021</real>
+				<real>0.19627077704753049</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -37701,7 +37701,7 @@
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>0.99310523343373491</real>
+			<real>0.98999999999999999</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -37714,6 +37714,7 @@
 	<array>
 		<string>3.3.20190506-nightly</string>
 		<string>3.3.20190617-nightly</string>
+		<string>3.3.20190626-nightly</string>
 		<string>3.3.20190625-nightly</string>
 	</array>
 	<key>NoSyncConfirmBeta</key>
@@ -37725,9 +37726,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {3440, 1440}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{1430, 828}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -37736,7 +37737,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>487559655.75019598</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>27</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -38610,7 +38611,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-06-28T09:06:14Z</date>
+	<date>2019-07-02T10:53:46Z</date>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -38676,9 +38677,9 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.20190625-nightly</string>
+	<string>3.3.20190626-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 	<key>kCommandHistoryHasEverBeenUsed</key>
