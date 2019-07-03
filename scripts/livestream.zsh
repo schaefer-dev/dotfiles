@@ -10,7 +10,7 @@ stream(){
    select first window
    launch session "Default Session"
        tell current session of first window
-           write text "streamlink twitch.tv/'$1' best --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6"
+           write text "streamlink twitch.tv/'$1' best --player 'mpv' --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6"
        end tell
    end tell
 EOF
@@ -22,11 +22,11 @@ EOF
 
 # function to open livestream from twitch in a new window using multithreading
 termstream(){
-            echo "$(streamlink twitch.tv/"$1" best --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6)"
+            echo "$(streamlink twitch.tv/"$1" best --player 'mpv' --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6)"
 }
 
 termstream720(){
-            $ echo "$(streamlink twitch.tv/"$1" 720p60 --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6)"
+            $ echo "$(streamlink twitch.tv/"$1" 720p60 --player 'mpv' --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6)"
 }
 
 # function to download twitch vod using livestreamer
