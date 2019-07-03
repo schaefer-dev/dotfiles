@@ -5,7 +5,7 @@
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
 
-alias macminissl="zsh ~/Desktop/macMiniSSL.zsh"
+alias macminissl="zsh ~/dotfiles/scripts/macMiniSSL.zsh"
 
 # -------------------------------------------------------------------
 # use nocorrect alias to prevent auto correct from "fixing" these
