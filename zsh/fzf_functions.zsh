@@ -19,8 +19,7 @@ function mvimf() {
   if [ -n "$file" ]; then
     open -a MacVim.app "$file"
   fi
-}
-
+} 
 
 function vimrf() {
   local out file key
@@ -75,11 +74,20 @@ function openb() {
 # ------------------
 unalias mvimb 2> /dev/null
 function mvimb() {
-   local dest_dir=$(cdscuts_glob_echo | fzf-tmux )
+   local dest_dir=$(cdscuts_glob_echo_files | fzf-tmux )
    if [[ $dest_dir != '' ]]; then
       mvim $dest_dir
    fi
 }
+
+unalias vimrb 2> /dev/null
+function vimrb() {
+   local dest_dir=$(cdscuts_glob_echo_files | fzf-tmux )
+   if [[ $dest_dir != '' ]]; then
+      vimr $dest_dir
+   fi
+}
+
 
 
 # Setup vimb function to edit bookmarks
