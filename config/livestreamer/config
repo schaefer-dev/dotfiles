@@ -1,2 +1,2 @@
-player = mpv --cache 32768 
+player = vlc --cache 32768 
 

@@ -48,3 +48,7 @@ brew install speedtest_cli
 # Install more recent versions of some OS X tools.
 echo "Install more recent versions of some OS X tools."
 brew install homebrew/dupes/openssh
+
+
+# Install quicklook plugins, see github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo

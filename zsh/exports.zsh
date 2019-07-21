@@ -67,3 +67,6 @@ export LANG=en_US.UTF-8
 # Fix python utf8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Ignore commands that start with a space
+setopt histignorespace
