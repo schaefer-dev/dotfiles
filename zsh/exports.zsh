@@ -1,6 +1,12 @@
     # Currently this path is appended to dynamically when picking a ruby version
     # zshenv has already started PATH with rbenv so append only here
-    export PATH=$PATH~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
+    export PATH=$PATH:~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
+
+    # Haskell
+    source /Users/daniel/.ghcup/env
+
+    # Add master thesis tools
+    export PATH=$PATH:~/dev/master/binaries
 
     # setting java_home
     export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"

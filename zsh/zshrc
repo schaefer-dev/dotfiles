@@ -7,6 +7,9 @@ source ~/dotfiles/zsh/fzf_functions.zsh
 # pure power prompt style
 source ~/dotfiles/zsh/prompts/purepower
 
+# Transient prompt means it does not devide past actions that were performed in same dir
+typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=same-dir
+
 # scripts
 source ~/dotfiles/scripts/livestream.zsh
 source ~/dotfiles/scripts/web.zsh
@@ -27,3 +30,5 @@ source $HOME/.rvm/scripts/rvm
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+

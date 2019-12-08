@@ -171,5 +171,7 @@ set tags=./tags,tags;$HOME
 " source my custom remaps
 source ~/dotfiles/mvim/remaps.vim
 
+com! FormatJSON %!python -m json.tool
+
 " source my plugin settings
 source ~/dotfiles/mvim/pluginsettings.vim
