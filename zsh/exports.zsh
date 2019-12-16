@@ -43,6 +43,9 @@
     # Rust path
     export PATH="~/.cargo/bin:$PATH"
 
+    # LLVM path
+    export LLVM_CONFIG_PATH=/usr/local/Cellar/llvm/9.0.0_1/bin/llvm-config
+
 
 # Setup terminal, and turn on colors
 export CLICOLOR=1
