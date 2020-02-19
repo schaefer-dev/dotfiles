@@ -5,6 +5,9 @@
     # Haskell
     source /Users/daniel/.ghcup/env
 
+    # LLVM config var
+    export LLVM_CONFIG_PATH="/usr/local/Cellar/llvm/9.0.1/bin"
+
     # Add master thesis tools
     export PATH=$PATH:~/dev/master/binaries
 
