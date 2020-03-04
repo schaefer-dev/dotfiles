@@ -3,18 +3,19 @@
 ############################################################
 
 # function to open livestream from twitch in a new window using multithreading
-stream(){
-   osascript <<-EOF
-   tell application "iTerm"
-   create window with profile "ZSH_livestream"
-   select first window
-   launch session "Default Session"
-       tell current session of first window
-           write text "streamlink twitch.tv/'$1' best --player 'mpv' --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6"
-       end tell
-   end tell
-EOF
-}
+# Currently replaced by iina functionality
+#stream(){
+#   osascript <<-EOF
+#   tell application "iTerm"
+#   create window with profile "ZSH_livestream"
+#   select first window
+#   launch session "Default Session"
+#       tell current session of first window
+#           write text "streamlink twitch.tv/'$1' best --player 'mpv' --player-passthrough=hls --hls-segment-threads 2 --http-header Client-ID=jzkbprff40iqj646a697cyrvl0zt2m6"
+#       end tell
+#   end tell
+#EOF
+#}
 
 ############################################################
 ######## in Terminal  Version (working) ####################
