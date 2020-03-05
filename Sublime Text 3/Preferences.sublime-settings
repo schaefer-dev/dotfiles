@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-spacemacs.tmTheme",
+	"color_scheme": "Packages/Theme - itg.flat/itg.dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -43,6 +43,6 @@
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Agila.sublime-theme",
 	"word_wrap": true
 }

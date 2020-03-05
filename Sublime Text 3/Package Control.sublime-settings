@@ -5,9 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Agila Theme",
 		"Alignment",
 		"AlignTab",
 		"AutoFileName",
+		"ayu",
 		"Base16 Color Schemes",
 		"BracketHighlighter",
 		"ColorPicker",

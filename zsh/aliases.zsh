@@ -262,7 +262,7 @@ alias twoLine="source ~/dotfiles/zsh/promptTwoLine.zsh"
 alias oneLine="source ~/dotfiles/zsh/promptOneLine.zsh"
 
 # start sublime university project
-alias uni="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/university.sublime-project"
+alias thesis="subl ~/dotfiles/Sublime\ Text\ 3/projects_workspaces/thesis.sublime-project"
 
 # proverif execution using pi calculus
 alias pv="proverif -in pi"
