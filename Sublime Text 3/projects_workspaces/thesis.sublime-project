@@ -1,0 +1,60 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.blg",
+				"*.bbl",
+				"*.bcf",
+				"*.fls",
+				"*.synctex.gz",
+				"*.run.xml"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings",
+				".texpadtmp"
+			],
+			"name": "Thesis",
+			"path": "/Users/daniel/uni_repos/repo_masterThesis"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.pyc",
+				"*.pyo",
+				".project",
+				"*.aux",
+				"*.fdb_latexmk",
+				"*.log",
+				"*.out",
+				"*.blg",
+				"*.bbl",
+				"*.bcf",
+				"*.fls",
+				"*.synctex.gz",
+				"*.run.xml"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				"._d",
+				".metadata",
+				".settings"
+			],
+			"name": "Specifications",
+			"path": "/Users/daniel/uni_repos/repo_masterThesisSpecifications"
+		}
+	]
+}
