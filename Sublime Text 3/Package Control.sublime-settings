@@ -2,27 +2,12 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"AlignTab",
-		"Base16 Color Schemes",
-		"BracketHighlighter",
-		"Floobits",
-		"Git",
-		"GitGutter",
-		"LaTeXTools",
-		"Minifier",
-		"Nodejs",
-		"Predawn",
-		"Python 3",
-		"Seti_UI",
-		"SideBarEnhancements",
-		"Solarized Color Scheme",
-		"SyntaxManager",
-		"Theme - Orchis"
 	],
 	"installed_packages":
 	[
 		"Alignment",
 		"AlignTab",
+		"AutoFileName",
 		"Base16 Color Schemes",
 		"BracketHighlighter",
 		"ColorPicker",

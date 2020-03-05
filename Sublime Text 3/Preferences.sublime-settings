@@ -1,6 +1,6 @@
 {
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Base16 Color Schemes/Themes/base16-spacemacs.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
@@ -37,29 +37,12 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"AlignTab",
-		"Base16 Color Schemes",
-		"BracketHighlighter",
-		"Floobits",
-		"Git",
-		"GitGutter",
 		"HTML-CSS-JS Prettify",
-		"LaTeXTools",
-		"Minifier",
-		"Nodejs",
-		"Predawn",
 		"Pylinter",
-		"Python 3",
-		"Seti_UI",
-		"SideBarEnhancements",
-		"Solarized Color Scheme",
-		"SublimeLinter",
-		"SyntaxManager",
-		"Theme - Orchis"
+		"SublimeLinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
-	"spacegray_tabs_xlarge": true,
-	"theme": "Default.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"word_wrap": true
 }
