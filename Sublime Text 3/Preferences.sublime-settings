@@ -32,14 +32,13 @@
 		"*.sublime-workspace"
 	],
 	"font_face": "Monaco",
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"HTML-CSS-JS Prettify",
-		"Pylinter",
-		"SublimeLinter"
+		"Pylinter"
 	],
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
