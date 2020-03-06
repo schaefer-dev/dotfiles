@@ -1,4 +1,15 @@
 {
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Theme - itg.flat/itg.dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
