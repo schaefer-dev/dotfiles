@@ -38,10 +38,11 @@
 /Users/daniel/dotfiles/config/git/gitconfig
 
 # Cheatsheets
-/Users/daniel/cheatsheets/fzf.md
-/Users/daniel/cheatsheets/git.md
-/Users/daniel/cheatsheets/tmux.md
-/Users/daniel/cheatsheets/commandline.md
-/Users/daniel/cheatsheets/vim.md
-/Users/daniel/cheatsheets/tmux.md
-/Users/daniel/cheatsheets/zsh.md
+/Users/daniel/dev/cheatsheets/fzf.md
+/Users/daniel/dev/cheatsheets/git.md
+/Users/daniel/dev/cheatsheets/tmux.md
+/Users/daniel/dev/cheatsheets/commandline.md
+/Users/daniel/dev/cheatsheets/vim.md
+/Users/daniel/dev/cheatsheets/tmux.md
+/Users/daniel/dev/cheatsheets/zsh.md
+/Users/daniel/dev/macOS_hotkeys/Readme.md
