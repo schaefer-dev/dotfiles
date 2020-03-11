@@ -279,3 +279,7 @@ alias fzf="fzf-tmux"
 # OS VM aliases for ssh and emacs
 alias emacsvm="emacs /ssh:pintos@192.168.56.101:/home/pintos/pintos/src &"
 alias sshvm="ssh pintos@192.168.56.101"
+
+
+# alias to fix mac mic when calling phoneline via continuity and iphone
+alias micfix="sudo killall coreaudiod"
