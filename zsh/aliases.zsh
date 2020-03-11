@@ -283,3 +283,5 @@ alias sshvm="ssh pintos@192.168.56.101"
 
 # alias to fix mac mic when calling phoneline via continuity and iphone
 alias micfix="sudo killall coreaudiod"
+alias fixmic="sudo killall coreaudiod"
+alias fixaudio="sudo killall coreaudiod"
