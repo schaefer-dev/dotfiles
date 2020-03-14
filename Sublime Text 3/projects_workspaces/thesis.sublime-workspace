@@ -17,10 +17,7 @@
 			}
 		},
 		{
-			"contents": "\\chapter{Research Proposal}\n\n% LATER REWRITTEN INTO INTRODUCTION\n\n% Unify style for all sources\n\n% Introduce own term instead of 'knowledge'. Maybe 'derivation rule' still fits. Other ideas: transformation rules,\n\n\n% TODO: intro sollte schon klar machen was ich mache und was es bringt. Make sure this is the case\n\\section{Motivation}\n\nThe synthesis of programs generates a program that is guaranteed to satisfy a given specification. There are two crucial problems, most existing synthesis approaches are facing.  One of these difficulties is formulating a specification that describes the desired behaviour perfectly. This can be quite challenging for the user in different scenarios. \n%TODO: quelle fuer diese Aussage\n\nA possible improvement is to argue on an abstract level such as the knowledge level as formulated by Halpern, Fagin \\etal~\\cite{implementing_knowledge_based_programs, knowledge_based_programs, knowledge_in_distributed_environment}. Knowledge semantics are particularly suited to model the uncertainty of the executing program about the behaviour of the environment.\nSystem designers often reason about knowledge of systems in the design phase of open systems because this allows for an intuitive representation of certain properties~\\cite{designers_reason_knowledge}. An example for such properties could be ''send an acknowledgement whenever you know that the message has been received correctly``.\n\n% TODO: mention increased expressiveness only briefly\nIn fact, the usage of knowledge not only simplifies formulating specifications in many cases. It can additionally increase the expressiveness of the specification~\\cite{synthesis_from_knowledge_based_specifications}. Arguing on the knowledge level allows users to specify that a system behaves optimally in an information-theoretical sense, which is sometimes not possible using a regular LTL specification~\\cite{synthesis_from_knowledge_based_specifications}. \nIn these, we can often not express optimality which may for example require some action to be performed \\textit{as soon as} information required for that action is gathered~\\cite{synthesis_from_knowledge_based_specifications,knowledge_motion_planning_under_uncertainty}.\n\n% TODO: expresiveness kurz erwaehnen aber schwerpunkt auf scalability setzen die das haupt pro ist. Wir schieben komplexity der synthese in verification.\nThe second big challenge synthesis approaches are facing is scalability to large specifications which is the main challenge we are tackling with our suggested approach. The root of this scalability issue is caused by the exponential complexity of synthesis algorithms~\\cite{synthesis_scalability}. With the goal of reducing the complexity of the synthesis task, we will use knowledge semantics as part of the input specification. However, these knowledge semantics are only part of the initial user-provided specification. The user will additionally provide a set of assumptions, called \\textit{transformation rules}. These rules provide additional information about the knowledge terms. They may specify for example that knowledge of a car turning right can be gathered by observing the right indicator of that particular car. Using a model-checker that supports epistemic logics, we can verify that these \\textit{transformation rules} are guaranteed to hold on the given environment model.\n\n\nAfterwards, these \\textit{transformation rules} will be used to transform the knowledge specification into an equivalent, regular LTL specification which may have an impact on the complexity of the following synthesis task.\n\n\n\n\\section{Concept}\n\n\n% Genauer erklären ggf.\nThe proposed approach will be used to synthesise a KLTL~\\cite{kltl_1, kltl_2} specification which was shown to be a 2Exp-time complete problem~\\cite{synthesis_from_knowledge_based_specifications}. However, we will not synthesise the epistemic specification directly. Instead, we will use \\textit{transformation rules} which are provided by the user to transform the KLTL specification into an LTL specification. An example \\textit{transformation rule} such as $K(\\lambda) \\leftrightarrow \\varphi$ is clearly sufficient to replace the knowledge term $K(\\lambda)$ in the specification using the LTL formula $\\varphi$. Equivalences like this example form the easiest \\textit{transformation rule} that allow for a transformation into an LTL specification. However, there are more sophisticated \\textit{transformation rules} which may also be sufficient to transform the specification into LTL. As part of this thesis we will explore what kind of additional information is in fact required to achieve the transformation from KLTL to LTL. To avoid the introduction of human error with \\textit{transformation rules}, we will verify the correctness of these rules. To do so we can use a KLTL model checker that has access to the given finite state machine of the environment.\n\nAfter the specification was transformed to LTL, we can use an LTL synthesis tool such as BoSy~\\cite{bosy} to generate a valid strategy for said specification. We will provide and study practical examples to which an implementation of our approach can be applied.\n\nThe necessity to provide \\textit{transformation rules} which provide additional information about the model is clearly a limitation of the suggested approach. We will investigate possible solutions to generate these rules algorithmically without any input of the user. Additionally, we will present complexity bounds and examine the practical viability of this algorithmic solution using similar practical examples.\n\n\n\\noindent In summary this thesis will contain out of five core segments:\n\n\\begin{enumerate}\n\t\\item Theory to allow for transformation from a KLTL specification to an LTL specification using a set of \\textit{transformation rules} which are specified by the user.\n\t\\item Presentation of practical examples to which this concept can be applied. This includes verification of the given \\textit{transformation rules} and the following synthesis of the resulting LTL specification.\n\t\\item Implementation of 1. and 2., not including a model-checking algorithm to verify \\textit{transformation rules}.\n\t\\item Theory for an algorithmic way to compute \\textit{transformation rules}, such that additional user input can be avoided entirely.\n\t\\item Addition of this algorithmic way to compute \\textit{transformation rules} to the implementation.\n\\end{enumerate}\n\n\n\\newpage\n\\section{Example Application}\n\n\n\\begin{figure}[h]\n\\centering\n\\includegraphics[width=0.6\\textwidth]{sketches/rework_ex_1.png}\n\\caption{Crossing in which the blue car may or may not turn right. We synthesise the orange car's behaviour.}\n\\label{fig:rework_ex_1}\n\\end{figure}\n\nImagine a scenario at a crossing as displayed in \\cref{fig:rework_ex_1}. The blue car may turn right which would allow the orange car to turn left without any risk of a crash. This intention of the blue car can be detected by observing whether it uses its right indicator. However, the absence of this indicator consequently requires the orange car to wait until the blue car has passed the crossing to avoid the possibility of a crash. \n\n\n\\begin{figure}[h]\n\\centering\n\\includegraphics[width=0.95\\textwidth]{sketches/example_blueCar_implementation.png}\n\\caption{Finite state machine of the blue car's implementation. Orange set contains observable propositions that hold in that state. Grey set contains propositions that hold but can not be observed.}\n\\label{fig:blue_car_impl_ex_1}\n\\end{figure}\n\nThe blue car's behaviour, displayed in \\cref{fig:blue_car_impl_ex_1} is part of the assumptions $\\mathscr{A}$ which describe the possible behaviour of the environment. The orange coloured atomic propositions are observable by the orange car, while the grey proposition in \\cref{fig:blue_car_impl_ex_1} can not be observed. Because part of the information can not be observed by the orange car, this example is considered an incomplete information scenario. A KLTL specification to express the desired behaviour of the orange is given in \\cref{eqn:spec_ex_1}. This specification can be used as input for our suggested approach.\n\n\\begin{equation} \n\t\\label{eqn:spec_ex_1}\n\t\\mathscr{A} \\rightarrow (\\square (\\text{go} \\rightarrow K(\\square \\neg \\text{driveStraight}_{\\text{blueCar}})) \\land \\lozenge \\text{go})\n\\end{equation}\n\nAdditional \\textit{transformation rules} given by the user may now allow us to transform this KLTL specification into an LTL specification. In this case, these rules have to contain information that describes when exactly $K(\\square \\neg \\text{goRight}_{\\text{blueCar}})$ holds. A possible example for this rule is given in \\cref{eqn:info_ex_1}.\n\n\n\\begin{equation} \n\t\\label{eqn:info_ex_1}\n\t\\square (K(\\square \\neg \\text{driveStraight}_{\\text{blueCar}}) \\leftrightarrow \\text{indicatingRight}_{\\text{blueCar}} \\lor \\text{pastCrossing}_{\\text{blueCar}})\n\\end{equation}\n\n\nUsing a given implementation of \\textit{blueCar} as shown in \\cref{fig:blue_car_impl_ex_1}, we can verify that the \\textit{transformation rule} displayed in \\cref{eqn:info_ex_1} is in fact correct.\n\n\n\\begin{equation} \n\t\\label{eqn:ltl_spec_ex1}\n\t\\mathscr{A} \\rightarrow (\\square (\\text{go} \\rightarrow (\\text{indicatingRight}_{\\text{blueCar}} \\lor \\text{pastCrossing}_{\\text{blueCar}})) \\land \\lozenge \\text{go})\n\\end{equation}\n\nAfter the verification has completed successfully, the resulting LTL specification (\\ref{eqn:ltl_spec_ex1}) is forwarded to BoSy~\\cite{bosy} and a valid strategy can be synthesised. ",
 			"file": "/Users/daniel/uni_repos/repo_masterThesis/chapters/1_introduction.tex",
-			"file_size": 9516,
-			"file_write_time": 132279097065332471,
 			"settings":
 			{
 				"buffer_size": 9515,
@@ -32,7 +29,7 @@
 			"file": "/Users/daniel/uni_repos/repo_masterThesis/chapters/2_background.tex",
 			"settings":
 			{
-				"buffer_size": 4839,
+				"buffer_size": 4836,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -41,7 +38,7 @@
 			"file": "/Users/daniel/uni_repos/repo_masterThesis/chapters/2_related_work.tex",
 			"settings":
 			{
-				"buffer_size": 13408,
+				"buffer_size": 13410,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -50,7 +47,7 @@
 			"file": "/Users/daniel/uni_repos/repo_masterThesis/chapters/3_transformation.tex",
 			"settings":
 			{
-				"buffer_size": 11566,
+				"buffer_size": 14841,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -116,16 +113,72 @@
 		"selected_items":
 		[
 			[
-				"remove",
-				"Package Control: Remove Package"
-			],
-			[
-				"package ",
-				"Package Control: Remove Package"
+				"package ins",
+				"Package Control: Install Package"
 			],
 			[
 				"package install",
 				"Package Control: Install Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"package install ",
+				"Package Control: Install Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"packae ins",
+				"Package Control: Install Package"
+			],
+			[
+				"build latex ",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"build",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"latex ",
+				"LaTeXTools: Show toggles"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"latextools",
+				"LaTeXTools: Open Detexify"
+			],
+			[
+				"package ",
+				"Package Control: Remove Package"
 			],
 			[
 				":w",
@@ -133,10 +186,6 @@
 			],
 			[
 				"package contro insta",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -148,16 +197,8 @@
 				"UI: Select Theme"
 			],
 			[
-				"build",
-				"Build With: LaTeX - PdfLaTeX"
-			],
-			[
 				"latex bib",
 				"LaTeXTools: Clear current bibliography cache"
-			],
-			[
-				"package insta",
-				"Package Control: Install Package"
 			],
 			[
 				"upgrad",
@@ -178,10 +219,6 @@
 			[
 				"python",
 				"Build With: Python3"
-			],
-			[
-				"linter",
-				"SublimeCodeIntel: Reset"
 			],
 			[
 				"list",
@@ -223,6 +260,10 @@
 	],
 	"file_history":
 	[
+		"/Users/daniel/Library/Application Support/Sublime Text 3/Packages/User/TodoReview.sublime-settings",
+		"/Users/daniel/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/daniel/uni_repos/repo_masterThesis/chapters/1_introduction.tex",
+		"/Users/daniel/uni_repos/repo_masterThesis/chapters/2_related_work.tex",
 		"/Users/daniel/uni_repos/repo_masterThesis/.gitignore",
 		"/Users/daniel/dotfiles/Sublime Text 3/projects_workspaces/university.sublime-project",
 		"/Users/daniel/uni_repos/repo_masterThesis/main.tex",
@@ -313,7 +354,7 @@
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 32.0
 	},
 	"find_in_files":
 	{
@@ -344,7 +385,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -360,12 +401,22 @@
 						"selection":
 						[
 							[
-								956,
-								956
+								1516,
+								1516
 							]
 						],
 						"settings":
 						{
+							"SL.13.region_keys":
+							[
+								"SL.chktex.Highlights.|071cd6454fa55ea9007316f30de2d941551bedf2f12c154ad230afa72f5cc0e1|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.chktex.Highlights.|33ff996efb1c2dc673124165a40b933d475f1fa07d42953661d938ef1e6cf225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.chktex.Highlights.|ae6f3d6f32c1478894e302a707019ad559fd69ace43d102f2177af4f224a511f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|9f4b30647aa04942e4e9b059652a7e8266d092465ec32aec1a2114b84cb00f45|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|3c0a3e9d323cdefbd7a1410a410498db4ca77cd261d24ab6d1daff87bb99bf9a|region.yellowish markup.warning.sublime_linter|32"
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -373,24 +424,24 @@
 								{
 									"1":
 									[
-										955,
-										956
+										2131,
+										2139
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										950,
-										951
+										1468,
+										1476
 									]
 								},
 								"unmatched":
@@ -399,46 +450,51 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -448,12 +504,7 @@
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_unmatched_content"
 							],
 							"git_gutter_is_enabled": true,
 							"rulers":
@@ -463,10 +514,10 @@
 							"syntax_mgr_loaded": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 888.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -482,23 +533,41 @@
 						"selection":
 						[
 							[
-								1084,
-								1084
+								7511,
+								7155
 							]
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										7504,
+										7510
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"region.orangish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										7162,
+										7168
+									]
 								},
 								"unmatched":
 								{
@@ -506,78 +575,72 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"git_gutter_is_enabled": true,
-							"rulers":
-							[
-								53.9,
-								54.2
-							],
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
 							"syntax_mgr_loaded": true,
-							"translate_tabs_to_spaces": false,
-							"wrap_width": 0
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 35.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -586,45 +649,37 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4839,
+						"buffer_size": 4836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3355,
-								3355
+								4436,
+								4436
 							]
 						],
 						"settings":
 						{
+							"SL.15.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.annotations.Highlights.|b720e2281186393bc4730b05d793537a1f289c61ae49aab0c64155e0ffbc0b20|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|c421c6af2cadd17cfcecd494f8aac2534e91cec62589c2f7caff95fe05572db1|region.yellowish markup.warning.sublime_linter|32"
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
-									"1":
-									[
-										3354,
-										3355
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										3348,
-										3349
-									]
 								},
 								"unmatched":
 								{
@@ -637,46 +692,41 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -686,7 +736,12 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"git_gutter_is_enabled": true,
 							"rulers":
@@ -697,7 +752,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 869.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -709,19 +764,35 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13408,
+						"buffer_size": 13410,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2070,
-								2070
+								2317,
+								2317
 							]
 						],
 						"settings":
 						{
+							"SL.16.region_keys":
+							[
+								"sublime_linter.protected_regions",
+								"SL.annotations.Highlights.|bfa1b215b53261c9383e267dd19a5ab46b079880058217863dd36b071a05727a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|f20de3449ffe0f7672d20737500b28805b8967522c684ea21fa507a6725620da|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|66c14934ad053061c7e47a4d03cec0395f795b02d300b3bb70f8e7f583b5a328|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|218cb6e124942b9700e107cbd08e45102ecfd077ceee2e51f7a8a7c3ffebdcfa|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.annotations.Highlights.|4abf2c79783fb3fec434dde13e36d56f0f7d558811eab3b8f02298804d7b8dba|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|14b96603857076302d67bb8cfe7cb396c6f2854a7f945aef8f99f6119ade978a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|aa97ce79438333cd5b773fe90d9479d442300c9ef8912d0adb93e89ba58de874|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.annotations.Highlights.|1ceba4422e45dcf7c450591b4f86fa76baafd4007f18d394a89bb36a8682c58b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|391f0dd050bc6b004ba6a82945b31a6c5d9ca2fe0b9a4f5c13f80b9aaa5211dd|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|207408896b8678fdb687879aed3f9135d00f43224317876c379f335dfc483b1e|region.yellowish markup.warning.sublime_linter|32"
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -745,46 +816,41 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -794,14 +860,14 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"git_gutter_is_enabled": true,
-							"rulers":
-							[
-								66.9,
-								67.2
-							],
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
 							"syntax_mgr_loaded": true
 						},
@@ -809,7 +875,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -818,45 +884,48 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11566,
+						"buffer_size": 14841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1719,
-								1719
+								3895,
+								3895
 							]
 						],
 						"settings":
 						{
+							"SL.17.region_keys":
+							[
+								"SL.annotations.Highlights.|a5fb806c143fbb8913f9bb7a0f096308a0fce21e4d72291fb12298daaa06847f|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|29194147e9a2b921ca699f2870493c5ab92c87e7825766e743965e455a398606|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|558fb6026f2165cff86a0be295c56077298f8b4364b5222f594cc61b8f8f00d0|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.chktex.Highlights.|9f8cc97fea5d5d271a39952ec6ffd8633457ece5b51f8619f1f4d169aeea2cb2|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|f88569e2b8ea5e6b01ed83227270279dbdc00a450f418243bf40a31df8dfe847|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|d19ad5654838b0b64372fe989031aa08b689fb11709b96766710fde72b58d2d3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.chktex.Highlights.|c34ce4965e13dc11976edc0060730c99b1c5b8c018b5d9d85289885521eb1271|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|4144711cacedd32029c1d1978a537edeb982457b8fd4960469a2622c6942f12a|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.chktex.Highlights.|ec177aec06c6c49c3458896036d82f3ea546d38a92d2d84d7f0bc49fa8a9df9d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|0dd3b1a9e210bcc290830222b89f51455dc68767d0a58f49c9ae44eb568c404a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|30923e993a9b4f12b2f7c64face65156bbbd8510d181db692cfd4c9ed7f17e72|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|884f160db0c0a4ced95160ec2378f2efafc364f50a7c4176e195775d0ac2dd90|region.yellowish markup.warning.sublime_linter|32"
+							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
-									"1":
-									[
-										1718,
-										1719
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"region.purplish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1713,
-										1714
-									]
 								},
 								"unmatched":
 								{
@@ -869,46 +938,41 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
@@ -918,7 +982,12 @@
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
-								"bh_single_quote_content"
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"git_gutter_is_enabled": true,
 							"rulers":
@@ -940,7 +1009,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -969,6 +1038,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -981,7 +1054,7 @@
 	"project": "thesis.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
