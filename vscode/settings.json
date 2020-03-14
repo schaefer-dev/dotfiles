@@ -54,5 +54,14 @@
     "sync.gist": "a21839fa9c59c2ef61808a3fdffb98b5",
     "editor.formatOnSave": true,
     "editor.matchBrackets": false,
+    "files.exclude": {
+        "**/.texpadtmp": true,
+        "**/*.aux": true,
+        "**/*.dist": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.out": true,
+        "**/*.synctex.gz": true
+    },
 
 }
