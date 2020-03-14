@@ -34,3 +34,6 @@ Temporary Items
 *.synctex.gz
 *.fdb_latexmk
 
+# Editor directories
+.vscode
+.texpadtmp

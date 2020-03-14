@@ -36,6 +36,7 @@
 
 # git stuff
 /Users/daniel/dotfiles/config/git/gitconfig
+/Users/daniel/dotfiles/config/git/ignore
 
 # Cheatsheets
 /Users/daniel/dev/cheatsheets/fzf.md
