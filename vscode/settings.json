@@ -2,12 +2,10 @@
 {
 
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": -1,
-    "editor.fontSize": 14,
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
     "files.trimTrailingWhitespace": true,
     "editor.scrollbar.verticalScrollbarSize": 5,
-    "markdown.preview.fontSize": 16,
-    "terminal.integrated.fontSize": 14,
     "editor.wordWrap": "on",
     "editor.cursorStyle": "block",
     "workbench.iconTheme": "eq-material-theme-icons",
@@ -67,5 +65,7 @@
         "**/*.run.xml": true,
         "**/*.synctex.gz": true
     },
+    "debug.console.fontSize": 11,
+    "terminal.integrated.fontSize": 10,
 
 }
