@@ -67,6 +67,9 @@ Sublime\ Text\ 3/Packages/User/Package\ Control.system-ca-bundle
 Sublime\ Text\ 3/Packages/User/ColorPicker/lib/linux_colorpicker.py
 Sublime\ Text\ 3/Packages/User/ColorPicker/lib/linux_colorpicker.py
 
+# Ignore all ST3 workspace files which constantly change
+Sublime\ Text\ 3/projects_workspaces/*.sublime-workspace
+
 # linux ignores
 config/mimeapps.list
 config/user-dirs.dirs

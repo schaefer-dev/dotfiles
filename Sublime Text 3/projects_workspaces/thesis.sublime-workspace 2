@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"top",
+				"\\top                                              \tlatex-mathsymbols"
+			]
 		]
 	},
 	"buffers":
@@ -47,7 +51,7 @@
 			"file": "/Users/daniel/uni_repos/repo_masterThesis/chapters/3_transformation.tex",
 			"settings":
 			{
-				"buffer_size": 14841,
+				"buffer_size": 19017,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -354,7 +358,7 @@
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -385,7 +389,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -401,21 +405,31 @@
 						"selection":
 						[
 							[
-								1516,
-								1516
+								1344,
+								1344
 							]
 						],
 						"settings":
 						{
 							"SL.13.region_keys":
 							[
+								"SL.chktex.Highlights.|3c0a3e9d323cdefbd7a1410a410498db4ca77cd261d24ab6d1daff87bb99bf9a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
 								"SL.chktex.Highlights.|071cd6454fa55ea9007316f30de2d941551bedf2f12c154ad230afa72f5cc0e1|region.yellowish markup.warning.sublime_linter|32",
 								"sublime_linter.protected_regions",
 								"SL.chktex.Highlights.|33ff996efb1c2dc673124165a40b933d475f1fa07d42953661d938ef1e6cf225|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.chktex.Highlights.|ae6f3d6f32c1478894e302a707019ad559fd69ace43d102f2177af4f224a511f|region.yellowish markup.warning.sublime_linter|32",
 								"SL.chktex.Highlights.|9f4b30647aa04942e4e9b059652a7e8266d092465ec32aec1a2114b84cb00f45|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|3c0a3e9d323cdefbd7a1410a410498db4ca77cd261d24ab6d1daff87bb99bf9a|region.yellowish markup.warning.sublime_linter|32"
+								"SL.chktex.Highlights.|ae6f3d6f32c1478894e302a707019ad559fd69ace43d102f2177af4f224a511f|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"SL.14.region_keys":
+							[
+								"SL.chktex.Highlights.|9f4b30647aa04942e4e9b059652a7e8266d092465ec32aec1a2114b84cb00f45|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.chktex.Highlights.|33ff996efb1c2dc673124165a40b933d475f1fa07d42953661d938ef1e6cf225|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|3c0a3e9d323cdefbd7a1410a410498db4ca77cd261d24ab6d1daff87bb99bf9a|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.chktex.Highlights.|071cd6454fa55ea9007316f30de2d941551bedf2f12c154ad230afa72f5cc0e1|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|ae6f3d6f32c1478894e302a707019ad559fd69ace43d102f2177af4f224a511f|region.yellowish markup.warning.sublime_linter|32"
 							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
@@ -424,24 +438,24 @@
 								{
 									"1":
 									[
-										2131,
-										2139
+										1419,
+										1420
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/tag.png",
-										"region.orangish"
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"region.bluish"
 									]
 								},
 								"open":
 								{
 									"1":
 									[
-										1468,
-										1476
+										1343,
+										1344
 									]
 								},
 								"unmatched":
@@ -450,11 +464,26 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
@@ -465,21 +494,11 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -490,21 +509,16 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"git_gutter_is_enabled": true,
 							"rulers":
@@ -514,10 +528,10 @@
 							"syntax_mgr_loaded": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 888.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -779,19 +793,19 @@
 						{
 							"SL.16.region_keys":
 							[
-								"sublime_linter.protected_regions",
-								"SL.annotations.Highlights.|bfa1b215b53261c9383e267dd19a5ab46b079880058217863dd36b071a05727a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|f20de3449ffe0f7672d20737500b28805b8967522c684ea21fa507a6725620da|region.yellowish markup.warning.sublime_linter|32",
 								"SL.annotations.Highlights.|66c14934ad053061c7e47a4d03cec0395f795b02d300b3bb70f8e7f583b5a328|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|218cb6e124942b9700e107cbd08e45102ecfd077ceee2e51f7a8a7c3ffebdcfa|region.yellowish markup.warning.sublime_linter|32",
 								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.annotations.Highlights.|4abf2c79783fb3fec434dde13e36d56f0f7d558811eab3b8f02298804d7b8dba|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|14b96603857076302d67bb8cfe7cb396c6f2854a7f945aef8f99f6119ade978a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|aa97ce79438333cd5b773fe90d9479d442300c9ef8912d0adb93e89ba58de874|region.yellowish markup.warning.sublime_linter|32",
 								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.annotations.Highlights.|1ceba4422e45dcf7c450591b4f86fa76baafd4007f18d394a89bb36a8682c58b|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|218cb6e124942b9700e107cbd08e45102ecfd077ceee2e51f7a8a7c3ffebdcfa|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|4abf2c79783fb3fec434dde13e36d56f0f7d558811eab3b8f02298804d7b8dba|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|bfa1b215b53261c9383e267dd19a5ab46b079880058217863dd36b071a05727a|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.chktex.Highlights.|207408896b8678fdb687879aed3f9135d00f43224317876c379f335dfc483b1e|region.yellowish markup.warning.sublime_linter|32",
 								"SL.chktex.Highlights.|391f0dd050bc6b004ba6a82945b31a6c5d9ca2fe0b9a4f5c13f80b9aaa5211dd|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|207408896b8678fdb687879aed3f9135d00f43224317876c379f335dfc483b1e|region.yellowish markup.warning.sublime_linter|32"
+								"SL.chktex.Highlights.|aa97ce79438333cd5b773fe90d9479d442300c9ef8912d0adb93e89ba58de874|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|14b96603857076302d67bb8cfe7cb396c6f2854a7f945aef8f99f6119ade978a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|f20de3449ffe0f7672d20737500b28805b8967522c684ea21fa507a6725620da|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|1ceba4422e45dcf7c450591b4f86fa76baafd4007f18d394a89bb36a8682c58b|region.yellowish markup.warning.sublime_linter|32"
 							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
@@ -884,36 +898,40 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14841,
+						"buffer_size": 19017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3895,
-								3895
+								18170,
+								18170
 							]
 						],
 						"settings":
 						{
 							"SL.17.region_keys":
 							[
-								"SL.annotations.Highlights.|a5fb806c143fbb8913f9bb7a0f096308a0fce21e4d72291fb12298daaa06847f|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|29194147e9a2b921ca699f2870493c5ab92c87e7825766e743965e455a398606|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|558fb6026f2165cff86a0be295c56077298f8b4364b5222f594cc61b8f8f00d0|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.chktex.Highlights.|9f8cc97fea5d5d271a39952ec6ffd8633457ece5b51f8619f1f4d169aeea2cb2|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|f88569e2b8ea5e6b01ed83227270279dbdc00a450f418243bf40a31df8dfe847|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|d19ad5654838b0b64372fe989031aa08b689fb11709b96766710fde72b58d2d3|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|0ad883ba484e557e9b9fd2c7552e7c0fbe8cb24b6416649eef61957284f04d02|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|f8e9e267d7efc5130780e631d46dddfb5a6d8c5da7123c546f9f0c9ad1f2f6aa|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|ac6c6a91d176f22ad11c7e04a4736878bb47365342e34994cc14955258e80684|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|2344d86008f910ed0dca22ea300c8481183624a264bc734dbe100d22fad6eaab|region.yellowish markup.warning.sublime_linter|32",
 								"SL.chktex.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.chktex.Highlights.|c34ce4965e13dc11976edc0060730c99b1c5b8c018b5d9d85289885521eb1271|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|4144711cacedd32029c1d1978a537edeb982457b8fd4960469a2622c6942f12a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|9af0886f2a7687d0e5cacca75550b55fa7eded71646876d06e03eb99d9dbdc9d|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|c3e9d5d13d679269c836e6c2b47c10a2acafd875b42fd16664d2621b6f7407a4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|2cb6265effa7918c50e28e8fca0ff72bf2dab6fe017e05c50309b0412e61d9ff|region.yellowish markup.warning.sublime_linter|32",
 								"sublime_linter.protected_regions",
+								"SL.annotations.Highlights.|c9a8cf047c7d9e0e60f2c805db368cb991fe1e3bb8f8a1b8bf26dfbfeb8670da|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.annotations.Highlights.|4380c3b35fd55581d69645f3c6715a5fe26ebfbc3ee2452d529d9f0469d63fa4|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|56444a7ca9914c6bfb36003b0baaaf2e73d2856a32607169ac4644c20a2b288e|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|8c1b1053a8293fd4cfeb947c2a948d11f012d4d6d98e12e90a9568d5a264f200|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|694af026739b0779b42982d69e41eedcf01851baf2679e1f508bc899829232b6|region.yellowish markup.warning.sublime_linter|32",
+								"SL.chktex.Highlights.|9fed053b30f18102a4696eadba2d1a8c139efcb2ae74d3e09b953ddf89e769a0|region.yellowish markup.warning.sublime_linter|32",
+								"SL.annotations.Highlights.|6224effc6fa89629be9869814093b3d63d77c438b3c390159c3bd5d5e181c609|region.yellowish markup.warning.sublime_linter|32",
 								"SL.chktex.Highlights.|ec177aec06c6c49c3458896036d82f3ea546d38a92d2d84d7f0bc49fa8a9df9d|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|0dd3b1a9e210bcc290830222b89f51455dc68767d0a58f49c9ae44eb568c404a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.chktex.Highlights.|30923e993a9b4f12b2f7c64face65156bbbd8510d181db692cfd4c9ed7f17e72|region.yellowish markup.warning.sublime_linter|32",
-								"SL.annotations.Highlights.|884f160db0c0a4ced95160ec2378f2efafc364f50a7c4176e195775d0ac2dd90|region.yellowish markup.warning.sublime_linter|32"
+								"SL.annotations.Highlights.|0ed156d59afafe8eced962b3f7708a80632e17cf249d5b453c4222d50a418bce|region.yellowish markup.warning.sublime_linter|32"
 							],
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
@@ -933,6 +951,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -943,51 +986,26 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"git_gutter_is_enabled": true,
 							"rulers":
@@ -998,10 +1016,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7651.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
