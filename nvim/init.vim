@@ -21,7 +21,7 @@ if (has("termguicolors"))
 endif
 
 " Color scheme 
-colorscheme one
+colorscheme hybrid
 set bg=dark
 
 " color for cursorline and cursorcolumn
