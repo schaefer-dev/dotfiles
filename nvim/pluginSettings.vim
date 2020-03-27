@@ -12,7 +12,7 @@ set noshowmode
 
 " lightline config
 let g:lightline = {
-      \ 'colorscheme': 'hybrid',
+      \ 'colorscheme': 'onedark',
       \ 'active': {
       \   'left': [ [ 'fugitive', 'filename', 'paste' ]],
       \   'right': []

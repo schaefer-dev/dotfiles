@@ -43,6 +43,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 " LanguageClient enhancements
 " Showing function signature and inline doc.
 Plug 'Shougo/echodoc.vim'
+Plug 'joshdick/onedark.vim'
 
 "}}}
 
