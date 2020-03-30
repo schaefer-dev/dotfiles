@@ -6,7 +6,7 @@ stream(){
    select first window
    launch session "Default Session"
        tell current session of first window
-           write text "/applications/IINA.app/Contents/MacOS/IINA https://twitch.tv/'$1'; exit"
+           write text "/applications/IINA.app/Contents/MacOS/IINA http://twitch.tv/'$1'; exit"
        end tell
    end tell
 EOF
