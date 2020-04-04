@@ -10,7 +10,6 @@ source ~/dotfiles/zsh/exports.zsh
 source ~/dotfiles/zsh/aliases.zsh
 
 # scripts
-source ~/dotfiles/scripts/livestream.zsh
 source ~/dev/media_utilities/livestreaming/iina.zsh
 source ~/dotfiles/scripts/web.zsh
 
