@@ -11,7 +11,7 @@ source ~/dotfiles/zsh/aliases.zsh
 
 # scripts
 source ~/dotfiles/scripts/livestream.zsh
-source ~/dotfiles/scripts/iina.zsh
+source ~/dev/media_utilities/livestreaming/iina.zsh
 source ~/dotfiles/scripts/web.zsh
 
 source ~/dotfiles/zsh/fzf_functions.zsh
