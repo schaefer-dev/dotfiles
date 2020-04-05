@@ -2,6 +2,10 @@
 /Users/daniel/dev/cheatsheets
 /Users/daniel/dev/macOS_hotkeys
 
+# playgrounds
+/Users/daniel/dev/c-playground
+/Users/daniel/dev/java-playground
+
 # main folders
 /Users/daniel/scripts
 /Users/daniel/Documents
@@ -10,8 +14,6 @@
 /Users/daniel/Desktop
 /Users/daniel/Pictures
 /Users/daniel/dev
-/Users/daniel/Dropbox/wallpaper
-/Users/daniel/Dropbox/Notability
 /Applications
 
 
@@ -42,6 +44,8 @@
 /Users/daniel/uni_repos/repo_masterThesisSpecifications
 /Users/daniel/uni_repos/repo_masterSeminar
 /Users/daniel/uni_repos/repo_se17
+/Users/daniel/uni_repos/repo_hci_dev
+/Users/daniel/uni_repos/repo_sopra_PirateGame
 /Users/daniel/uni_repos/repo_bachelorArbeit
 /Users/daniel/uni_repos/repo_operatingSystems
 /Users/daniel/uni_repos/repo_cryptography
@@ -49,13 +53,22 @@
 /Users/daniel/uni_repos/repo_trex
 /Users/daniel/uni_repos/repo_formalVerification
 
-# Dropbox uni stuff
-/Users/daniel/Dropbox/uni/embeddedSystems
-/Users/daniel/Dropbox/uni/automataGamesVerification
-/Users/daniel/Dropbox/uni/formalSecurity
-
-# Notability uni stuff
-/Users/daniel/Dropbox/Notability/Automata Games Verification
-/Users/daniel/Dropbox/Notability/Embedded Systems
-/Users/daniel/Dropbox/Notability/Formal Security
-/Users/daniel/Dropbox/Notability/HiWi
+# University materials
+/Users/daniel/Documents/uni_archiv/prog2
+/Users/daniel/Documents/uni_archiv/Prog\ 1
+/Users/daniel/Documents/uni_archiv/planning
+/Users/daniel/Documents/uni_archiv/infosys
+/Users/daniel/Documents/uni_archiv/theoretische_informatik
+/Users/daniel/Documents/uni_archiv/security
+/Users/daniel/Documents/uni_archiv/web_security
+/Users/daniel/Documents/uni_archiv/artificial_intelligence
+/Users/daniel/Documents/uni_archiv/automataGamesVerification
+/Users/daniel/Documents/uni_archiv/nebenlaeufige_programmierung
+/Users/daniel/Documents/uni_archiv/high_level_computer_vision
+/Users/daniel/Documents/uni_archiv/handsOnNetworking
+/Users/daniel/Documents/uni_archiv/operating_systems
+/Users/daniel/Documents/uni_archiv/software_engineering
+/Users/daniel/Documents/uni_archiv/human_computer_interaction
+/Users/daniel/Documents/uni_archiv/cryptography
+/Users/daniel/Documents/uni_archiv/embeddedSystems
+/Users/daniel/Documents/uni_archiv/formalSecurity
