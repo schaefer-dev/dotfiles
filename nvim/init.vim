@@ -79,6 +79,7 @@ set mat=2                   " how many tenths of a second to blink
 
 set cursorline cursorcolumn " horizontal and vertical cursorlines
 set wrap breakindent        " linebreaks after long line are indented correctly
+set breakindentopt=shift:2,min:40,sbr
 set relativenumber number   " show linenumbers
 set nobackup nowb noswapfile "disable creating of all sort of swapfiles
 set ruler                   " shows number of columns and lines in powerbar
