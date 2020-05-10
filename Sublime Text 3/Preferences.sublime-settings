@@ -1,4 +1,12 @@
 {
+	"added_words":
+	[
+		"subformula",
+		"automata",
+		"equisatisfiable",
+		"equisatisfiability",
+		"occurances"
+	],
 	"auto_complete_triggers":
 	[
 		{
