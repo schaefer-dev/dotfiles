@@ -1,0 +1,1 @@
+docker run -d --name pihole_dns -e ServerIP=192.168.1.60 -e TZ=Europe/Berlin -e WEBPASSWORD=TEST -e DNS1=1.1.1.1 -e DNS2=1.0.0.1 -p 80:80 -p 53:53/tcp -p 53:53/udp -p 443:443 -v ~/pihole/:/etc/pihole/ --dns=127.0.0.1 --dns=1.1.1.1 --cap-add=NET_ADMIN --restart=unless-stopped pihole/pihole:latest
