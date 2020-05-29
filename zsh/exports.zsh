@@ -31,9 +31,6 @@
     # load bins from dotfiles
     export PATH="/Users/daniel/dotfiles/bin:$PATH"
 
-    # Anaconda python 
-    # export PATH="/Users/daniel/anaconda/bin:$PATH"
-
     # Latex path
     export PATH="/Library/TeX/texbin:$PATH"
 
