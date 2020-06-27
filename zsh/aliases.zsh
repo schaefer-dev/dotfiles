@@ -8,6 +8,9 @@
 # alias g++='g++-4.8'
 # alias c++='c++-4.8'
 
+# quick conversion into BoSy web format
+alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transformed.bosy"
+
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
 
