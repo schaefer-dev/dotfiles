@@ -1,6 +1,5 @@
 // Place your settings in this file to overwrite the default settings
 {
-
     "workbench.statusBar.feedback.visible": false,
     "window.zoomLevel": 0,
     "editor.fontSize": 13,
@@ -12,21 +11,21 @@
     "workbench.colorTheme": "Egoist One",
     "materialTheme.fixIconsRunning": false,
     //"workbench.colorCustomizations": {
-        //"activityBarBadge.background": "#FF7042",
-        //"list.activeSelectionForeground": "#FF7042",
-        //"list.inactiveSelectionForeground": "#FF7042",
-        //"list.highlightForeground": "#FF7042",
-        //"scrollbarSlider.activeBackground": "#FF704250",
-        //"editorSuggestWidget.highlightForeground": "#FF7042",
-        //"textLink.foreground": "#FF7042",
-        //"progressBar.background": "#FF7042",
-        //"pickerGroup.foreground": "#FF7042",
-        //"tab.activeBorder": "#FF7042",
-        //"notificationLink.foreground": "#FF7042",
-        //"editor.findWidgetResizeBorder": "#FF7042",
-        //"editorWidget.border": "#FF7042"
+    //"activityBarBadge.background": "#FF7042",
+    //"list.activeSelectionForeground": "#FF7042",
+    //"list.inactiveSelectionForeground": "#FF7042",
+    //"list.highlightForeground": "#FF7042",
+    //"scrollbarSlider.activeBackground": "#FF704250",
+    //"editorSuggestWidget.highlightForeground": "#FF7042",
+    //"textLink.foreground": "#FF7042",
+    //"progressBar.background": "#FF7042",
+    //"pickerGroup.foreground": "#FF7042",
+    //"tab.activeBorder": "#FF7042",
+    //"notificationLink.foreground": "#FF7042",
+    //"editor.findWidgetResizeBorder": "#FF7042",
+    //"editorWidget.border": "#FF7042"
     //},
-    "workbench.colorCustomizations":{
+    "workbench.colorCustomizations": {
         "tab.activeBackground": "#282c34",
         "activityBar.background": "#282c34",
         "editorGroup.background": "#282c34",
@@ -37,7 +36,6 @@
     "arduino.additionalUrls": [
         "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
     ],
-
     "arduino.output": "../ArduinoOutput",
     "output": "../ArduinoOutput",
     "arduino.ignoreBoards": [
@@ -69,5 +67,10 @@
     "terminal.integrated.fontSize": 10,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
+    "rust-client.channel": null,
+    "rust-analyzer.cargo-watch.allTargets": false,
+    "rust-analyzer.cargo-watch.arguments": [
+        "--target",
+        "thumbv7m-none-eabi"
+    ]
 }
