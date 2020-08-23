@@ -7,16 +7,16 @@ ctrl - up : yabai -m window --focus north
 ctrl - right : yabai -m window --focus east
 
 # swap window
-shift + ctrl - left : yabai -m window --swap west
-shift + ctrl - down : yabai -m window --swap south
-shift + ctrl - up : yabai -m window --swap north
-shift + ctrl - right : yabai -m window --swap east
+shift + ctrl - h : yabai -m window --swap west
+shift + ctrl - j : yabai -m window --swap south
+shift + ctrl - k : yabai -m window --swap north
+shift + ctrl - l : yabai -m window --swap east
 
 # move window
-shift + cmd - left : yabai -m window --warp west
-shift + cmd - down : yabai -m window --warp south
-shift + cmd - up : yabai -m window --warp north
-shift + cmd - right : yabai -m window --warp east
+shift + cmd - h : yabai -m window --warp west
+shift + cmd - j : yabai -m window --warp south
+shift + cmd - k : yabai -m window --warp north
+shift + cmd - l : yabai -m window --warp east
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
