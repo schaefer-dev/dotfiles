@@ -39,6 +39,9 @@ source $HOME/.rvm/scripts/rvm
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# TOGGLE to overwrite gcc with LLVM gcc (sometimes required to compile things)
+# export PATH="/usr/bin:$PATH"
+
 # pyenv to manage python installs
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
