@@ -18,6 +18,9 @@ source ~/dotfiles/zsh/fzf_functions.zsh
 # pure power prompt style
 source ~/dotfiles/zsh/prompts/purepower
 
+# use fish style autocomplete
+source ~/.zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Transient prompt means it does not devide past actions that were performed in same dir
 typeset -g POWERLEVEL9K_TRANSIENT_PROMPT=same-dir
 
