@@ -11,6 +11,9 @@
 # quick conversion into BoSy web format
 alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transformed.bosy"
 
+alias startYabai="brew services start yabai; killall Dock"
+alias stopYabai="brew services stop yabai; killall Dock"
+
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"
 
