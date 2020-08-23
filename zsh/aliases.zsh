@@ -13,6 +13,8 @@ alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transform
 
 alias startYabai="brew services start yabai; killall Dock"
 alias stopYabai="brew services stop yabai; killall Dock"
+alias startSKHD="brew services start skhd"
+alias stopSKHD="brew services stop skhd"
 
 # dock tmux
 alias dock="tmux attach -t MAIN;tmux new -s MAIN; clear;"

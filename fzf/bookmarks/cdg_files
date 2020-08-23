@@ -16,6 +16,10 @@
 # Alacritty config
 /Users/daniel/dotfiles/config/alacritty/alacritty.yml
 
+# yabai config
+/Users/daniel/dotfiles/yabai/yabairc
+/Users/daniel/dotfiles/yabai/skhdrc
+
 # fzf bookmarks
 /Users/daniel/dotfiles/fzf/bookmarks/cdg_files
 /Users/daniel/dotfiles/fzf/bookmarks/cdg_paths
