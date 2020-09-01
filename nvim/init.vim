@@ -87,7 +87,7 @@ set encoding=utf8           " sets character encoding
 set scrolloff=10			" show at least x lines above/below the cursor
 set history=999
 
-" set cb=unnamed				" clipboard setting to make everything work in vim
+set cb=unnamed				" clipboard setting to make everything work in vim
 
 
 " vim tab navigation
