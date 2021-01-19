@@ -7,7 +7,8 @@
 # alias cc='gcc-4.8'
 # alias g++='g++-4.8'
 # alias c++='c++-4.8'
-
+alias stream="python ~/dotfiles/scripts/stream.py"
+ 
 # quick conversion into BoSy web format
 alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transformed.bosy"
 

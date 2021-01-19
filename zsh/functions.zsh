@@ -153,6 +153,9 @@ alias map='web_search duckduckgo \!m'
 alias image='web_search duckduckgo \!i'
 alias ducky='web_search duckduckgo \!'
 
+
+alias ducky='web_search duckduckgo \!'
+
 function web_search() {
   emulate -L zsh
 
