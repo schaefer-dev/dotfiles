@@ -87,7 +87,7 @@ set encoding=utf8           " sets character encoding
 set scrolloff=10			" show at least x lines above/below the cursor
 set history=999
 
-" set cb=unnamed				" clipboard setting to make everything work in vim
+set cb=unnamed				" clipboard setting to make everything work in vim
 
 
 " vim tab navigation
@@ -132,8 +132,8 @@ set gdefault
 set undodir=~/.vimdid
 set undofile
 
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python2_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/Users/daniel/.pyenv/shims/python'
 
 
 source ~/dotfiles/config/nvim/remaps.vim

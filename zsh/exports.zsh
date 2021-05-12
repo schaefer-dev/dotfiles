@@ -1,3 +1,9 @@
+# Master Thesis stuff
+export EAHYPER_SOLVER_DIR=~/dev/master/eahyper/LTL_SAT_solver
+# export EAHYPER_SOLVER_DIR ~/dev/master/eahyper/LTL_SAT_solver/pltl
+
+
+
     # Currently this path is appended to dynamically when picking a ruby version
     # zshenv has already started PATH with rbenv so append only here
     export PATH=$PATH:~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
@@ -31,9 +37,6 @@
     # load bins from dotfiles
     export PATH="/Users/daniel/dotfiles/bin:$PATH"
 
-    # Anaconda python 
-    # export PATH="/Users/daniel/anaconda/bin:$PATH"
-
     # Latex path
     export PATH="/Library/TeX/texbin:$PATH"
 
@@ -45,6 +48,9 @@
 
     # Rust path
     export PATH="~/.cargo/bin:$PATH"
+
+    # Ruby path
+    export PATH="/Users/daniel/.rvm/gems/ruby-2.4.0/bin:$PATH"
 
     # LLVM path
     export LLVM_CONFIG_PATH=/usr/local/Cellar/llvm/9.0.0_1/bin/llvm-config
