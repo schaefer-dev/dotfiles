@@ -132,8 +132,8 @@ set gdefault
 set undodir=~/.vimdid
 set undofile
 
-let g:python2_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/Users/daniel/.pyenv/shims/python'
+let g:python2_host_prog = '/Library/Frameworks/Python.framework/Versions/2.7/bin/python'
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 
 source ~/dotfiles/config/nvim/remaps.vim

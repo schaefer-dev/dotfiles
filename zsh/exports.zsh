@@ -1,15 +1,9 @@
-# Master Thesis stuff
-export EAHYPER_SOLVER_DIR=~/dev/master/eahyper/LTL_SAT_solver
-# export EAHYPER_SOLVER_DIR ~/dev/master/eahyper/LTL_SAT_solver/pltl
-
-
-
     # Currently this path is appended to dynamically when picking a ruby version
     # zshenv has already started PATH with rbenv so append only here
     export PATH=$PATH:~/dotfiles/bin:~/bin:/usr/local/bin:/usr/local/sbin:~/bin
 
-    # Haskell
-    source /Users/daniel/.ghcup/env
+    # Apple Silicon Homebrew
+    PATH=$PATH:/opt/homebrew/bin
 
     # LLVM config var
     export LLVM_CONFIG_PATH="/usr/local/Cellar/llvm/9.0.1/bin"
@@ -18,7 +12,10 @@ export EAHYPER_SOLVER_DIR=~/dev/master/eahyper/LTL_SAT_solver
     export PATH=$PATH:~/dev/master/binaries
 
     # setting java_home
-    export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+    export JAVA_HOME="/opt/homebrew/opt/openjdk@17/bin"
+
+    # make sure openjdk17 is used
+    export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
     # important for lesspipe to work properly
     export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
@@ -32,7 +29,7 @@ export EAHYPER_SOLVER_DIR=~/dev/master/eahyper/LTL_SAT_solver
     export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.0/lib:$DYLD_LIBRARY_PATH
 
     # homebrew default override
-    export PATH="/usr/local/bin:$PATH"
+    export PATH="/opt/homebrew/bin:$PATH"
 
     # load bins from dotfiles
     export PATH="/Users/daniel/dotfiles/bin:$PATH"

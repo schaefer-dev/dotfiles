@@ -1,5 +1,6 @@
 # ignore vim bundle/color downloads
 mvim/vim
+config/Battle.net/
 
 # scripts ropreproject
 scripts/.ropeproject/
