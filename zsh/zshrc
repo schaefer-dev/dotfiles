@@ -14,6 +14,7 @@ source ~/dotfiles/zsh/aliases.zsh
 source ~/dotfiles/scripts/web.zsh
 
 source ~/dotfiles/zsh/fzf_functions.zsh
+source ~/dotfiles/zsh/functions.zsh
 
 # pure power prompt style
 source ~/dotfiles/zsh/prompts/purepower

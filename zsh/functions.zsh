@@ -156,6 +156,11 @@ alias ducky='web_search duckduckgo \!'
 
 alias ducky='web_search duckduckgo \!'
 
+showDesktopIcons() {
+  defaults write com.apple.finder CreateDesktop $1
+  killall Finder
+}
+
 function web_search() {
   emulate -L zsh
 
