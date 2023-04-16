@@ -1,51 +1,46 @@
-# -------------------------------------------------------------------
-# Mac specific functions
-# -------------------------------------------------------------------
-if [[ $IS_MAC -eq 1 ]]; then
-  # -------------------------------------------------------------------
-  # compressed file expander 
-  # (from https://github.com/myfreeweb/zshuery/blob/master/zshuery.sh)
-  # -------------------------------------------------------------------
-  ex() {
-      if [[ -f $1 ]]; then
-          case $1 in
-            *.tar.bz2) tar xvjf $1;;
-            *.tar.gz) tar xvzf $1;;
-            *.tar.xz) tar xvJf $1;;
-            *.tar.lzma) tar --lzma xvf $1;;
-            *.bz2) bunzip $1;;
-            *.rar) unrar $1;;
-            *.gz) gunzip $1;;
-            *.tar) tar xvf $1;;
-            *.tbz2) tar xvjf $1;;
-            *.tgz) tar xvzf $1;;
-            *.zip) unzip $1;;
-            *.Z) uncompress $1;;
-            *.7z) 7z x $1;;
-            *.dmg) hdiutul mount $1;; # mount OS X disk images
-            *) echo "'$1' cannot be extracted via >ex<";;
-      esac
-      else
-          echo "'$1' is not a valid file"
-      fi
-  }
+ex() {
+    if [[ -f $1 ]]; then
+        case $1 in
+          *.tar.bz2) tar xvjf $1;;
+          *.tar.gz) tar xvzf $1;;
+          *.tar.xz) tar xvJf $1;;
+          *.tar.lzma) tar --lzma xvf $1;;
+          *.bz2) bunzip $1;;
+          *.rar) unrar $1;;
+          *.gz) gunzip $1;;
+          *.tar) tar xvf $1;;
+          *.tbz2) tar xvjf $1;;
+          *.tgz) tar xvzf $1;;
+          *.zip) unzip $1;;
+          *.Z) uncompress $1;;
+          *.7z) 7z x $1;;
+          *.dmg) hdiutul mount $1;; # mount OS X disk images
+          *) echo "'$1' cannot be extracted via >ex<";;
+    esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
 
-  # view man pages in Preview
-  pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps" ; }
+# view man pages in Preview
+pman() { ps=`mktemp -t manpageXXXX`.ps ; man -t $@ > "$ps" ; open "$ps" ; }
 
-  # notify function - http://hints.macworld.com/article.php?story=20120831112030251
-  notify() { automator -D title=$1 -D subtitle=$2 -D message=$3 ~/Library/Workflows/DisplayNotification.wflow }
+# notify function - http://hints.macworld.com/article.php?story=20120831112030251
+notify() { automator -D title=$1 -D subtitle=$2 -D message=$3 ~/Library/Workflows/DisplayNotification.wflow }
 
-  # function to start terminal chess
-  chess(){
-          cd /Applications/Chess.app/Contents/Resources/
-          sudo ./sjeng.ChessEngine
-  }
+# function to start terminal chess
+chess(){
+        cd /Applications/Chess.app/Contents/Resources/
+        sudo ./sjeng.ChessEngine
+}
 
-  dash(){
-      open "dash://$1"
-  }
+dash(){
+    open "dash://$1"
+}
 
+livestream(){
+  streamlink https://twitch.tv/$1 best --twitch-disable-ads
+}
 
 # function to open Stuff in a new iTerm Window
 popout_helper(){
@@ -64,9 +59,6 @@ EOF
 popout(){
   popout_helper $(pwd) $@
 }
-
-fi
-
 
 # generate ctags starting at current directory down
 generateCtags(){
