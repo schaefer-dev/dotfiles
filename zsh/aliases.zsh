@@ -8,6 +8,7 @@
 # alias g++='g++-4.8'
 # alias c++='c++-4.8'
 alias stream="python ~/dotfiles/scripts/stream.py"
+alias wakepc="wakeonlan -i 192.168.52.255 d8:bb:c1:6e:58:52"
  
 # quick conversion into BoSy web format
 alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transformed.bosy"
