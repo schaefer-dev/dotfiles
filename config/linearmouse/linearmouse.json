@@ -1,44 +1,45 @@
 {
-  "$schema" : "https:\/\/app.linearmouse.org\/schema\/0.7.3",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
   "schemes" : [
     {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x258a",
+          "category" : "mouse",
+          "productName" : "Wired Gaming Mouse",
+          "productID" : "0x27"
+        }
+      },
       "pointer" : {
         "acceleration" : 0,
         "disableAcceleration" : true
-      },
-      "if" : {
-        "device" : {
-          "productName" : "Wired Gaming Mouse",
-          "productID" : "0x27",
-          "category" : "mouse",
-          "vendorID" : "0x258a"
-        }
       }
     },
     {
       "pointer" : {
+        "acceleration" : 1.2,
         "disableAcceleration" : true
       },
       "if" : {
         "device" : {
           "productName" : "USB Receiver",
-          "productID" : "0xc548",
           "category" : "mouse",
-          "vendorID" : "0x46d"
+          "vendorID" : "0x46d",
+          "productID" : "0xc548"
         }
       }
     },
     {
-      "pointer" : {
-        "disableAcceleration" : true
-      },
       "if" : {
         "device" : {
-          "productName" : "USB Receiver",
           "productID" : "0xc52b",
-          "category" : "mouse",
-          "vendorID" : "0x46d"
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "category" : "mouse"
         }
+      },
+      "pointer" : {
+        "disableAcceleration" : true
       }
     }
   ]

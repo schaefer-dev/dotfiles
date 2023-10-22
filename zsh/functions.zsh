@@ -39,7 +39,7 @@ dash(){
 }
 
 livestream(){
-  streamlink https://twitch.tv/$1 best --twitch-disable-ads
+  streamlink --player=/Applications/IINA.app/Contents/MacOS/iina-cli --player-args {playerinput}-stdin https://twitch.tv/$1 best --twitch-disable-ads
 }
 
 # function to open Stuff in a new iTerm Window

@@ -15,7 +15,7 @@
 	<key>BadgeTopMargin</key>
 	<integer>10</integer>
 	<key>CheckTestRelease</key>
-	<true/>
+	<false/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<true/>
 	<key>Command</key>
