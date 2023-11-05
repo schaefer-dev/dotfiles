@@ -42,6 +42,13 @@ livestream(){
   streamlink --player=/Applications/IINA.app/Contents/MacOS/iina-cli --player-args {playerinput}-stdin https://twitch.tv/$1 best --twitch-disable-ads
 }
 
+# url argument need to be passed in quotes
+ytplay(){
+  open "iina://weblink?url=$1"
+}
+# ability to pass argument without needing quotes
+alias yt="noglob ytplay"
+
 # function to open Stuff in a new iTerm Window
 popout_helper(){
     osascript <<-EOF
