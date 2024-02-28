@@ -1,6 +1,7 @@
 # ignore vim bundle/color downloads
 mvim/vim
 config/Battle.net/
+config/Jellyfin/
 
 # scripts ropreproject
 scripts/.ropeproject/
