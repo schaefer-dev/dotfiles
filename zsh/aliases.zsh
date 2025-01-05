@@ -8,7 +8,7 @@
 # alias g++='g++-4.8'
 # alias c++='c++-4.8'
 alias stream="python ~/dotfiles/scripts/stream.py"
-alias wakepc="wakeonlan -i 192.168.52.255 d8:bb:c1:6e:58:52"
+alias wakepc="wakeonlan -i 192.168.52.255 9c:6b:00:56:85:c9"
  
 # quick conversion into BoSy web format
 alias spec2web="python3 spec_to_web.py temp_after_automata_translation_transformed.bosy"
@@ -137,6 +137,7 @@ alias mvimt="mvim --remote-tab-silent"
 # remote machines
 # -------------------------------------------------------------------
 alias 'server=ssh server'
+alias ssh_pi="ssh daniel@192.168.52.50"
 
 # -------------------------------------------------------------------
 # Git
@@ -295,3 +296,5 @@ alias sshvm="ssh pintos@192.168.56.101"
 alias micfix="sudo killall coreaudiod"
 alias fixmic="sudo killall coreaudiod"
 alias fixaudio="sudo killall coreaudiod"
+
+alias tmuxa="tmux attach -t MAIN;tmux new -s MAIN; clear;"

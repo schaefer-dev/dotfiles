@@ -1,17 +1,44 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
       "if" : {
         "device" : {
-          "vendorID" : "0x258a",
-          "category" : "mouse",
           "productName" : "Wired Gaming Mouse",
-          "productID" : "0x27"
+          "category" : "mouse",
+          "productID" : "0x27",
+          "vendorID" : "0x258a"
         }
       },
       "pointer" : {
-        "acceleration" : 0,
+        "disableAcceleration" : true,
+        "acceleration" : 0
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "productName" : "USB Receiver",
+          "productID" : "0xc548"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1.2
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "productName" : "USB Receiver",
+          "productID" : "0xc52b",
+          "vendorID" : "0x46d",
+          "category" : "mouse"
+        }
+      },
+      "pointer" : {
         "disableAcceleration" : true
       }
     },
@@ -22,24 +49,17 @@
       },
       "if" : {
         "device" : {
-          "productName" : "USB Receiver",
           "category" : "mouse",
+          "serialNumber" : "D043C5A4",
+          "productName" : "MX Master 3S",
           "vendorID" : "0x46d",
-          "productID" : "0xc548"
-        }
-      }
-    },
-    {
-      "if" : {
-        "device" : {
-          "productID" : "0xc52b",
-          "vendorID" : "0x46d",
-          "productName" : "USB Receiver",
-          "category" : "mouse"
+          "productID" : "0xb034"
         }
       },
-      "pointer" : {
-        "disableAcceleration" : true
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        }
       }
     }
   ]
